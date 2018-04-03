@@ -21,23 +21,24 @@
 
 
 
-  </script> -->
-
+    </script> -->
+    <link href="{{request.static_url('interstate_sales:static/theme.css')}}" rel="stylesheet">
     <title>Interstate Sales - Homepage</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
-<body style="background-color:white;">
-<div id="wrap">
-<a href="#" id="top"><b></b></a>
-<div id="Banner_image" style="width:980px">
-<img src="Interstate_Sales_Backdrop.jpg" alt="Interstate Sales" width="980" height="300">
-</div>
-<div id="container1" style="width:980px">
-<a style="position: fixed; bottom:5px;right:5px;" class="scrollup" href="#" title="Back to Top"><img style="border: none;" src="arrow6.jpg" alt="up icon"></a>
+  <body style="background-color:white;">
+    <div id="wrap">
+    <a href="#" id="top"><b></b></a>
+    <div id="Banner_image" style="width:980px">
+      <img src="{{request.static_url('interstate_sales:static/Interstate_Sales_Backdrop.jpg')}}" alt="Interstate Sales" width="980" height="300">
+    </div>
+    <div id="container1" style="width:980px">
+    <a style="position: fixed; bottom:5px;right:5px;" class="scrollup" href="#" title="Back to Top">
+      <img style="border: none;" src="{{request.static_url('interstate_sales:static/arrow6.jpg')}}" alt="up icon">
+    </a>
 
 
-<ul id="nav">
+  <ul id="nav">
 
 	<li id="home"><a href="index.html">Home</a></li>
 	<li id="guardrail">
@@ -136,28 +137,28 @@
 
 
 
-<div id="content_1" style="background-color:black;color:white;height:415px;width:490px;float:left;">
-<br>
-<p><center><h1><em> Welcome to <b>Interstate Sales</b></h1></center></p>
+  <div id="content_1" style="background-color:black;color:white;height:415px;width:490px;float:left;">
+    <br>
+    <p><center><h1><em> Welcome to <b>Interstate Sales</b></h1></center></p>
 
-<p align="justify" style="border:10px" >We are your provider of Traffic Safety Supplies. For over 45 years we have had the opportunity to bring great products to the people who use them. Interstate Sales is a family owned and operated business
-located in Northern California. Whether you are near or far we can get your order to you promptly. While our
-warehouse has gotten bigger our small town feel and personalized
-attention has not. Please give us a call or stop by our office. </p>
-<br>
+    <p align="justify" style="border:10px" >We are your provider of Traffic Safety Supplies. For over 45 years we have had the opportunity to bring great products to the people who use them. Interstate Sales is a family owned and operated business
+    located in Northern California. Whether you are near or far we can get your order to you promptly. While our
+    warehouse has gotten bigger our small town feel and personalized
+    attention has not. Please give us a call or stop by our office. </p>
+    <br>
 
-<center><img src="cert.small.business.jpg"border="3"></center>
-
-
-</div>
-
-
+    <center>
+      <img src="{{request.static_url('interstate_sales:static/cert_small_business.jpg')}}"border="3">
+    </center>
+  </div>
 
 
-<div id="content_2" style="background-color:black;height:415px;width:490px;float:left;">
-<br>
-<center><img src="office.jpg" alt="office"width="450" height="350" border="2"></center>
-</div>
+
+
+  <div id="content_2" style="background-color:black;height:415px;width:490px;float:left;">
+    <br>
+    <center><img src="{{request.static_url('interstate_sales:static/office.jpg')}}" alt="office" width="450" height="350" border="2"></center>
+  </div>
 
 
 
@@ -176,18 +177,24 @@ attention has not. Please give us a call or stop by our office. </p>
 <div id="content_5" style="background-color:black;height:150px;width:980px;float:left;">
 <br>
 <center>
-	<a href="Gregory.html" target="newWindow" ><img src="gregory.bmp" alt="gregory" width="120" height="60"border="3" align="center" ></a>
-	<a href="Saso.html" target="newWindow" ><img src="saso_logo.jpg" alt="saso" width="120" height="60" border="3"align="center" ></a>
-	<a href="Ennis-Flint.html" target="newWindow" ><img src="ennis_logo.png" alt="ennis_logo" width="120" height="100"border="3" align="center"></a>
+	<a href="Gregory.html" target="newWindow" >
+  <img src="{{request.static_url('interstate_sales:static/gregory.bmp')}}" alt="gregory" width="120" height="60"border="3" align="center" ></a>
+	<a href="Saso.html" target="newWindow" >
+  <img src="{{request.static_url('interstate_sales:static/saso_logo.jpg')}}" alt="saso" width="120" height="60" border="3"align="center" ></a>
+	<a href="Ennis-Flint.html" target="newWindow" >
+  <img src="{{request.static_url('interstate_sales:static/ennis_logo.png')}}" alt="ennis_logo" width="120" height="100"border="3" align="center"></a>
 
-	<a href="graco.html" target="newWindow" ><img src="graco.jpg" alt="gracologo" width="120" height="100" border="3"align="center"></a>
-	<a href="Impact Recovery.html" target="newWindow" ><img src="impact_logo.png" alt="impact_logo" width="120" height="60"border="3" align="center"></a>
-	<a href="Uteck.html"  target="newWindow" ><img src="u-teck.jpg" alt="u-teck" width="120" height="60" border="3" align="center" ></a>
+	<a href="graco.html" target="newWindow" >
+  <img src="{{request.static_url('interstate_sales:static/graco.jpg')}}" alt="gracologo" width="120" height="100" border="3"align="center"></a>
+	<a href="Impact Recovery.html" target="newWindow" >
+  <img src="{{request.static_url('interstate_sales:static/impact_logo.png')}}" alt="impact_logo" width="120" height="60"border="3" align="center"></a>
+	<a href="Uteck.html"  target="newWindow" >
+  <img src="{{request.static_url('interstate_sales:static/u-teck.jpg')}}" alt="u-teck" width="120" height="60" border="3" align="center" ></a>
 </center>
 </div>
 
 <div id="content_3" style="background-color:white;height:300px;width:980px;float:left;">
-<img src="newservicesbanner.jpg" alt="new" width="980" height="300" border="0" >
+<img src="{{request.static_url('interstate_sales:static/newservicesbanner.jpg')}}" alt="new" width="980" height="300" border="0" >
 </div>
 
 <div id="content_6" style="background-color:black;color:white;height:90px;width:980px;float:left;"><center><h3>
@@ -196,20 +203,11 @@ attention has not. Please give us a call or stop by our office. </p>
 </center></h3></p>
 </div>
 
-
-
-
-
 <div id="content_6" style="background-color:black;height:275px;width:980px;float:left;">
-<center><img src="wpan4.jpg" alt="warehouse" width="900" height="220"border="2" ></center>
-</div>
-
-
-
-
-
-
-<br>
+<center>
+<img src="{{request.static_url('interstate_sales:static/wpan4.jpg')}}" alt="warehouse" width="900" height="220"border="2" >
+</center>
+</div><br>
 
 <div id="content_5" style="background-color:gold;height:10px;width:980px;float:left;"></div>
 <div id="content_5" style="background-color:black;height:10px;width:980px;float:left;"></div>
@@ -222,14 +220,17 @@ attention has not. Please give us a call or stop by our office. </p>
 
 <div id="content_6" style="background-color:black;height:300px;width:350px;float:left;">
 <br>
-<center><div id="content" style="background-color:black;height:250px;width:230px;float:right;"><a href="contact.html"  target="newWindow" ><img src="auburn.jpg" width="200" height="200" border="3"><p>Follow Link to Contact Us</p></a></center></div>
+<center>
+<div id="content" style="background-color:black;height:250px;width:230px;float:right;"><a href="contact.html"  target="newWindow" >
+<img src="{{request.static_url('interstate_sales:static/auburn.jpg')}}" width="200" height="200" border="3"><p>Follow Link to Contact Us</p></a></center></div>
 
 <div id="content_6" style="background-color:black;color:white;height:300px;width:280px;float:left;">
 <center><h2><p><br>Now Offering Two Warehouse Locations In California To Better Serve You!</center></p></div>
 
 <div id="content_6" style="background-color:black;height:300px;width:350px;float:left;">
 <br>
-<center><div id="content" style="background-color:black;height:250px;width:230px;float:left;"><a href="http://www.tmantraffic.com"  target="newWindow" ><img src="el_cajon.jpg" width="200" height="200" border="3"><p>Follow Link to T-Man Traffic</p></a></center></div>
+<center><div id="content" style="background-color:black;height:250px;width:230px;float:left;"><a href="http://www.tmantraffic.com"  target="newWindow" >
+<img src="{{request.static_url('interstate_sales:static/el_cajon.jpg')}}" width="200" height="200" border="3"><p>Follow Link to T-Man Traffic</p></a></center></div>
 
 
 <div id="address_1" style="width:980px; background-color:white;">
@@ -242,8 +243,8 @@ attention has not. Please give us a call or stop by our office. </p>
 
 <div id="footer" style="background-color:gold;clear:both;text-align:center;width:980px;float:left;"><p><center><b>www.interstatesales.com</center></p></div>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </div>
 </body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </html>
