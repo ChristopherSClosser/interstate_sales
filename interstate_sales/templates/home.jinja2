@@ -6,22 +6,19 @@
     <meta charset="UTF-8" />
     <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
     <script type="text/javascript">document.documentElement.className = 'js';</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script> -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () {
-
+      $(document).ready(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
-
-
-
-    </script> -->
+          if ($(this).scrollTop() > 100) {
+              $('.scrollup').fadeIn();
+          } else {
+              $('.scrollup').fadeOut();
+          }
+        }
+      });
+    </script>
     <link href="{{request.static_url('interstate_sales:static/theme.css')}}" rel="stylesheet">
     <title>Interstate Sales - Homepage</title>
 
