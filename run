@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
 python setup.py develop
+initialize_interstate_sales_db production.ini
 python runapp.py build
-cd interstate_sales
-initializedb production.ini
