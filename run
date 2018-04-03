@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 python setup.py develop
-python ./initializedb production.ini
+python interstate_sales/scripts/initializedb production.ini
 python runapp.py build
