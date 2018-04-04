@@ -58,7 +58,7 @@ setup(
             'main = interstate_sales:main',
         ],
         'console_scripts': [
-            'init_interstate_salesdb = interstate_sales.scripts.initializedb:main',
+            'initialize_interstate_sales_db = interstate_sales.scripts.initializedb:main',
         ],
     },
 )
