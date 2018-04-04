@@ -45,7 +45,7 @@ def login(request):
         if is_authenticated(username, password):
             headers = remember(request, username)
             return HTTPFound(request.route_url('home'), headers=headers)
-        return {}
+        return {'res': 'Username or Password Entered Incorrect'}
 
 
 @view_config(route_name='logout')
