@@ -1,5 +1,8 @@
 {% extends "base.jinja2" %}
-
+<%
+from pyramid.security import authenticated_userid
+user_id = authenticated_userid(request)
+%>
 {% block content %}
 
   {% for category in subcategories %}

@@ -1,6 +1,12 @@
 from pyramid.response import Response
 from pyramid.view import view_config
-
+from pyramid.security import remember, forget, NO_PERMISSION_REQUIRED
+from pyramid.httpexceptions import HTTPNotFound, HTTPFound
+from pyramid.view import view_config, forbidden_view_config
+from ..security import is_authenticated
+from ..models import MyModel
+import datetime
+import os
 from sqlalchemy.exc import DBAPIError
 
 from ..models import MyModel
@@ -25,3 +31,25 @@ def guardrail_view(request):
         if item.subcategory not in subcategories:
             subcategories.append(item.subcategory)
     return {'guardrails': guardrails, 'subcategories': subcategories}
+
+
+@view_config(route_name='login', renderer='../templates/login.jinja2')
+@forbidden_view_config(renderer='../templates/nonentry.jinja2')
+def login(request):
+    """."""
+    if request.method == 'GET':
+        return {}
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        if is_authenticated(username, password):
+            headers = remember(request, username)
+            return HTTPFound(request.route_url('home'), headers=headers)
+        return {}
+
+
+@view_config(route_name='logout')
+def logout(request):
+    """."""
+    headers = forget(request)
+    return HTTPFound(request.route_url('home'), headers=headers)

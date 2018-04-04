@@ -13,3 +13,5 @@ def includeme(config):
     config.add_route('equipment', '/equipment')
     config.add_route('team', '/team')
     config.add_route('contact', '/contact')
+    config.add_route('login', '/login')
+    config.add_route('logout', '/logout')

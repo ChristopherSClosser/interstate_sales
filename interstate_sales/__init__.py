@@ -1,5 +1,6 @@
 from pyramid.config import Configurator
 import os
+from pyramid.authentication import AuthTktAuthenticationPolicy
 
 
 def main(global_config, **settings):
@@ -11,5 +12,6 @@ def main(global_config, **settings):
     config.include('.models')
     config.include('.routes')
     config.include('.views')
+    config.include('.security')
     config.scan()
     return config.make_wsgi_app()

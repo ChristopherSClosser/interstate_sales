@@ -1,0 +1,25 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+
+<section class="entry">
+  <h3 class="entry-title">Login</h3>
+
+  <form class="new_entry" method="POST">
+    <p>
+      <label for="username">Enter your username: </label>
+      <input type="text" name="username">
+    </p>
+    <br>
+    <p class="text">
+      <label for="password">Enter your password: </label>
+      <input type="password" name="password">
+    </p>
+    <br>
+    <p>
+      <input type="submit" name="Login">
+    </p>
+  </form>
+</section>
+
+{% endblock %}
