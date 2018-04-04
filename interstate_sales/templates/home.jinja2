@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
     <script type="text/javascript">document.documentElement.className = 'js';</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
@@ -18,7 +18,7 @@
           }
         }
       });
-    </script>
+    </script> -->
     <link href="{{request.static_url('interstate_sales:static/theme.css')}}" rel="stylesheet">
     <title>Interstate Sales - Homepage</title>
 
@@ -36,24 +36,21 @@
 
 
   <ul id="nav">
-
-	<li id="home"><a href="index.html">Home</a></li>
-	<li id="guardrail">
-		<a href="guardrail.html">Guardrail</a>
-		<ul>
-            <li><a href="guardrail.html#guardrail">Guardrail</a></li>
-			<li><a href="guardrail.html#end%20treatment">End Treatments</a></li>
-            <li><a href="guardrail.html#post">Posts</a></li>
-			<li><a href="guardrail.html#steel_rail">Steel Rail</a></li>
-            <li><a href="guardrail.html#weedmat">Weedmat</a></li>
-
-        </ul>
-	</li>
-	<li id="paint">
-		<a href="traffic_paint.html">Traffic Paint</a>
-		<ul>
-            <li><a href="traffic_paint.html#water-based">Water-Based</a></li>
-            <li><a href="traffic_paint.html#solvent-based">Solvent-Based</a></li>
+	  <li id="home"><a href="{{request.route_url('home')}}">Home</a></li>
+	  <li id="guardrail"><a href="guardrail.html">Guardrail</a>
+		  <ul>
+        <li><a href="guardrail.html#guardrail">Guardrail</a></li>
+			  <li><a href="guardrail.html#end%20treatment">End Treatments</a></li>
+        <li><a href="guardrail.html#post">Posts</a></li>
+			  <li><a href="guardrail.html#steel_rail">Steel Rail</a></li>
+        <li><a href="guardrail.html#weedmat">Weedmat</a></li>
+      </ul>
+	  </li>
+	  <li id="paint">
+		  <a href="traffic_paint.html">Traffic Paint</a>
+		  <ul>
+        <li><a href="traffic_paint.html#water-based">Water-Based</a></li>
+        <li><a href="traffic_paint.html#solvent-based">Solvent-Based</a></li>
             <li><a href="traffic_paint.html#thermo">Thermoplastic</a></li>
 			<li><a href="traffic_paint.html#marking%20paint">Marking Paint</a></li>
 			<li><a href="traffic_paint.html#coating">Coating</a></li>
@@ -219,7 +216,7 @@
 <div id="content_6" style="background-color:black;height:300px;width:350px;float:left;">
 <br>
 <center>
-<div id="content" style="background-color:black;height:250px;width:230px;float:right;"><a href="contact.html"  target="newWindow" >
+<div id="content" style="background-color:black;height:250px;width:230px;float:right;"><a href="contact.html"  target="_blank" >
 <img src="{{request.static_url('interstate_sales:static/auburn.jpg')}}" width="200" height="200" border="3"><p>Follow Link to Contact Us</p></a></center></div>
 
 <div id="content_6" style="background-color:black;color:white;height:300px;width:280px;float:left;">
@@ -227,7 +224,7 @@
 
 <div id="content_6" style="background-color:black;height:300px;width:350px;float:left;">
 <br>
-<center><div id="content" style="background-color:black;height:250px;width:230px;float:left;"><a href="http://www.tmantraffic.com"  target="newWindow" >
+<center><div id="content" style="background-color:black;height:250px;width:230px;float:left;"><a href="http://www.tmantraffic.com" target="_blank" >
 <img src="{{request.static_url('interstate_sales:static/el_cajon.jpg')}}" width="200" height="200" border="3"><p>Follow Link to T-Man Traffic</p></a></center></div>
 
 
