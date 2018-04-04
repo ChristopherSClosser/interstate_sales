@@ -6,14 +6,14 @@ from sqlalchemy.exc import DBAPIError
 from ..models import MyModel
 
 
-@view_config(route_name='home', renderer='../templates/home.jinja2')
-def my_view(request):
-    try:
-        query = request.dbsession.query(MyModel)
-        one = query.filter(MyModel.name == 'one').first()
-    except DBAPIError:
-        return Response(db_err_msg, content_type='text/plain', status=500)
-    return {'one': one, 'project': 'interstate_sales'}
+@view_config(route_name='home', renderer='../templates/base.jinja2')
+def home_view(request):
+    # try:
+    #     query = request.dbsession.query(MyModel)
+    #     one = query.filter(MyModel.name == 'one').first()
+    # except DBAPIError:
+    #     return Response(db_err_msg, content_type='text/plain', status=500)
+    return {}
 
 
 db_err_msg = """\

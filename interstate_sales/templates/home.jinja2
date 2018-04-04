@@ -9,18 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () {
-
+      $(document).ready(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
-
-
-
+          if ($(this).scrollTop() > 100) {
+              $('.scrollup').fadeIn();
+          } else {
+              $('.scrollup').fadeOut();
+          }
+        }
+      });
     </script> -->
     <link href="{{request.static_url('interstate_sales:static/theme.css')}}" rel="stylesheet">
     <title>Interstate Sales - Homepage</title>
@@ -37,214 +34,109 @@
       <img style="border: none;" src="{{request.static_url('interstate_sales:static/arrow6.jpg')}}" alt="up icon">
     </a>
 
+    <ul id="nav">
+  	  <li id="home"><a href="{{request.route_url('home')}}">Home</a></li>
+  	  <li id="guardrail"><a href="guardrail.html">Guardrail</a>
+  		  <ul>
+          <li><a href="guardrail.html#guardrail">Guardrail</a></li>
+  			  <li><a href="guardrail.html#end%20treatment">End Treatments</a></li>
+          <li><a href="guardrail.html#post">Posts</a></li>
+  			  <li><a href="guardrail.html#steel_rail">Steel Rail</a></li>
+          <li><a href="guardrail.html#weedmat">Weedmat</a></li>
+        </ul>
+      </li>
+      <li id="paint">
+    		<a href="traffic_paint.html">Traffic Paint</a>
+    		<ul>
+          <li><a href="traffic_paint.html#water-based">Water-Based</a></li>
+          <li><a href="traffic_paint.html#solvent-based">Solvent-Based</a></li>
+          <li><a href="traffic_paint.html#thermo">Thermoplastic</a></li>
+    			<li><a href="traffic_paint.html#marking%20paint">Marking Paint</a></li>
+    			<li><a href="traffic_paint.html#coating">Coating</a></li>
+    			<li><a href="traffic_paint.html#stencils">Stencils</a></li>
+        </ul>
+    	</li>
 
-  <ul id="nav">
-
-	<li id="home"><a href="index.html">Home</a></li>
-	<li id="guardrail">
-		<a href="guardrail.html">Guardrail</a>
-		<ul>
-            <li><a href="guardrail.html#guardrail">Guardrail</a></li>
-			<li><a href="guardrail.html#end%20treatment">End Treatments</a></li>
-            <li><a href="guardrail.html#post">Posts</a></li>
-			<li><a href="guardrail.html#steel_rail">Steel Rail</a></li>
-            <li><a href="guardrail.html#weedmat">Weedmat</a></li>
+    	<li id="pavement%20markings">
+    		<a href="pavement_markings.html">Pavement Markings</a>
+    		<ul>
+          <li><a href="pavement_markings.html#markers">Markers</a></li>
+    			<li><a href="pavement_markings.html#bituminous">Bituminous</a></li>
+          <li><a href="pavement_markings.html#beads">Traffic Beads</a></li>
+    			<li><a href="pavement_markings.html#adhesive">Adhesive</a></li>
+          <li><a href="pavement_markings.html#pl_safety">Parking Lot Safety</a></li>
+        </ul>
+    	</li>
+    	<li id="construction%20safety">
+    		<a href="construction_safety.html">Construction Safety</a>
+    		<ul >
+          <li><a href="construction_safety.html#barricades">Barricades</a></li>
+    			<li><a href="construction_safety.html#cones">Cones</a></li>
+          <li><a href="construction_safety.html#delineators">Delineators</a></li>
+    			<li><a href="construction_safety.html#sign-stands">Sign Stands</a></li>
+    			<li><a href="construction_safety.html#traffic%20control">Traffic Control</a></li>
+    			<li><a href="construction_safety.html#tools">Tools</a></li>
+    			<li><a href="construction_safety.html#batteries">Batteries</a></li>
 
         </ul>
-	</li>
-	<li id="paint">
-		<a href="traffic_paint.html">Traffic Paint</a>
-		<ul>
-            <li><a href="traffic_paint.html#water-based">Water-Based</a></li>
-            <li><a href="traffic_paint.html#solvent-based">Solvent-Based</a></li>
-            <li><a href="traffic_paint.html#thermo">Thermoplastic</a></li>
-			<li><a href="traffic_paint.html#marking%20paint">Marking Paint</a></li>
-			<li><a href="traffic_paint.html#coating">Coating</a></li>
-			<li><a href="traffic_paint.html#stencils">Stencils</a></li>
+    	</li>
+    	<li id="signs">
+    		<a href="signs.html">Signs</a>
+    		<ul>
+          <li><a href="signs.html#regulatory_signs">Regulatory</a></li>
+    			<li><a href="signs.html#warning">Warning</a></li>
+          <li><a href="signs.html#guide">Guide</a></li>
+    			<li><a href="signs.html#construction">Construction</a></li>
+    			<li><a href="signs.html#blanks">Sign Blanks</a></li>
+    			<li><a href="signs.html#address">Address Signs</a></li>
+          <li><a href="signs.html#custom">Custom Signs</a></li>
+    			<li><a href="signs.html#ada">ADA Signs</a></li>
+    			<li><a href="signs.html#temporary_signs">Temporary</a></li>
+    			<li><a href="signs.html#roll-ups">Roll-up</a></li>
+    			<li><a href="signs.html#tape">Reflective Tape</a></li>
+    			<li><a href="signs.html#hardware">Sign Hardware</a></li>
+    			<li><a href="signs.html#posts">Sign Posts</a></li>
         </ul>
-	</li>
+    	</li>
+    	<li id="equipment">
+    		<a href="equipment.html">Equipment</a>
+    		<ul>
+          <li><a href="equipment.html#graco">Graco</a></li>
+          <li><a href="equipment.html#downing">Downing</a></li>
+          <li><a href="equipment.html#arrow_boards">Arrow Boards</a></li>
+    			<li><a href="equipment.html#message_boards">Message Boards</a></li>
+    	  </ul>
+    	</li>
 
-	<li id="pavement%20markings">
-		<a href="pavement_markings.html">Pavement Markings</a>
-		<ul>
-            <li><a href="pavement_markings.html#markers">Markers</a></li>
-			<li><a href="pavement_markings.html#bituminous">Bituminous</a></li>
-            <li><a href="pavement_markings.html#beads">Traffic Beads</a></li>
-			<li><a href="pavement_markings.html#adhesive">Adhesive</a></li>
-         <li><a href="pavement_markings.html#pl_safety">Parking Lot Safety</a></li>
-        </ul>
-	</li>
-	<li id="construction%20safety">
-		<a href="construction_safety.html">Construction Safety</a>
-		<ul >
-            <li><a href="construction_safety.html#barricades">Barricades</a></li>
-			<li><a href="construction_safety.html#cones">Cones</a></li>
-            <li><a href="construction_safety.html#delineators">Delineators</a></li>
-			<li><a href="construction_safety.html#sign-stands">Sign Stands</a></li>
-			<li><a href="construction_safety.html#traffic%20control">Traffic Control</a></li>
-			<li><a href="construction_safety.html#tools">Tools</a></li>
-			<li><a href="construction_safety.html#batteries">Batteries</a></li>
-
-        </ul>
-	</li>
-	<li id="signs">
-		<a href="signs.html">Signs</a>
-		 <ul>
-            <li><a href="signs.html#regulatory_signs">Regulatory</a></li>
-			<li><a href="signs.html#warning">Warning</a></li>
-            <li><a href="signs.html#guide">Guide</a></li>
-			<li><a href="signs.html#construction">Construction</a></li>
-			<li><a href="signs.html#blanks">Sign Blanks</a></li>
-			<li><a href="signs.html#address">Address Signs</a></li>
-            <li><a href="signs.html#custom">Custom Signs</a></li>
-			<li><a href="signs.html#ada">ADA Signs</a></li>
-			<li><a href="signs.html#temporary_signs">Temporary</a></li>
-			<li><a href="signs.html#roll-ups">Roll-up</a></li>
-			<li><a href="signs.html#tape">Reflective Tape</a></li>
-			<li><a href="signs.html#hardware">Sign Hardware</a></li>
-			<li><a href="signs.html#posts">Sign Posts</a></li>
-        </ul>
-	</li>
-	<li id="equipment">
-		<a href="equipment.html">Equipment</a>
-		<ul>
-           <li><a href="equipment.html#graco">Graco</a></li>
-            <li><a href="equipment.html#downing">Downing</a></li>
-            <li><a href="equipment.html#arrow_boards">Arrow Boards</a></li>
-			<li><a href="equipment.html#message_boards">Message Boards</a></li>
-	   </ul>
-	</li>
-
-	<li id="our%20team">
-		<a href="our_team.html">Our Team</a>
-		<ul>
-           <li><a href="our_team.html#lee">Lee</a></li>
-            <li><a href="our_team.html#mike">Mike</a></li>
-            <li><a href="our_team.html#jane">Jane</a></li>
-			<li><a href="our_team.html#courtney">Courtney</a></li>
-			<li><a href="our_team.html#john">John</a></li>
-			<li><a href="our_team.html#leslie">Leslie</a></li>
-			<li><a href="our_team.html#kimmy">Kimmy</a></li>
-			<li><a href="our_team.html#ed">Ed</a></li>
-			<li><a href="our_team.html#thomas">Thomas</a></li>
-			<li><a href="our_team.html#kevin">Kevin</a></li>
-			<li><a href="our_team.html#val">Val</a></li>
-			<li><a href="our_team.html#lou">Lou</a></li>
-		</ul>
-     <li id="contact"><a href="contact.html">Contact Us</a></li>
-
-</ul>
-
-
-
-  <div id="content_1" style="background-color:black;color:white;height:415px;width:490px;float:left;">
-    <br>
-    <p><center><h1><em> Welcome to <b>Interstate Sales</b></h1></center></p>
-
-    <p align="justify" style="border:10px" >We are your provider of Traffic Safety Supplies. For over 45 years we have had the opportunity to bring great products to the people who use them. Interstate Sales is a family owned and operated business
-    located in Northern California. Whether you are near or far we can get your order to you promptly. While our
-    warehouse has gotten bigger our small town feel and personalized
-    attention has not. Please give us a call or stop by our office. </p>
-    <br>
-
-    <center>
-      <img src="{{request.static_url('interstate_sales:static/cert_small_business.jpg')}}"border="3">
-    </center>
-  </div>
+    	<li id="our%20team">
+    		<a href="our_team.html">Our Team</a>
+    		<ul>
+          <li><a href="our_team.html#lee">Lee</a></li>
+          <li><a href="our_team.html#mike">Mike</a></li>
+          <li><a href="our_team.html#jane">Jane</a></li>
+    			<li><a href="our_team.html#courtney">Courtney</a></li>
+    			<li><a href="our_team.html#john">John</a></li>
+    			<li><a href="our_team.html#leslie">Leslie</a></li>
+    			<li><a href="our_team.html#kimmy">Kimmy</a></li>
+    			<li><a href="our_team.html#ed">Ed</a></li>
+    			<li><a href="our_team.html#thomas">Thomas</a></li>
+    			<li><a href="our_team.html#kevin">Kevin</a></li>
+    			<li><a href="our_team.html#val">Val</a></li>
+    			<li><a href="our_team.html#lou">Lou</a></li>
+    		</ul>
+      <li id="contact"><a href="contact.html">Contact Us</a></li>
+    </ul>
+    {% block content %}
+    {% endblock content %}
 
 
 
 
-  <div id="content_2" style="background-color:black;height:415px;width:490px;float:left;">
-    <br>
-    <center><img src="{{request.static_url('interstate_sales:static/office.jpg')}}" alt="office" width="450" height="350" border="2"></center>
-  </div>
+    <div id="footer" style="background-color:gold; clear:both; text-align:center; width:980px; float:left;">
+      <p><center><b>www.interstatesales.com</center></p>
+    </div>
 
 
-
-</div>
-
-
-
-
-
-
-
-<div id="content_5" style="background-color:gold;height:80px;width:980px;float:left;">
-<p><h3><center>We Proudly Partner With Industry Leaders To Bring You The Best Products</p></h3></center>
-<p><h5><center>(Please click on the links below for more information)</p></h5></center>
-</div>
-<div id="content_5" style="background-color:black;height:150px;width:980px;float:left;">
-<br>
-<center>
-	<a href="Gregory.html" target="newWindow" >
-  <img src="{{request.static_url('interstate_sales:static/gregory.bmp')}}" alt="gregory" width="120" height="60"border="3" align="center" ></a>
-	<a href="Saso.html" target="newWindow" >
-  <img src="{{request.static_url('interstate_sales:static/saso_logo.jpg')}}" alt="saso" width="120" height="60" border="3"align="center" ></a>
-	<a href="Ennis-Flint.html" target="newWindow" >
-  <img src="{{request.static_url('interstate_sales:static/ennis_logo.png')}}" alt="ennis_logo" width="120" height="100"border="3" align="center"></a>
-
-	<a href="graco.html" target="newWindow" >
-  <img src="{{request.static_url('interstate_sales:static/graco.jpg')}}" alt="gracologo" width="120" height="100" border="3"align="center"></a>
-	<a href="Impact Recovery.html" target="newWindow" >
-  <img src="{{request.static_url('interstate_sales:static/impact_logo.png')}}" alt="impact_logo" width="120" height="60"border="3" align="center"></a>
-	<a href="Uteck.html"  target="newWindow" >
-  <img src="{{request.static_url('interstate_sales:static/u-teck.jpg')}}" alt="u-teck" width="120" height="60" border="3" align="center" ></a>
-</center>
-</div>
-
-<div id="content_3" style="background-color:white;height:300px;width:980px;float:left;">
-<img src="{{request.static_url('interstate_sales:static/newservicesbanner.jpg')}}" alt="new" width="980" height="300" border="0" >
-</div>
-
-<div id="content_6" style="background-color:black;color:white;height:90px;width:980px;float:left;"><center><h3>
-<p> Interstate Sales has provided trusted service since 1969.<br>
- We offer quality products with outstanding customer service. <br>
-</center></h3></p>
-</div>
-
-<div id="content_6" style="background-color:black;height:275px;width:980px;float:left;">
-<center>
-<img src="{{request.static_url('interstate_sales:static/wpan4.jpg')}}" alt="warehouse" width="900" height="220"border="2" >
-</center>
-</div><br>
-
-<div id="content_5" style="background-color:gold;height:10px;width:980px;float:left;"></div>
-<div id="content_5" style="background-color:black;height:10px;width:980px;float:left;"></div>
-<div id="content_5" style="background-color:gold;height:10px;width:980px;float:left;"></div>
-
-
-
-
-
-
-<div id="content_6" style="background-color:black;height:300px;width:350px;float:left;">
-<br>
-<center>
-<div id="content" style="background-color:black;height:250px;width:230px;float:right;"><a href="contact.html"  target="newWindow" >
-<img src="{{request.static_url('interstate_sales:static/auburn.jpg')}}" width="200" height="200" border="3"><p>Follow Link to Contact Us</p></a></center></div>
-
-<div id="content_6" style="background-color:black;color:white;height:300px;width:280px;float:left;">
-<center><h2><p><br>Now Offering Two Warehouse Locations In California To Better Serve You!</center></p></div>
-
-<div id="content_6" style="background-color:black;height:300px;width:350px;float:left;">
-<br>
-<center><div id="content" style="background-color:black;height:250px;width:230px;float:left;"><a href="http://www.tmantraffic.com"  target="newWindow" >
-<img src="{{request.static_url('interstate_sales:static/el_cajon.jpg')}}" width="200" height="200" border="3"><p>Follow Link to T-Man Traffic</p></a></center></div>
-
-
-<div id="address_1" style="width:980px; background-color:white;">
-<p style="font-family:arial;color:black;font-size:18px;font-weight:bold; text-align:center">
- 12600 Locksley Lane	 	. 		Suite #200		 .  		Auburn, California 		 .  		95602 </div>
-
-
-
- <br>
-
-<div id="footer" style="background-color:gold;clear:both;text-align:center;width:980px;float:left;"><p><center><b>www.interstatesales.com</center></p></div>
-
-
-</div>
-</body>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </html>
