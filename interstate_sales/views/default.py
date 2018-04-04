@@ -20,8 +20,8 @@ def home_view(request):
 def guardrail_view(request):
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
-    # subcategories = []
-    # for item in guardrails:
-    #     if item.subcategory not in subcategories:
-    #         subcategories.append(item.subcategory)
-    return {'guardrails': guardrails}
+    subcategories = []
+    for item in guardrails:
+        if item.subcategory not in subcategories:
+            subcategories.append(item.subcategory)
+    return {'guardrails': guardrails, 'subcategories': subcategories}
