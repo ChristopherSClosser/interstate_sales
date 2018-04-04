@@ -19,4 +19,4 @@ class MyModel(Base):
     extra = Column(Text)
 
 
-Index('my_index', MyModel.name, unique=True, mysql_length=255)
+# Index('my_index', MyModel.name, unique=True, mysql_length=255)
