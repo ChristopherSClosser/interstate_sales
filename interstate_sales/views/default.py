@@ -6,7 +6,7 @@ from sqlalchemy.exc import DBAPIError
 from ..models import MyModel
 
 
-@view_config(route_name='home', renderer='../templates/base.jinja2')
+@view_config(route_name='home', renderer='../templates/home.jinja2')
 def home_view(request):
     # try:
     #     query = request.dbsession.query(MyModel)
@@ -16,18 +16,12 @@ def home_view(request):
     return {}
 
 
-db_err_msg = """\
-Pyramid is having a problem using your SQL database.  The problem
-might be caused by one of the following things:
-
-1.  You may need to run the "initialize_interstate_sales_db" script
-    to initialize your database tables.  Check your virtual
-    environment's "bin" directory for this script and try to run it.
-
-2.  Your database server may not be running.  Check that the
-    database server referred to by the "sqlalchemy.url" setting in
-    your "development.ini" file is running.
-
-After you fix the problem, please restart the Pyramid application to
-try it again.
-"""
+@view_config(route_name='guardrail', renderer='../templates/guardrail.jinja2')
+def guardrail_view(request):
+    query = request.dbsession.query(MyModel)
+    guardrails = query.filter(MyModel.category == 'Guardrail').all()
+    # subcategories = []
+    # for item in guardrails:
+    #     if item.subcategory not in subcategories:
+    #         subcategories.append(item.subcategory)
+    return {'guardrails': guardrails}

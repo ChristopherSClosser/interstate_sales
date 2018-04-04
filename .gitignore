@@ -26,6 +26,7 @@ Data.fs*
 .DS_Store
 coverage
 test
+*.sqlite
 
 # Distribution / packaging
 .Python

@@ -22,6 +22,7 @@ requires = [
     'pyramid_ipython',
     'zope.sqlalchemy',
     'waitress',
+    'passlib'
 ]
 
 tests_require = [
@@ -57,7 +58,7 @@ setup(
             'main = interstate_sales:main',
         ],
         'console_scripts': [
-            'initialize_interstate_sales_db = interstate_sales.scripts.initializedb:main',
+            'init_interstate_salesdb = interstate_sales.scripts.initializedb:main',
         ],
     },
 )
