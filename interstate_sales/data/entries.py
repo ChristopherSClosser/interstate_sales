@@ -6,7 +6,7 @@ ENTRIES = [
         "subcategory": "Guardrail",
         "title": "W-Beam",
         "img": "w_beam.jpg",
-        "markdown": "W-Beam guardrail is produced in standard AASHTO 12'-6\" lengths and is offered in 10-gauge or 12-gauge steel.",
+        "markdown": "W-Beam guardrail is produced in standard AASHTO 12'-6\" lengths<br>and is offered in 10-gauge or 12-gauge steel.",
         "extra": ""
     },
     {
@@ -14,7 +14,7 @@ ENTRIES = [
         "subcategory": "Guardrail",
         "title": "Thrie-Beam",
         "img": "thrie_beam.jpg",
-        "markdown": "Thrie-Beam guardrail is produced in standard AASHTO 12'-6\" lengths and is offered in 10-gauge or 12-gauge steel.",
+        "markdown": "Thrie-Beam guardrail is produced in standard AASHTO 12'-6\" lengths<br>and is offered in 10-gauge or 12-gauge steel.",
         "extra": ""
     },
     {
@@ -22,7 +22,7 @@ ENTRIES = [
         "subcategory": "Guardrail",
         "title": "Trans-Beam",
         "img": "transbeam.jpg",
-        "markdown": "Trans-Beam guardrail is produced in standard AASHTO 12'-6\" lengths and is offered in 10-gauge or 12-gauge steel.",
+        "markdown": "Trans-Beam guardrail is produced in standard AASHTO 12'-6\" lengths<br>and is offered in 10-gauge or 12-gauge steel.",
         "extra": "transbeam.jpg"
     },
     {
@@ -58,7 +58,7 @@ ENTRIES = [
         "subcategory": "End Treatment",
         "title": "SRT-350",
         "img": "q_end_cap.jpg",
-        "markdown": "The Slotted Rail Terminal (SRT-350™) is a gating, flared end terminal and is available in a 6-Post and 8-Post System.",
+        "markdown": "The Slotted Rail Terminal (SRT-350™) is a gating, flared end terminal<br>and is available in a 6-Post and 8-Post System.",
         "extra": ""
     },
     {
