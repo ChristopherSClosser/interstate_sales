@@ -16,6 +16,7 @@ from ..models import MyModel
 def home_view(request):
     auth = False
     try:
+        print(dict(request._headers.items()))
         auth = dict(request._headers.items())['Cookie']
     except:
         pass
