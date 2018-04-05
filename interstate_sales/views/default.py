@@ -42,9 +42,14 @@ def guardrail_view(request):
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
     subcategories = []
+    # images = []
     for item in guardrails:
         if item.subcategory not in subcategories:
             subcategories.append(item.subcategory)
+        # for image in item.img.split():
+        #     images.append(image)
+        # item.img = images
+        # images = []
     return {
         'guardrails': guardrails,
         'subcategories': subcategories,

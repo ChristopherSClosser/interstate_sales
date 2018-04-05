@@ -20,15 +20,15 @@
       <br>
       <p class="text">
           <label for="markdown">Body: </label>
-          <textarea type='text' name="markdown">{{ entry.markdown|safe }}</textarea>
+          <textarea style="width: 50%;" type='text' name="markdown">{{ entry.markdown|safe }}</textarea>
       </p>
       <p class="text">
-          <label for="img">Image Name: </label>
+          <label for="img">Image Name: <br><em style="font-size: smaller;">*for multiple images separate names with a space<br>**names must not contain spaces</em></label>
           <input type='text' name="img" value="{{ entry.img }}"/>
       </p>
       <p class="text">
           <label for="extra">Extra: </label>
-          <textarea type='text' name="extra">{{ entry.extra }}</textarea>
+          <textarea style="width: 50%;" type='text' name="extra">{{ entry.extra }}</textarea>
       </p>
       <br>
       <p>

@@ -29,27 +29,15 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "End Treatment",
         "title": "The SKT 350 (Sequential Kinking Terminal)",
-        "img": "",
-        # [
-        #     "skt2.jpg",
-        #     "skt_2.jpg",
-        #     "skt_2a.jpg",
-        #     "skt_2b.jpg",
-        # ],
-        "markdown": "The SKT 350 (Sequential Kinking Terminal) is an energy absorbing tangent terminal. The SKT is 50'-0\" long and has 8 breakaway posts. NCHRP 350 APPROVED! During head-on impacts, the SKT head slides over the W-beam guardrail. The rail is sequentially kinked or bent as it moves through the head. The kinked guardrail exits the head safely and the vehicle is brought to a controlled stop. When impacted along the side within the length-of-need, the SKT functions like guardrail. The errant vehicle is safely redirected back toward its original travel path. <a href='http://www.gregorycorp.com/highway_endtreatments_skt.cfm' target='_blank'>For more info, please click here</a>",
+        "img": "skt2.jpg skt_2.jpg skt_2a.jpg skt_2b.jpg",
+        "markdown": """The SKT 350 (Sequential Kinking Terminal) is an energy absorbing tangent terminal. The SKT is 50'-0\" long and has 8 breakaway posts.<br>NCHRP 350 APPROVED! During head-on impacts, the SKT head slides over the W-beam guardrail. The rail is sequentially kinked or bent as it moves through the head. The kinked guardrail exits the head safely and the vehicle is brought to a controlled stop. When impacted along the side within the length-of-need, the SKT functions like guardrail. The errant vehicle is safely redirected back toward its original travel path.<br><a href='http://www.gregorycorp.com/highway_endtreatments_skt.cfm' target='_blank'>For more info, please click here</a>""",
         "extra": ""
     },
     {
         "category": "Guardrail",
         "subcategory": "End Treatment",
         "title": "The FLEAT 350 (FLared Energy Absorbing Terminal)",
-        "img": "",
-        # [
-        #     "fleat2.jpg",
-        #     "fleat_1a.jpg",
-        #     "fleat_1b.jpg",
-        #     "fleat1.bmp",
-        # ],
+        "img": "fleat2.jpg fleat_1a.jpg fleat_1b.jpg fleat1.bmp",
         "markdown": "The FLEAT 350 (FLared Energy Absorbing Terminal) is an energy-absorbing flared terminal. The flare is straight and the offset is variable anywhere between 2'-6\" and 4'-0\". The FLEAT is 37'-6\" long and has 7 breakaway posts. NCHRP 350 APPROVED! The FLEAT combines the superior performance of the energy absorbing tangent terminals with the advantage of flared terminals in reducing nuisance impacts. During head-on impacts, the FLEAT head slides over the W-beam guardrail. The rail is sequentially kinked or bent as it moves through the head. The kinked guardrail exits the head safely and the vehicle is brought to a controlled stop. When impacted along the side within the length-of-need, the FLEAT functions like guardrail. The errant vehicle is safely redirected back toward its original travel path. <a href='http://www.gregorycorp.com/highway_endtreatments_fleat.cfm' target='_blank'>For more info, please click here</a>",
         "extra": ""
     },
