@@ -14,22 +14,7 @@ from ..models import MyModel
 
 @view_config(route_name='home', renderer='../templates/home.jinja2')
 def home_view(request):
-    query = request.dbsession.query(MyModel)
-    guardrails = query.filter(MyModel.category == 'Guardrail').all()
-    subcategories = []
-    for item in guardrails:
-        if item.subcategory not in subcategories:
-            subcategories.append(item.subcategory)
-    return {
-        'guardrails': guardrails,
-        'subcategories': subcategories,
-    }
-
-
-@view_config(route_name='guardrail', renderer='../templates/guardrail.jinja2')
-def guardrail_view(request):
     auth = False
-    # if dict(request._headers.items())['Cookie']:
     try:
         auth = dict(request._headers.items())['Cookie']
     except KeyError:
@@ -45,6 +30,47 @@ def guardrail_view(request):
         'subcategories': subcategories,
         'auth': auth,
     }
+
+
+@view_config(route_name='guardrail', renderer='../templates/guardrail.jinja2')
+def guardrail_view(request):
+    auth = False
+    try:
+        auth = dict(request._headers.items())['Cookie']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    guardrails = query.filter(MyModel.category == 'Guardrail').all()
+    subcategories = []
+    for item in guardrails:
+        if item.subcategory not in subcategories:
+            subcategories.append(item.subcategory)
+    return {
+        'guardrails': guardrails,
+        'subcategories': subcategories,
+        'auth': auth,
+    }
+
+
+@view_config(
+    route_name='new',
+    renderer='../templates/entry.jinja2',
+    permission='secret',
+)
+def create_view(request):
+    """Display create a list entry."""
+    if request.POST:
+        entry = MyModel(
+            category=request.POST["category"],
+            subcategory=request.POST["subcategory"],
+            title=request.POST["title"],
+            markdown=request.POST["markdown"],
+            img=request.POST["img"],
+            extra=request.POST["extra"],
+        )
+        request.dbsession.add(entry)
+        return HTTPFound(request.route_url('home'))
+    return {}
 
 
 @view_config(
