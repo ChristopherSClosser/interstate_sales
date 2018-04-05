@@ -17,7 +17,7 @@ def home_view(request):
     auth = False
     try:
         auth = dict(request._headers.items())['Cookie']
-    except KeyError:
+    except:
         pass
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
@@ -37,7 +37,7 @@ def guardrail_view(request):
     auth = False
     try:
         auth = dict(request._headers.items())['Cookie']
-    except KeyError:
+    except:
         pass
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
