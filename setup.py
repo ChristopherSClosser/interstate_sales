@@ -22,6 +22,7 @@ requires = [
     'pyramid_ipython',
     'zope.sqlalchemy',
     'waitress',
+    'passlib'
 ]
 
 tests_require = [

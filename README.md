@@ -12,19 +12,6 @@ interstate_sales
 ---
 * https://github.com/ChristopherSClosser/interstate_sales
 
-### Dependencies
----
-* models
-* common
-* waitress
-* deploy
-* paster
-* exc
-* response
-* transaction
-* view
-* Pyramid
-
 ### Getting Started
 ---
 ##### *Prerequisites*
@@ -45,7 +32,7 @@ Now now that you have cloned your repo and changed directories into the project,
 
 `$ source ENV/bin/activate`
 
-`$ pip install -r requirements.txt`
+`$ pip install e .`
 ##### *Serving Locally*
 Once you have cloned the application and installed the requirements, you can serve the project on your local machine by executing this command at the root level of your application, at the same level as `development.ini` and `production.ini`.
 `$ pserve development.ini`

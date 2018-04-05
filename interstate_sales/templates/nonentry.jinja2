@@ -1,0 +1,16 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+
+<section class="entry">
+    <br>
+    <div class="noauth">
+      <img class="x" src="{{request.static_url('interstate_sales:static/x.jpg')}}" alt="x">
+      <p class="subtitle">
+        You are not authenticated...<br>You may not add or edit an entry.
+      </p>
+    </div>
+  </form>
+</section>
+
+{% endblock %}

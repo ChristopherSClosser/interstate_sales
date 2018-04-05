@@ -5,49 +5,39 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Guardrail",
         "title": "W-Beam",
-        "img": "{{request.static_url('interstate_sales:static/w_beam.jpg')}}",
-        "markdown": "W-Beam guardrail is produced in standard AASHTO 12'-6\" lengths and is offered in 10-gauge or 12-gauge steel.",
+        "img": "w_beam.jpg",
+        "markdown": "W-Beam guardrail is produced in standard AASHTO 12'-6\" lengths<br>and is offered in 10-gauge or 12-gauge steel.",
         "extra": ""
     },
     {
         "category": "Guardrail",
         "subcategory": "Guardrail",
         "title": "Thrie-Beam",
-        "img": "{{request.static_url('interstate_sales:static/thrie_beam.jpg')}}",
-        "markdown": "Thrie-Beam guardrail is produced in standard AASHTO 12'-6\" lengths and is offered in 10-gauge or 12-gauge steel.",
+        "img": "thrie_beam.jpg",
+        "markdown": "Thrie-Beam guardrail is produced in standard AASHTO 12'-6\" lengths<br>and is offered in 10-gauge or 12-gauge steel.",
         "extra": ""
     },
     {
         "category": "Guardrail",
         "subcategory": "Guardrail",
         "title": "Trans-Beam",
-        "img": "{{request.static_url('interstate_sales:static/transbeam.jpg')}}",
-        "markdown": "Trans-Beam guardrail is produced in standard AASHTO 12'-6\" lengths and is offered in 10-gauge or 12-gauge steel.",
-        "extra": "{{request.static_url('interstate_sales:static/transbeam.jpg')}}"
+        "img": "transbeam.jpg",
+        "markdown": "Trans-Beam guardrail is produced in standard AASHTO 12'-6\" lengths<br>and is offered in 10-gauge or 12-gauge steel.",
+        "extra": "transbeam.jpg"
     },
     {
         "category": "Guardrail",
         "subcategory": "End Treatment",
         "title": "The SKT 350 (Sequential Kinking Terminal)",
-        "img": [
-            "{{request.static_url('interstate_sales:static/skt2.jpg')}}",
-            "{{request.static_url('interstate_sales:static/skt_2.jpg')}}",
-            "{{request.static_url('interstate_sales:static/skt_2a.jpg')}}",
-            "{{request.static_url('interstate_sales:static/skt_2b.jpg')}}",
-        ],
-        "markdown": "The SKT 350 (Sequential Kinking Terminal) is an energy absorbing tangent terminal. The SKT is 50'-0\" long and has 8 breakaway posts. NCHRP 350 APPROVED! During head-on impacts, the SKT head slides over the W-beam guardrail. The rail is sequentially kinked or bent as it moves through the head. The kinked guardrail exits the head safely and the vehicle is brought to a controlled stop. When impacted along the side within the length-of-need, the SKT functions like guardrail. The errant vehicle is safely redirected back toward its original travel path. <a href='http://www.gregorycorp.com/highway_endtreatments_skt.cfm' target='_blank'>For more info, please click here</a>",
+        "img": "skt2.jpg skt_2.jpg skt_2a.jpg skt_2b.jpg",
+        "markdown": """The SKT 350 (Sequential Kinking Terminal) is an energy absorbing tangent terminal. The SKT is 50'-0\" long and has 8 breakaway posts.<br>NCHRP 350 APPROVED! During head-on impacts, the SKT head slides over the W-beam guardrail. The rail is sequentially kinked or bent as it moves through the head. The kinked guardrail exits the head safely and the vehicle is brought to a controlled stop. When impacted along the side within the length-of-need, the SKT functions like guardrail. The errant vehicle is safely redirected back toward its original travel path.<br><a href='http://www.gregorycorp.com/highway_endtreatments_skt.cfm' target='_blank'>For more info, please click here</a>""",
         "extra": ""
     },
     {
         "category": "Guardrail",
         "subcategory": "End Treatment",
         "title": "The FLEAT 350 (FLared Energy Absorbing Terminal)",
-        "img": [
-            "{{request.static_url('interstate_sales:static/fleat2.jpg')}}",
-            "{{request.static_url('interstate_sales:static/fleat_1a.jpg')}}",
-            "{{request.static_url('interstate_sales:static/fleat_1b.jpg')}}",
-            "{{request.static_url('interstate_sales:static/fleat1.bmp')}}",
-        ],
+        "img": "fleat2.jpg fleat_1a.jpg fleat_1b.jpg fleat1.bmp",
         "markdown": "The FLEAT 350 (FLared Energy Absorbing Terminal) is an energy-absorbing flared terminal. The flare is straight and the offset is variable anywhere between 2'-6\" and 4'-0\". The FLEAT is 37'-6\" long and has 7 breakaway posts. NCHRP 350 APPROVED! The FLEAT combines the superior performance of the energy absorbing tangent terminals with the advantage of flared terminals in reducing nuisance impacts. During head-on impacts, the FLEAT head slides over the W-beam guardrail. The rail is sequentially kinked or bent as it moves through the head. The kinked guardrail exits the head safely and the vehicle is brought to a controlled stop. When impacted along the side within the length-of-need, the FLEAT functions like guardrail. The errant vehicle is safely redirected back toward its original travel path. <a href='http://www.gregorycorp.com/highway_endtreatments_fleat.cfm' target='_blank'>For more info, please click here</a>",
         "extra": ""
     },
@@ -55,15 +45,15 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "End Treatment",
         "title": "SRT-350",
-        "img": "{{request.static_url('interstate_sales:static/q_end_cap.jpg')}}",
-        "markdown": "The Slotted Rail Terminal (SRT-350™) is a gating, flared end terminal and is available in a 6-Post and 8-Post System.",
+        "img": "q_end_cap.jpg",
+        "markdown": "The Slotted Rail Terminal (SRT-350™) is a gating, flared end terminal<br>and is available in a 6-Post and 8-Post System.",
         "extra": ""
     },
     {
         "category": "Guardrail",
         "subcategory": "End Treatment",
         "title": "Type A Cap",
-        "img": "{{request.static_url('interstate_sales:static/type_a_cap.jpg')}}",
+        "img": "type_a_cap.jpg",
         "markdown": "These terminals are placed at the beginning and/or end of a guard rail run.",
         "extra": ""
     },
@@ -71,7 +61,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "End Treatment",
         "title": "Type-B",
-        "img": "{{request.static_url('interstate_sales:static/fishtail.jpg')}}",
+        "img": "fishtail.jpg",
         "markdown": "Guardrail End Section uses absorb the energy of an impacting vehicle. The End Section provides exceptional vehicle control and energy absorbing capabilities during head-on impacts. The energy is absorbed at the impact head rather than being transferred down the rail as occurs with other terminals.",
         "extra": ""
     },
@@ -79,7 +69,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Post",
         "title": "Wood Post",
-        "img": "{{request.static_url('interstate_sales:static/wood_post.jpg')}}",
+        "img": "wood_post.jpg",
         "markdown": "All of our products comply with the requirements of AASHTO M-133 for wood preservation as well as meeting AASHTO M-168 for the physical and strength characteristics. All of our products are put through rigorous quality control testing to ensure wood quality as well as treatment quality before we approve them for use.",
         "extra": ""
     },
@@ -87,7 +77,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Post",
         "title": "Metal Post",
-        "img": "{{request.static_url('interstate_sales:static/metal_post.jpg')}}",
+        "img": "metal_post.jpg",
         "markdown": "Galvanized Steel guardrail posts meet the materials certification for dimensional acceptance and physical strength. The construction for the steel meets the state DOT specifications.",
         "extra": ""
     },
@@ -95,7 +85,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Blocks",
         "title": "Wood Block Spacers",
-        "img": "{{request.static_url('interstate_sales:static/wood_block2.bmp')}}",
+        "img": "wood_block2.bmp",
         "markdown": "The wood spacers are used in conjunction with the wood post.",
         "extra": ""
     },
@@ -103,7 +93,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Blocks",
         "title": "Composite Block Spacers",
-        "img": "{{request.static_url('interstate_sales:static/rubber_g-rail_block.bmp')}}",
+        "img": "rubber_g-rail_block.bmp",
         "markdown": "The composite spacers are used in conjuction with the metal post.",
         "extra": ""
     },
@@ -111,7 +101,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "ST-10 Bridge Rail",
-        "img": "{{request.static_url('interstate_sales:static/st10br.jpg')}}",
+        "img": "st10br.jpg",
         "markdown": "California Type ST-10 Bridge Rail",
         "extra": ""
     },
@@ -119,7 +109,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "Type 115 Bridge Rail",
-        "img": "{{request.static_url('interstate_sales:static/type115br.jpg')}}",
+        "img": "type115br.jpg",
         "markdown": "California Type 115 Bridge Rail",
         "extra": ""
     },
@@ -127,7 +117,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "Type 116 Bridge Rail",
-        "img": "{{request.static_url('interstate_sales:static/type116br.bmp')}}",
+        "img": "type116br.jpg",
         "markdown": "California Type 116 Bridge Rail",
         "extra": ""
     },
@@ -135,7 +125,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "Type 117 Bridge Rail",
-        "img": "{{request.static_url('interstate_sales:static/type117br.jpg')}}",
+        "img": "type117br.jpg",
         "markdown": "California Type 117 Bridge Rail",
         "extra": ""
     },
@@ -143,7 +133,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "Type 9 Bridge Rail",
-        "img": "{{request.static_url('interstate_sales:static/type9br.jpg')}}",
+        "img": "type9br.jpg",
         "markdown": "California Type 9 Bridge Rail",
         "extra": ""
     },
@@ -151,7 +141,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "Type 18 Bridge Rail",
-        "img": "{{request.static_url('interstate_sales:static/type18br.jpg')}}",
+        "img": "type18br.jpg",
         "markdown": "California Type 18 Bridge Rail",
         "extra": ""
     },
@@ -159,7 +149,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "Type B11-51 Bridge Rail",
-        "img": "{{request.static_url('interstate_sales:static/b11-51.jpg')}}",
+        "img": "b11-51.jpg",
         "markdown": "California Type B11-51 Bridge Rail",
         "extra": ""
     },
@@ -167,7 +157,7 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Steel Bridge Rail",
         "title": "Pedestrian Barrier",
-        "img": "{{request.static_url('interstate_sales:static/pedrail.jpg')}}",
+        "img": "pedrail.jpg",
         "markdown": "Pedestrian safety barrier systems protect personnel from uneven walkways and mezzanine drop off’s.",
         "extra": ""
     },
@@ -175,8 +165,8 @@ ENTRIES = [
         "category": "Guardrail",
         "subcategory": "Weedmat",
         "title": "'WeedEnder' Weedmat",
-        "img": "{{request.static_url('interstate_sales:static/Weedmat.jpg')}}",
-        "markdown": "The WeedEnder products are an environmentally friendly, 100% recycled fiber material. This mat material deprives vegetation of sunlight while allowing water and nutrients to easily pass through to maintain the root system around the mat, minimizing erosion, while controlling growth where it is needed. And the material is so durable trucks have been driven over it without any damage.<ul> <li>Benefits of WeedEnder</li><li>•Fire Retardant</li><li>•Cost effective</li><li>•No Herbicides</li><li>•Made with 100% recycled materials</li><li>•Easy to install</li></ul>",
+        "img": "Weedmat.jpg",
+        "markdown": "The WeedEnder products are an environmentally friendly, 100% recycled fiber material. This mat material deprives vegetation of sunlight while allowing water and nutrients to easily pass through to maintain the root system around the mat, minimizing erosion, while controlling growth where it is needed. And the material is so durable trucks have driven over it without any damage.<ul style='list-style: None;'> <li>Benefits of WeedEnder</li><li>•Fire Retardant</li><li>•Cost effective</li><li>•No Herbicides</li><li>•Made with 100% recycled materials</li><li>•Easy to install</li></ul>",
         "extra": ""
     },
 # -----------------------------------------

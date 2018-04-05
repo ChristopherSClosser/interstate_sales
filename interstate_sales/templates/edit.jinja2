@@ -1,0 +1,44 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+
+<section class="entry">
+<div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
+<p></p><br><h2 class="entry-title">Edit entry:</h2>
+  <form method="POST">
+      <p>
+          <label for="category">Category: </label>
+          <input type="text" name="category" value="{{ entry.category }}"/>
+      </p>
+      <p>
+          <label for="subcategory">Subcategory: </label>
+          <input type="text" name="subcategory" value="{{ entry.subcategory }}"/>
+      </p>
+      <p>
+          <label for="title">Title: </label>
+          <input type="text" name="title" value="{{ entry.title }}"/>
+      </p>
+      <br>
+      <p class="text">
+          <label for="markdown">Body: </label>
+          <textarea style="width: 50%;" type='text' name="markdown">{{ entry.markdown|safe }}</textarea>
+      </p>
+      <p class="text">
+          <label for="img">Image Name: <br><em style="font-size: smaller;">*for multiple images separate names with a space<br>**names must not contain spaces</em></label>
+          <input type='text' name="img" value="{{ entry.img }}"/>
+      </p>
+      <p class="text">
+          <label for="extra">Extra: </label>
+          <textarea style="width: 50%;" type='text' name="extra">{{ entry.extra }}</textarea>
+      </p>
+      <br>
+      <p>
+          <!--<a href="{{ request.route_url('home') }}#{{ entry.title }}">-->
+            <input type="submit" name="Edit Entry" />
+          <!--</a>-->
+      </p>
+  </form>
+
+</section>
+
+{% endblock %}
