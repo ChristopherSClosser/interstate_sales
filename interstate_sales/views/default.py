@@ -16,11 +16,9 @@ from ..models import MyModel
 def home_view(request):
     auth = False
     try:
-        auth = dict(request._headers.items())['Cookie']
+        auth = request.cookies['auth_tkt']
     except:
         pass
-    print('Headers', request.cookies['auth_tkt'])
-    print('Auth: ', auth)
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
     subcategories = []
@@ -38,7 +36,7 @@ def home_view(request):
 def guardrail_view(request):
     auth = False
     try:
-        auth = dict(request._headers.items())['Cookie']
+        auth = request.cookies['auth_tkt']
     except:
         pass
     query = request.dbsession.query(MyModel)
