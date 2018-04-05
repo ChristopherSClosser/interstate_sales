@@ -47,6 +47,61 @@ def guardrail_view(request):
     }
 
 
+@view_config(
+    route_name='edit',
+    renderer='../templates/edit.jinja2',
+    permission='secret',
+)
+def edit_view(request):
+    ident = int(request.matchdict["id"])
+    entry = request.dbsession.query(MyModel).get(ident)
+    if not entry:
+        raise HTTPNotFound
+    if request.POST:
+        entry.category = request.POST['category']
+        entry.subcategory = request.POST["subcategory"]
+        entry.title = request.POST["title"]
+        entry.markdown = request.POST["markdown"]
+        entry.img = request.POST["img"]
+        entry.extra = request.POST["extra"]
+        request.dbsession.flush()
+        return HTTPFound(request.route_url('home'))
+
+    form_fill = {
+        "category": entry.category,
+        "subcategory": entry.subcategory,
+        "title": entry.title,
+        "markdown": entry.markdown,
+        "img": entry.img,
+        "extra": entry.extra,
+    }
+    return {"entry": form_fill}
+
+
+@view_config(
+    route_name='delete',
+    renderer='../templates/delete.jinja2',
+    permission='secret',
+)
+def delete_view(request):
+    """."""
+    ident = int(request.matchdict["id"])
+    entry = request.dbsession.query(MyModel).get(ident)
+    if request.POST:
+        request.dbsession.delete(entry)
+        request.dbsession.flush()
+        return HTTPFound(request.route_url('home'))
+    form_fill = {
+        "category": entry.category,
+        "subcategory": entry.subcategory,
+        "title": entry.title,
+        "markdown": entry.markdown,
+        "img": entry.img,
+        "extra": entry.extra,
+    }
+    return {"entry": form_fill}
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):

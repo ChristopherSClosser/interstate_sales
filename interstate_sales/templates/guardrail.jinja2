@@ -29,7 +29,14 @@
         </div>
         {% if auth %}
           <p>
-            <input type="submit" name="Edit" value="Edit">
+          <form class="" action="item/{{item.id}}/edit-entry" method="get">
+
+            <input type="submit" name={{item.id}} value="Edit"}>
+          </form>
+          <form class="" action="item/{{item.id}}/delete-entry" method="get">
+
+            <input type="submit" name={{item.id}} value="Delete"}>
+          </form>
           </p><hr style="width:980px;float:left;">
         {% endif %}
       {% endif %}

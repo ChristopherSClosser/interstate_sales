@@ -15,3 +15,6 @@ def includeme(config):
     config.add_route('contact', '/contact')
     config.add_route('login', '/login')
     config.add_route('logout', '/logout')
+    config.add_route('new', '/item/new-entry')
+    config.add_route('edit', '/item/{id:\d+}/edit-entry')
+    config.add_route('delete', '/item/{id:\d+}/delete-entry')

@@ -1,0 +1,31 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+
+<section class="entry">
+<div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
+<p></p><br><h2 style="color: red; margin-left: 1rem; float: left;">Are You Sure?<br><br>There is no undo action!<br>This Entry Will Be Permanently Deleted!</h2>
+<div id="header" style="background-color:white;height:25px;width:980px;float:left;"></div>
+
+  <form method="POST">
+    <input type="submit" name="delete" value="YES DELETE ENTRY"/>
+  </form>
+  <div style="background-color:gold;height:75px;width:980px;float:left;"><a name="{{ entry.category }}"></a><p></p><h2 style="padding-top: .5rem;">&emsp;&emsp;&emsp;{{ entry.category }}</h2><p></p>
+  </div>
+
+  <div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
+    <div id="menu" style="background-color:white;height:250px;width:250px;float:left;">
+      <center>
+        <img src="{{request.static_url('interstate_sales:static/')}}{{ entry.img }}" alt="{{ entry.title }}" style="max-width: 225px; max-height: 170px;">
+      </center>
+    </div>
+    <div id="content" style="background-color:white;height:250px;width:730px;float:left;">
+      <center>
+        <p></p><h4>{{ entry.title }}</h4><br>{{ entry.markdown | safe }}<p></p>
+      </center>
+    </div>
+
+</form>
+</section>
+
+{% endblock %}
