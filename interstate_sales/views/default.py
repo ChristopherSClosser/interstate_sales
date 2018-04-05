@@ -65,7 +65,6 @@ def guardrail_view(request):
 def create_view(request):
     """Display create a list entry."""
     if request.POST:
-        import pdb; pdb.set_trace()
         entry = MyModel(
             category=request.POST["category"],
             subcategory=request.POST["subcategory"],
