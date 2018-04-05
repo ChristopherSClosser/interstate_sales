@@ -19,6 +19,7 @@ def home_view(request):
         auth = dict(request._headers.items())['Cookie']
     except:
         pass
+    print('Auth: ', auth)
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
     subcategories = []
