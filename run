@@ -1,5 +1,4 @@
 #!/bin/bash
 set -e
 python setup.py develop
-initialize_interstate_sales_db development.ini
 python runapp.py build
