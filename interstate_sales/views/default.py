@@ -16,10 +16,10 @@ from ..models import MyModel
 def home_view(request):
     auth = False
     try:
-        print(dict(request._headers.items()))
         auth = dict(request._headers.items())['Cookie']
     except:
         pass
+    print('Headers', dict(request._headers.items()))
     print('Auth: ', auth)
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
