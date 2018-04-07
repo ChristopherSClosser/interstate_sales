@@ -169,5 +169,101 @@ ENTRIES = [
         "markdown": "The WeedEnder products are an environmentally friendly, 100% recycled fiber material. This mat material deprives vegetation of sunlight while allowing water and nutrients to easily pass through to maintain the root system around the mat, minimizing erosion, while controlling growth where it is needed. And the material is so durable trucks have driven over it without any damage.<ul style='list-style: None;'> <li>Benefits of WeedEnder</li><li>•Fire Retardant</li><li>•Cost effective</li><li>•No Herbicides</li><li>•Made with 100% recycled materials</li><li>•Easy to install</li></ul>",
         "extra": ""
     },
-# -----------------------------------------
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Water-Based",
+        "title": "Fast Dry",
+        "img": "ennis_5g_wb.jpg",
+        "markdown": "User friendly, high solids, traffic marking formulated specifically for use in both airless and conventional air-atomized striping equipment.",
+        "extra": "<ul><h3>Availible in:</h3> <li>White</li> <li>Black</li> <li>Yellow</li> <li>Red</li> <li>Green</li><li>Blue</li></ul>"
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Water-Based",
+        "title": "High Build",
+        "img": "ennis_5g_wb.jpg",
+        "markdown": "Formulated for increased durability and retroreflectivity through greater film build.",
+        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li>"
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Solvent-Based",
+        "title": "Low-VOC",
+        "img": "ennis_5g_low.jpg",
+        "markdown": "Solvent based paints are classified as Low VOC. Versatile quick dry times with excellent durability.",
+        "extra": "<ul><h3>Availible in:</h3> <li>White</li> <li>Black</li> <li>Yellow</li> <li>Red</li> <li>Blue</li></ul>"
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Thermoplastic",
+        "title": "Hot-Applied Thermoplastic",
+        "img": "thermo2.jpg thermoplastic.jpg",
+        "markdown": "Formulated to meet AASHTO as well as many state specifications. User-friendly and formulated for fast melting and easy application allowing for maximum production while in the field.",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Thermoplastic",
+        "title": "HotTape",
+        "img": "hotape.jpg",
+        "markdown": "Preformed thermoplastic pavement markings provide flexibility, durability, and visibility to help increase the life of a pavement marking program. On highways and streets, in office parks, shopping centers, campuses, and parking lots, HotTape is your traffic control solution.",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Thermoplastic",
+        "title": "PreMark",
+        "img": "premark2.jpg",
+        "markdown": "PreMark high performance retroreflective preformed thermoplastic pavement markings are engineered for enhanced visibility both day and night. PreMark has no minimum road or air temperature requirements and is designed for use in heavy traffic locations where maximum wear and tear is present. PreMark does not require preheating of the pavement to a specific temperature prior to application.",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Marking Paint",
+        "title": "Aervoe Marking Paint",
+        "img": "aervoe.jpg",
+        "markdown": "A superior upside-down marking paint designed for survey marking. It provides the best quality paint in terms of color visibility, retention, and durability.<ul> <li>Mark will last up to 6 months </li> <li>Non-freezing</li><li>Operational to 14°F (-10°C) </li><li>H.D. = high delivery (30% greater than other colors)</li></ul>",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Marking Paint",
+        "title": "Aervoe 245 Marking Stick",
+        "img": "markingstick.jpg",
+        "markdown": "A hand held, rolling inverted marking paint applicator. Includes a flag holder and flag insert spike. Simply remove the wheel and insert the spike for quick flag placement. The entire item measures 32\" long and is easily transportable.",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Stencil Coating",
+        "title": "'Easy-Kote'",
+        "img": "ez_kote.jpg",
+        "markdown": "Stencil coating works a liguid barrier to protect your stencils. Provides protection and longevity.",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Stencil Coating",
+        "title": "'Red-E-Kote'",
+        "img": "ez_kote2.jpg",
+        "markdown": "Red-E-Kote is a specialized product designed to form a shield on asphalt stencils to prevent sticking and insure easy clean up.",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Stencils",
+        "title": "Plastic Stencils",
+        "img": "plastic_stencil.jpg",
+        "markdown": "All road and highway stencils are manufactured to MUTCD specifications. Individual state specified (DOT) stencils are also available. Directional arrows, lane markings and wording stencils help you meet the marking requirements of any roadway. Cut from 1/8\" (125mil) plastic.",
+        "extra": ""
+    },
+    {
+        "category": "Traffic Paint",
+        "subcategory": "Stencils",
+        "title": "Aluminum Stencils",
+        "img": "alum_stencil.jpg",
+        "markdown": "All stencils are manufactured to MUTCD specifications. Directional arrows, lane markings and wording stencils help you meet the marking requirements of any roadway. Cut from long lasting aluminum.",
+        "extra": ""
+    },
+    # -----------------------------------------
 ]

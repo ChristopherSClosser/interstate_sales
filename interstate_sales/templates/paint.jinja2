@@ -2,9 +2,9 @@
 
 {% block content %}
 
-  {% for category in gr_subcats %}
+  {% for category in tr_subcats %}
 
-    {% if category == 'Guardrail' %}
+    {% if category == 'Water-Based' %}
 
       <div id="{{ category }}" style="background-color:gold;height:75px;width:250px;float:left;"><a name="{{ category }}"></a><center><p></p><h2 style="padding-top: .5rem;">{{ category }}</h2><p></p></center></div>
       <div id="header" style="background-color:gold;height:75px;width:500px;float:left;"></div>
@@ -14,7 +14,7 @@
       </div>
     {% endif %}
     <div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
-    {% for item in guardrails %}
+    {% for item in paints %}
       {% if item.subcategory == category %}
         {% set images = item.img.split(' ') %}
         {% if images|count > 1 %}

@@ -37,7 +37,7 @@
       <li id="home"><a href="{{request.route_url('home')}}">Home</a></li>
       <li id="guardrail"><a href="{{request.route_url('guardrail')}}">Guardrail</a>
         <ul>
-          {% for item in subcategories %}
+          {% for item in gr_subcats %}
             {% if '/guardrail' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
             {% else %}
@@ -46,17 +46,18 @@
           {% endfor %}
         </ul>
       </li>
-      <li id="paint">
-        <a href="traffic_paint.html">Traffic Paint</a>
+      <li id="paint"><a href="{{request.route_url('paint')}}">Traffic Paint</a>
         <ul>
-          <li><a href="traffic_paint.html#water-based">Water-Based</a></li>
-          <li><a href="traffic_paint.html#solvent-based">Solvent-Based</a></li>
-          <li><a href="traffic_paint.html#thermo">Thermoplastic</a></li>
-          <li><a href="traffic_paint.html#marking%20paint">Marking Paint</a></li>
-          <li><a href="traffic_paint.html#coating">Coating</a></li>
-          <li><a href="traffic_paint.html#stencils">Stencils</a></li>
+          {% for item in tr_subcats %}
+            {% if '/paint' in request.path %}
+              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% else %}
+              <li><a href="{{request.route_url('paint')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </li>
+
 
       <li id="pavement%20markings">
         <a href="pavement_markings.html">Pavement Markings</a>
@@ -154,7 +155,12 @@
       <div id="header" style="background-color:white;height:25px;width:980px;float:left;"></div>
 
     {% endif %}
+    <div id="header" style="background:gold;height:50px;width:980px;float:left;">
 
+      <div>
+        {{ gr_subcats }} {{ tr_subcats }}
+      </div>
+    </div>
     {% block content %}
     {% endblock content %}
 

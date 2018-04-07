@@ -1,15 +1,35 @@
 from pyramid.response import Response
-from pyramid.view import view_config
 from pyramid.security import remember, forget, NO_PERMISSION_REQUIRED
 from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid.view import view_config, forbidden_view_config
 from ..security import is_authenticated
 from ..models import MyModel
-import datetime
 import os
-from sqlalchemy.exc import DBAPIError
 
-from ..models import MyModel
+
+def build_dict(request):
+    """Return category and subcategory dict to view."""
+    query = request.dbsession.query(MyModel)
+    guardrails = query.filter(MyModel.category == 'Guardrail').all()
+    gr_subcats = []
+    paints = query.filter(MyModel.category == 'Traffic Paint').all()
+    tr_subcats = []
+    # pm = query.filter(MyModel.category == 'Pavement Markings').all()
+    # pm_subcats = []
+    for item in guardrails:
+        if item.subcategory not in gr_subcats:
+            gr_subcats.append(item.subcategory)
+    for item in paints:
+        if item.subcategory not in tr_subcats:
+            tr_subcats.append(item.subcategory)
+    # for item in pm:
+    #     if item.subcategory not in pm_subcats:
+    #         pm_subcats.append(item.subcategory)
+    return {
+        'gr_subcats': gr_subcats,
+        'tr_subcats': tr_subcats,
+        # 'pm_subcats': pm_subcats,
+    }
 
 
 @view_config(route_name='home', renderer='../templates/home.jinja2')
@@ -20,15 +40,10 @@ def home_view(request):
         auth = request.cookies['auth_tkt']
     except KeyError:
         pass
-    query = request.dbsession.query(MyModel)
-    guardrails = query.filter(MyModel.category == 'Guardrail').all()
-    subcategories = []
-    for item in guardrails:
-        if item.subcategory not in subcategories:
-            subcategories.append(item.subcategory)
+    items = build_dict(request)
     return {
-        'guardrails': guardrails,
-        'subcategories': subcategories,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
         'auth': auth,
     }
 
@@ -76,13 +91,31 @@ def guardrail_view(request):
         pass
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
-    subcategories = []
-    for item in guardrails:
-        if item.subcategory not in subcategories:
-            subcategories.append(item.subcategory)
+    items = build_dict(request)
+
     return {
         'guardrails': guardrails,
-        'subcategories': subcategories,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'auth': auth,
+    }
+
+
+@view_config(route_name='paint', renderer='../templates/paint.jinja2')
+def paint_view(request):
+    """Query for guardrail view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    paints = query.filter(MyModel.category == 'Traffic Paint').all()
+    items = build_dict(request)
+    return {
+        'paints': paints,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
         'auth': auth,
     }
 
@@ -94,6 +127,8 @@ def guardrail_view(request):
 )
 def create_view(request):
     """Display create a list entry."""
+    items = build_dict(request)
+
     if request.POST:
         entry = MyModel(
             category=request.POST["category"],
@@ -105,7 +140,10 @@ def create_view(request):
         )
         request.dbsession.add(entry)
         return HTTPFound(request.route_url('home'))
-    return {}
+    return {
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+    }
 
 
 @view_config(
@@ -114,6 +152,7 @@ def create_view(request):
     permission='secret',
 )
 def edit_view(request):
+    items = build_dict(request)
     ident = int(request.matchdict["id"])
     entry = request.dbsession.query(MyModel).get(ident)
     if not entry:
@@ -136,7 +175,11 @@ def edit_view(request):
         "img": entry.img,
         "extra": entry.extra,
     }
-    return {"entry": form_fill}
+    return {
+        "entry": form_fill,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+    }
 
 
 @view_config(
@@ -146,6 +189,7 @@ def edit_view(request):
 )
 def delete_view(request):
     """."""
+    items = build_dict(request)
     ident = int(request.matchdict["id"])
     entry = request.dbsession.query(MyModel).get(ident)
     if request.POST:
@@ -160,7 +204,11 @@ def delete_view(request):
         "img": entry.img,
         "extra": entry.extra,
     }
-    return {"entry": form_fill}
+    return {
+        "entry": form_fill,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+    }
 
 
 @view_config(route_name='login', renderer='../templates/login.jinja2')
