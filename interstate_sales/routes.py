@@ -18,3 +18,4 @@ def includeme(config):
     config.add_route('new', '/item/new-entry')
     config.add_route('edit', '/item/{id:\d+}/edit-entry')
     config.add_route('delete', '/item/{id:\d+}/delete-entry')
+    config.add_route('search', '/search')

@@ -14,10 +14,11 @@ from ..models import MyModel
 
 @view_config(route_name='home', renderer='../templates/home.jinja2')
 def home_view(request):
+    """Home view."""
     auth = False
     try:
         auth = request.cookies['auth_tkt']
-    except:
+    except KeyError:
         pass
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
@@ -32,24 +33,53 @@ def home_view(request):
     }
 
 
+@view_config(route_name='search', renderer='../templates/search.jinja2')
+def search_view(request):
+    """Search view."""
+    auth = False
+    try:
+        search = request.POST['search']
+    except KeyError:
+        pass
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel).all()
+    res = []
+    if search:
+        for item in query:
+            for key, val in vars(item).items():
+                if search in str(key) or search in str(val):
+                    if item not in res:
+                        res.append(item)
+    subcategories = []
+    for item in res:
+        if item.subcategory not in subcategories:
+            subcategories.append(item.subcategory)
+
+    return {
+        'res': res,
+        'search': search,
+        'subcategories': subcategories,
+        'auth': auth,
+    }
+
+
 @view_config(route_name='guardrail', renderer='../templates/guardrail.jinja2')
 def guardrail_view(request):
+    """Query for guardrail view."""
     auth = False
     try:
         auth = request.cookies['auth_tkt']
-    except:
+    except KeyError:
         pass
     query = request.dbsession.query(MyModel)
     guardrails = query.filter(MyModel.category == 'Guardrail').all()
     subcategories = []
-    # images = []
     for item in guardrails:
         if item.subcategory not in subcategories:
             subcategories.append(item.subcategory)
-        # for image in item.img.split():
-        #     images.append(image)
-        # item.img = images
-        # images = []
     return {
         'guardrails': guardrails,
         'subcategories': subcategories,
