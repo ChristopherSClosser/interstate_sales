@@ -265,5 +265,149 @@ ENTRIES = [
         "markdown": "All stencils are manufactured to MUTCD specifications. Directional arrows, lane markings and wording stencils help you meet the marking requirements of any roadway. Cut from long lasting aluminum.",
         "extra": ""
     },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Road Markers",
+        "title": "Round Polypropelene Pavement Markers",
+        "img": "poly.bmp",
+        "markdown": "Our round polypropelene pavement markers are manufactured per ASTM specifications. The bottom of these pavement markers are configured to produce an excellent structural bond with the pavement. Non-reflective road marker 4 inches in diameter.",
+        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li></ul>"
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Road Markers",
+        "title": "Ceramic Raised Pavement Markers",
+        "img": "ceramic_yellow.jpg",
+        "markdown": "Ceramic traffic buttons provide ultimate daytime/nighttime visibility, cost effective alternative to painted stripes, eliminates painting stripes and maximum durability. When properly installed, traffic buttons can last 3-4 times longer than painted stripes.",
+        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li></ul>"
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Road Markers",
+        "title": "C80 Series Reflective Pavement Markers",
+        "img": "c80.jpg",
+        "markdown": "The new Ennis Paints C80 raised pavement markers are the result of state of the art technology representing a new standard for roadway delineation. Engineered for extended reflector life and rugged performance. The C80 series offers cost effective solutions for drivers at night and during inclement weather conditions. C80 series is coated with toughened covering for extra strength. Finger grips allow for easy placement and the Patent Pending sure grip bottom allows for excellent adhesion to the road. Available in different color combinations.",
+        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li><li>Red</li> <li>Blue</li><li>Red/Clear</li></ul>"
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Road Markers",
+        "title": "948 Series Reflective Pavement Markers",
+        "img": "948.jpg",
+        "markdown": "The model 948 is an innovative glass-face marker for use on pavement. It is designed to meet today's changing highway and vehicle conditions. The 948 marker measures 4.7\" long x 2.3\" wide x 0.52\" high. Markers can be applied with bituminous adhesive or conventional epoxy adhesive.",
+        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li><li>Red/Clear</li></ul>"
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Road Markers",
+        "title": "Chip Seal Markers",
+        "img": "chipseal.jpg w_chipseal.jpg",
+        "markdown": "Chip seal markers are typically installed prior to spraying while the center-line stripes are still visible. This avoids having to re-measure lanes. The road surface should be reasonably clean for good adhesion. The bottom of the marker has a self stick pad already on the bottom, so it's just peel and stick. The markers have a clear plastic cover attached with a single staple. With the markers in place, just spray right over them. When the seal coat has had enough time to dry, the formerly clear plastic cover is removed, exposing a clean marker.",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Bituminous",
+        "title": "Martin 'Standard' Bituminous Adhesive",
+        "img": "bit1.jpg bit2.jpg",
+        "markdown": "Bituminous Marker Adhesive is a hot melt bituminous adhesive used to permanently bond pavement markers to Portland cement concrete and asphaltic concrete.<ul><li>- Superior Adhesion</li> <li>- Superior Flexibility</li> <li>- Superior Impact Resistance</li></ul>",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Bituminous",
+        "title": "Martin 'Flexible' Bituminous Adhesive",
+        "img": "bit3.jpg",
+        "markdown": "Evergrip Flexible GTR (Ground Tire Rubber) Bituminous Marker Adhesive is a hot melt bituminous adhesive used to permanently bond pavement markers.<ul><li>- Superior Adhesion</li> <li>- Superior Flexibility</li> <li>- Superior Impact Resistance</li> <li>- Requires less heat for application – Lower fuel cost</li> <li>- Uses recycled GTR – Cleaner environment</li><ul>",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Bituminous",
+        "title": "'Henry' Crack Seal",
+        "img": "crackseal.jpg crackseal2.jpg",
+        "markdown": "Henry Crack Sealer is a mixture of paving asphalt, ground rubber, and polymer which conforms to all specifications set forth by the California Department of Transportation for hot melt material. The sealer is used for sealing cracks in asphalt and concrete highways, city streets, and rural roadways. Application requires an oil-jacketed melter.",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Traffic Beads",
+        "title": "'Swarco' Premium Glass Beads",
+        "img": "swarco_beads.jpg bead_closeup.jpg",
+        "markdown": "Glass beads are the result of a recycling process which are taken from window manufacturers and is transformed in furnaces into round, clear spheres. The smallest beads are no bigger than a few thousandth parts of a millimetre.<ul><li>Availible in:</li> <li>Bags</li> <li>Drums </li> <li>Super Bags</li><ul>",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Traffic Beads",
+        "title": "'Potters' Highway Safety Spheres",
+        "img": "potters_bag.jpg bead2.jpg",
+        "markdown": "Pavement marking lines make a significant contribution to highway safety, especially in conditions of poor visibility at night and in wet weather. Applying Potters Highway Safety Marking Sphere technology is one of the most cost-effective ways to increase highway safety in these conditions.<ul><li>Availible in:</li> <li>Bags</li> <li>Drums </li> <li>Super Bags</li><ul>",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Adhesive",
+        "title": "'Dura Tec' Epoxy Adhesive Resin",
+        "img": "duratec1.jpg dura_ad.jpg",
+        "markdown": "epoxy resin provides great adhesive to surface areas. Two part epoxy, simply mix part A and B together. Quick drying times coupled with advanced hardening prove to be a winning combination.",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Adhesive",
+        "title": "Butyl Pads",
+        "img": "bpad.jpg",
+        "markdown": "Butyl adhesive pads are a quick and easy way to firmly adhere road reflectors, delineator posts, car stops, speed bumps and other traffic control devices to asphalt or concrete surfaces. Ideal where temporary mounting is required. Simply peel one of the release papers from the pad, apply the pad to the device, peel off the remaining release paper and firmly attach device to cleaned surface.",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Parking Lot Safety",
+        "title": "Parking Lot Stop",
+        "img": "parking_stop.jpg",
+        "markdown": "<ul><li>•Includes 5 pre-drilled holes for easy lag bolt mooring. </li> <li>•Temporary or permanent installation.</li> <li>•Flexible: conforms to any asphalt or concrete surface.</li> <li>•Less damaging to vehicles upon impact.</li> <li>•Resistant to extreme temperature variations, UV light, oils, moisture and damage. </li> <li>•All-weather easy maintenance: will not rust, chip, crack, crumble, corrode or need repainting.</li>",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Parking Lot Safety",
+        "title": "'Impact Recovery Systems' Pedestrian Crossing",
+        "img": "ped_irs.jpg impact2.jpg",
+        "markdown": "The In-Street Pedestrian Crosswalk Signs provide enhanced conspicuity at un-signalized intersections in order to alert motorists to local laws concerning yielding to or stopping for pedestrians in crosswalks.",
+        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Parking Lot Safety",
+        "title": "'Impact Recovery Systems' Sta-Rite signpost",
+        "img": "sta-rite.jpg impact2.jpg",
+        "markdown": "These signs utilize our reactive spring unit which allows the sign to withstand bumper hits and return to original position, without damaging the sign or vehicle. Ideal for high traffic parking lot locations.",
+        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Parking Lot Safety",
+        "title": "Asphalt Patch",
+        "img": "patch2.jpg",
+        "markdown": "This is commercial grade blacktop repair and is designed to repair potholes. It provides superior placement and bonding to produce a virtually permanent repair, even in cold, damp conditions. * Use on roads, driveways, parking lots and pathways * Repaired area is ready for immediate return to service * Superior bond strength * Use in wet or dry conditions",
+        "extra": ""
+    },
+    {
+        "category": "Pavement Markings",
+        "subcategory": "Parking Lot Safety",
+        "title": "'Armorcast' Detectable Warning Panels",
+        "img": "armorcast.jpg truncated.jpg",
+        "markdown": "ADAAG COMPLIANT - Armorcast products meet all requirements set forth by the American Disabilities Act Accessibilities Guidelines and are approved by most municipalities and state DOT's. Out performs all traditional panels, clay, brick, composite or cement concrete domed products. Truncated domes will not shear or crack when exposed to high side impact loads or when installed in high traffic areas.",
+        "extra": ""
+    },
+    {
+        "category": "",
+        "subcategory": "",
+        "title": "",
+        "img": "",
+        "markdown": "",
+        "extra": ""
+    },
     # -----------------------------------------
 ]

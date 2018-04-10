@@ -57,16 +57,15 @@
           {% endfor %}
         </ul>
       </li>
-
-
-      <li id="pavement%20markings">
-        <a href="pavement_markings.html">Pavement Markings</a>
+      <li id="markings"><a href="{{request.route_url('markings')}}">Pavement Markings</a>
         <ul>
-          <li><a href="pavement_markings.html#markers">Markers</a></li>
-          <li><a href="pavement_markings.html#bituminous">Bituminous</a></li>
-          <li><a href="pavement_markings.html#beads">Traffic Beads</a></li>
-          <li><a href="pavement_markings.html#adhesive">Adhesive</a></li>
-          <li><a href="pavement_markings.html#pl_safety">Parking Lot Safety</a></li>
+          {% for item in pm_subcats %}
+            {% if '/markings' in request.path %}
+              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% else %}
+              <li><a href="{{request.route_url('markings')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </li>
       <li id="construction%20safety">
@@ -155,17 +154,9 @@
       <div id="header" style="background-color:white;height:25px;width:980px;float:left;"></div>
 
     {% endif %}
-    <div id="header" style="background:gold;height:50px;width:980px;float:left;">
 
-      <div>
-        {{ gr_subcats }} {{ tr_subcats }}
-      </div>
-    </div>
     {% block content %}
     {% endblock content %}
-
-
-
 
     <div id="footer" style="background-color:gold; clear:both; text-align:center; width:980px; float:left;">
       <p><center><b>www.interstatesales.com</center></p>

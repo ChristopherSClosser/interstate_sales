@@ -1,5 +1,7 @@
-from pyramid.response import Response
-from pyramid.security import remember, forget, NO_PERMISSION_REQUIRED
+"""Interstate Sales Views."""
+
+
+from pyramid.security import remember, forget
 from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid.view import view_config, forbidden_view_config
 from ..security import is_authenticated
@@ -14,21 +16,21 @@ def build_dict(request):
     gr_subcats = []
     paints = query.filter(MyModel.category == 'Traffic Paint').all()
     tr_subcats = []
-    # pm = query.filter(MyModel.category == 'Pavement Markings').all()
-    # pm_subcats = []
+    pm = query.filter(MyModel.category == 'Pavement Markings').all()
+    pm_subcats = []
     for item in guardrails:
         if item.subcategory not in gr_subcats:
             gr_subcats.append(item.subcategory)
     for item in paints:
         if item.subcategory not in tr_subcats:
             tr_subcats.append(item.subcategory)
-    # for item in pm:
-    #     if item.subcategory not in pm_subcats:
-    #         pm_subcats.append(item.subcategory)
+    for item in pm:
+        if item.subcategory not in pm_subcats:
+            pm_subcats.append(item.subcategory)
     return {
         'gr_subcats': gr_subcats,
         'tr_subcats': tr_subcats,
-        # 'pm_subcats': pm_subcats,
+        'pm_subcats': pm_subcats,
     }
 
 
@@ -44,6 +46,7 @@ def home_view(request):
     return {
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
         'auth': auth,
     }
 
@@ -97,6 +100,7 @@ def guardrail_view(request):
         'guardrails': guardrails,
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
         'auth': auth,
     }
 
@@ -116,6 +120,27 @@ def paint_view(request):
         'paints': paints,
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'auth': auth,
+    }
+
+
+@view_config(route_name='markings', renderer='../templates/markings.jinja2')
+def markings_view(request):
+    """Query for guardrail view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    markings = query.filter(MyModel.category == 'Pavement Markings').all()
+    items = build_dict(request)
+    return {
+        'markings': markings,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
         'auth': auth,
     }
 
@@ -143,6 +168,7 @@ def create_view(request):
     return {
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
     }
 
 
@@ -179,6 +205,7 @@ def edit_view(request):
         "entry": form_fill,
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
     }
 
 
@@ -208,6 +235,7 @@ def delete_view(request):
         "entry": form_fill,
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
     }
 
 

@@ -1,0 +1,64 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+
+  {% for category in pm_subcats %}
+
+    {% if category == 'Road Markers' %}
+
+      <div id="{{ category }}" style="background-color:gold;height:75px;width:250px;float:left;"><a name="{{ category }}"></a><center><p></p><h2 style="padding-top: .5rem;">{{ category }}</h2><p></p></center></div>
+      <div id="header" style="background-color:gold;height:75px;width:500px;float:left;"></div>
+      <div id="header" style="background-color:gold;height:75px;width:230px;float:left;"><center><p></p><h4> For Pricing Please Call<br> 800-237-7245</h4><p></p></center></div>
+    {% else %}
+      <div id="{{ category.replace(' ', '').lower() }}" style="background-color:gold;height:75px;width:980px;float:left;"><a name="{{ category }}"></a><p></p><h2 style="padding-top: .5rem;">&emsp;&emsp;&emsp;{{ category }}</h2><p></p>
+      </div>
+    {% endif %}
+    <div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
+    {% for item in markings %}
+      {% if item.subcategory == category %}
+        {% set images = item.img.split(' ') %}
+        {% if images|count > 1 %}
+          <div id="menu" style="background-color:white;height:200px;width:980px;float:left;">
+          <center>
+          {% for image in images %}
+
+            <img src="{{request.static_url('interstate_sales:static/')}}{{ image }}" alt="{{ image }}" style="width: 200px; height: 150px;">
+
+          {% endfor %}
+          </center>
+          </div>
+          <center>
+          <div id="content" style="background-color:white;height:250px;width:950px;float:right;">
+          <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
+          </div>
+          </center>
+        {% elif images|count == 1 %}
+        <div id="menu" style="background-color:white;height:250px;width:250px;float:left;">
+          <center>
+            <img src="{{request.static_url('interstate_sales:static/')}}{{ item.img }}" alt="{{ item.title }}" style="max-width: 225px; max-height: 170px;">
+          </center>
+        </div>
+        <div id="content" style="background-color:white;height:250px;width:730px;float:right;">
+        <center>
+        <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
+        </center>
+        </div>
+        {% endif %}
+        {% if auth %}
+          <p>
+          <form class="" action="item/{{item.id}}/edit-entry" method="get">
+
+            <input type="submit" name={{item.id}} value="Edit"}>
+          </form>
+          <form class="" action="item/{{item.id}}/delete-entry" method="get">
+
+            <input type="submit" name={{item.id}} value="Delete"}>
+          </form>
+          </p><hr style="width:980px;float:left;">
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  <div id="header" style="background-color:white;height:30px;width:980px;float:left;"></div>
+
+{% endblock content %}
