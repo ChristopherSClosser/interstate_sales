@@ -850,11 +850,107 @@ ENTRIES = [
         "extra": ""
     },
     {
-        "category": "",
-        "subcategory": "",
-        "title": "",
-        "img": "",
-        "markdown": "",
+        "category": "Equipment",
+        "subcategory": "Graco Equipment",
+        "title": "LineLazer 3400",
+        "img": "linelazer3400.jpg graco.jpg",
+        "markdown": "The LineLazer 3400 is the preferred choice with parking lot and seal coating contractors who are looking for professional performance and features, in a one-gun machine.",
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Graco Equipment",
+        "title": "LineLazer 5900",
+        "img": "linelazer5900.jpg graco.jpg",
+        "markdown": "This LineLazer 5900 is a 1 or 2 gun professional striping machine designed specifically to deliver the most precise and consistent lines in the industry. Materials sprayed are most heavy, low VOC, waterborne and rubberized traffic paints. This sprayer is ideal for your continuous heavy-duty line striping requirements.",
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Graco Equipment",
+        "title": "LineLazer 130HS",
+        "img": "linelazer130hs.jpg graco.jpg",
+        "markdown": "The LineLazer 130HS is a workhorse hydraulic airless striper for the most demanding pavement marking jobs. Materials sprayed are most heavy, low VOC, waterborne and rubberized traffic paints.",
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Graco Equipment",
+        "title": "Roadlazer RoadPak",
+        "img": "roadpak.jpg graco.jpg",
+        "markdown": "RoadLazer RoadPak System is a hydraulic striping system built for the professional road striping contractor. With the RoadPak airless striping system you can achieve extremely accurate lines at highly productive speeds - up to 10 mph (16 km/h).",
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Graco Equipment",
+        "title": "ThermoLazer",
+        "img": "thermolazer.png graco.jpg",
+        "markdown": "The industry-leading experts that brought you the groundbreaking LineLazer family of stripers in 1990 have done it again by changing the game in thermoplastic striping technology. Introducing the new ThermoLazer, the most user-friendly, innovative thermoplastic striper to hit the streets. See for yourself where the next generation of thermoplastic stripers (aka handliner) is heading.",
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Graco Equipment",
+        "title": "Grindlazer 390",
+        "img": "grindlazer.jpg graco.jpg",
+        "markdown": "The GrindLazer 390 is the contractor choice for all-around scarifying jobs including parking lot lines, intersection markings, construction zones and sidewalk smoothing. With the optional LineDriver system its productivity is unmatched and means you can get more work done everyday without the fatigue from walking.",
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Downing MFG Equipment",
+        "title": "Model 1001",
+        "img": "bit_applicator.jpg dmi_logo.jpg",
+        "markdown": "The Model 1001 is perfect for small to medium jobs. It comes standard with a 24 gallon aluminium vat, 10\" burner, swivel wheel, brakes and basket. Additional options include upgrading to a steel vat, swivel wheel with lock, line up bar and a hand torch.",
+        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Downing MFG Equipment",
+        "title": "Model 2001",
+        "img": "dmi2001.jpg dmi_logo.jpg",
+        "markdown": "The Model 2001 is built for the big jobs. It comes standard with a 39 gallon steel vat controlled by a solid state LED display. It has an electric start with a power agitator. All controlled by foot flow switch with a flow line that has a 18\" travel.",
+        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Downing MFG Equipment",
+        "title": "Model 2001-2",
+        "img": "dmi2001-2.jpg dmi_logo.jpg",
+        "markdown": "The Model 2001-2 is also built for the big jobs, featuring dual operator stations. It comes standard with a 39 gallon steel vat controlled by a solid state LED display. It has an electric start with a power agitator. All controlled by foot flow switch with a flow line that has a 18\" travel.",
+        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'><p>(click for more info)</p></a>"
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Arrow boards",
+        "title": "Curve",
+        "img": "curve.jpg",
+        "markdown": "With the innovative curve design, the operator has greater clearance to maneuver around the chassis. This unique curve design provides greater lateral strength to the uprights, decreases the amount of welding which means less energy required for manufacturing, and increases the foot print area. That means less chance for blow overs in high wind areas.",
+        "extra": ""
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Arrow boards",
+        "title": "Low Profile Directional Display",
+        "img": "lowpro.jpg",
+        "markdown": "The low profile Directional Display represents the latest technical advances in vehicle mounted arrows. Paired with the Slim Line control which measures only 1 inch thick, it is ideal for mounting on crowded dash boards.",
+        "extra": ""
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Message Boards",
+        "title": "Sunray 190",
+        "img": "sunray190.jpg",
+        "markdown": "The Sunray Solar 190 combines the advantages of a highly portable, solar- powered, large display trailer with LED Full Matrix technology and Radar capabilities.",
+        "extra": ""
+    },
+    {
+        "category": "Equipment",
+        "subcategory": "Message Boards",
+        "title": "Sunray 480",
+        "img": "sunray480.jpg",
+        "markdown": "The SR480 combines the features of the large and small signs into a convenient package that delivers great legibility in a compact easy to use package. The SR480 comes equipped with 15\" high characters, manual lift, or an electro-hydraulic lift option.",
         "extra": ""
     },
     # -----------------------------------------
