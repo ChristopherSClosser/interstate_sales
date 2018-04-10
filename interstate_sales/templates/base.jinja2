@@ -68,19 +68,18 @@
           {% endfor %}
         </ul>
       </li>
-      <li id="construction%20safety">
-        <a href="construction_safety.html">Construction Safety</a>
-        <ul >
-          <li><a href="construction_safety.html#barricades">Barricades</a></li>
-          <li><a href="construction_safety.html#cones">Cones</a></li>
-          <li><a href="construction_safety.html#delineators">Delineators</a></li>
-          <li><a href="construction_safety.html#sign-stands">Sign Stands</a></li>
-          <li><a href="construction_safety.html#traffic%20control">Traffic Control</a></li>
-          <li><a href="construction_safety.html#tools">Tools</a></li>
-          <li><a href="construction_safety.html#batteries">Batteries</a></li>
-
+      <li id="markings"><a href="{{request.route_url('safety')}}">Construction Safety</a>
+        <ul>
+          {% for item in cs_subcats %}
+            {% if '/safety' in request.path %}
+              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% else %}
+              <li><a href="{{request.route_url('safety')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </li>
+
       <li id="signs">
         <a href="signs.html">Signs</a>
         <ul>

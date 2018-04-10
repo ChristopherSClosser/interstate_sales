@@ -18,6 +18,8 @@ def build_dict(request):
     tr_subcats = []
     pm = query.filter(MyModel.category == 'Pavement Markings').all()
     pm_subcats = []
+    cs = query.filter(MyModel.category == 'Construction Safety').all()
+    cs_subcats = []
     for item in guardrails:
         if item.subcategory not in gr_subcats:
             gr_subcats.append(item.subcategory)
@@ -27,10 +29,14 @@ def build_dict(request):
     for item in pm:
         if item.subcategory not in pm_subcats:
             pm_subcats.append(item.subcategory)
+    for item in cs:
+        if item.subcategory not in cs_subcats:
+            cs_subcats.append(item.subcategory)
     return {
         'gr_subcats': gr_subcats,
         'tr_subcats': tr_subcats,
         'pm_subcats': pm_subcats,
+        'cs_subcats': cs_subcats,
     }
 
 
@@ -47,6 +53,7 @@ def home_view(request):
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
         'auth': auth,
     }
 
@@ -101,6 +108,7 @@ def guardrail_view(request):
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
         'auth': auth,
     }
 
@@ -121,6 +129,7 @@ def paint_view(request):
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
         'auth': auth,
     }
 
@@ -141,6 +150,29 @@ def markings_view(request):
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
+        'auth': auth,
+    }
+
+
+@view_config(route_name='safety', renderer='../templates/safety.jinja2')
+def safety_view(request):
+    """Query for safety view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    safety_items = query.filter(MyModel.category == 'Construction Safety').all()
+    items = build_dict(request)
+
+    return {
+        'safety_items': safety_items,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
         'auth': auth,
     }
 
@@ -169,6 +201,7 @@ def create_view(request):
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
     }
 
 
@@ -206,6 +239,7 @@ def edit_view(request):
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
     }
 
 
@@ -236,6 +270,7 @@ def delete_view(request):
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
     }
 
 
