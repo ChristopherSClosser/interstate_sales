@@ -101,23 +101,19 @@
           {% endfor %}
         </ul>
       </li>
-
-      <li id="our%20team">
-        <a href="our_team.html">Our Team</a>
+      <li id="markings"><a href="{{request.route_url('team')}}">Our Team</a>
         <ul>
-          <li><a href="our_team.html#lee">Lee</a></li>
-          <li><a href="our_team.html#mike">Mike</a></li>
-          <li><a href="our_team.html#jane">Jane</a></li>
-          <li><a href="our_team.html#courtney">Courtney</a></li>
-          <li><a href="our_team.html#john">John</a></li>
-          <li><a href="our_team.html#leslie">Leslie</a></li>
-          <li><a href="our_team.html#kimmy">Kimmy</a></li>
-          <li><a href="our_team.html#ed">Ed</a></li>
-          <li><a href="our_team.html#thomas">Thomas</a></li>
-          <li><a href="our_team.html#kevin">Kevin</a></li>
-          <li><a href="our_team.html#val">Val</a></li>
-          <li><a href="our_team.html#lou">Lou</a></li>
+          {% for item in team_subcats %}
+            {% if '/team' in request.path %}
+              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% else %}
+              <li><a href="{{request.route_url('team')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
+      </li>
+
+      
       <li id="contact"><a href="contact.html">Contact Us</a></li>
     </ul>
 

@@ -24,6 +24,8 @@ def build_dict(request):
     signs_subcats = []
     equipment = query.filter(MyModel.category == 'Equipment').all()
     equipment_subcats = []
+    team = query.filter(MyModel.category == 'Our Team').all()
+    team_subcats = []
     for item in guardrails:
         if item.subcategory not in gr_subcats:
             gr_subcats.append(item.subcategory)
@@ -42,6 +44,9 @@ def build_dict(request):
     for item in equipment:
         if item.subcategory not in equipment_subcats:
             equipment_subcats.append(item.subcategory)
+    for item in team:
+        if item.subcategory not in team_subcats:
+            team_subcats.append(item.subcategory)
     return {
         'gr_subcats': gr_subcats,
         'tr_subcats': tr_subcats,
@@ -49,6 +54,7 @@ def build_dict(request):
         'cs_subcats': cs_subcats,
         'signs_subcats': signs_subcats,
         'equipment_subcats': equipment_subcats,
+        'team_subcats': team_subcats,
     }
 
 
@@ -68,6 +74,7 @@ def home_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 
@@ -125,6 +132,7 @@ def guardrail_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 
@@ -148,6 +156,7 @@ def paint_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 
@@ -171,6 +180,7 @@ def markings_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 
@@ -195,6 +205,7 @@ def safety_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 
@@ -218,6 +229,7 @@ def signs_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 
@@ -241,6 +253,31 @@ def equipment_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
+        'auth': auth,
+    }
+
+
+@view_config(route_name='team', renderer='../templates/team.jinja2')
+def team_view(request):
+    """Query for guardrail view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    team = query.filter(MyModel.category == 'Our Team').all()
+    items = build_dict(request)
+    return {
+        'team': team,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 
@@ -272,6 +309,7 @@ def create_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
     }
 
 
@@ -312,6 +350,7 @@ def edit_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
     }
 
 
@@ -345,6 +384,7 @@ def delete_view(request):
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
         'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
     }
 
 
