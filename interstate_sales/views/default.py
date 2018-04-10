@@ -20,6 +20,8 @@ def build_dict(request):
     pm_subcats = []
     cs = query.filter(MyModel.category == 'Construction Safety').all()
     cs_subcats = []
+    signs = query.filter(MyModel.category == 'Signs').all()
+    signs_subcats = []
     for item in guardrails:
         if item.subcategory not in gr_subcats:
             gr_subcats.append(item.subcategory)
@@ -32,11 +34,15 @@ def build_dict(request):
     for item in cs:
         if item.subcategory not in cs_subcats:
             cs_subcats.append(item.subcategory)
+    for item in signs:
+        if item.subcategory not in signs_subcats:
+            signs_subcats.append(item.subcategory)
     return {
         'gr_subcats': gr_subcats,
         'tr_subcats': tr_subcats,
         'pm_subcats': pm_subcats,
         'cs_subcats': cs_subcats,
+        'signs_subcats': signs_subcats,
     }
 
 
@@ -54,6 +60,7 @@ def home_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
         'auth': auth,
     }
 
@@ -109,6 +116,7 @@ def guardrail_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
         'auth': auth,
     }
 
@@ -130,6 +138,7 @@ def paint_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
         'auth': auth,
     }
 
@@ -151,6 +160,7 @@ def markings_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
         'auth': auth,
     }
 
@@ -173,6 +183,29 @@ def safety_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
+        'auth': auth,
+    }
+
+
+@view_config(route_name='signs', renderer='../templates/signs.jinja2')
+def signs_view(request):
+    """Query for guardrail view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    signs = query.filter(MyModel.category == 'Signs').all()
+    items = build_dict(request)
+    return {
+        'signs': signs,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
         'auth': auth,
     }
 
@@ -202,6 +235,7 @@ def create_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
     }
 
 
@@ -240,6 +274,7 @@ def edit_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
     }
 
 
@@ -271,6 +306,7 @@ def delete_view(request):
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
     }
 
 

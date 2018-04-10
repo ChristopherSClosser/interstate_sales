@@ -79,25 +79,19 @@
           {% endfor %}
         </ul>
       </li>
-
-      <li id="signs">
-        <a href="signs.html">Signs</a>
+      <li id="markings"><a href="{{request.route_url('signs')}}">Signs</a>
         <ul>
-          <li><a href="signs.html#regulatory_signs">Regulatory</a></li>
-          <li><a href="signs.html#warning">Warning</a></li>
-          <li><a href="signs.html#guide">Guide</a></li>
-          <li><a href="signs.html#construction">Construction</a></li>
-          <li><a href="signs.html#blanks">Sign Blanks</a></li>
-          <li><a href="signs.html#address">Address Signs</a></li>
-          <li><a href="signs.html#custom">Custom Signs</a></li>
-          <li><a href="signs.html#ada">ADA Signs</a></li>
-          <li><a href="signs.html#temporary_signs">Temporary</a></li>
-          <li><a href="signs.html#roll-ups">Roll-up</a></li>
-          <li><a href="signs.html#tape">Reflective Tape</a></li>
-          <li><a href="signs.html#hardware">Sign Hardware</a></li>
-          <li><a href="signs.html#posts">Sign Posts</a></li>
+          {% for item in signs_subcats %}
+            {% if '/signs' in request.path %}
+              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% else %}
+              <li><a href="{{request.route_url('signs')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </li>
+
+
       <li id="equipment">
         <a href="equipment.html">Equipment</a>
         <ul>

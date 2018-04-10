@@ -789,7 +789,7 @@ ENTRIES = [
         "category": "Signs",
         "subcategory": "Sign Hardware",
         "title": "Square Post Cap",
-        "img": "square_post _mount3.bmp",
+        "img": "square_post_mount3.bmp",
         "markdown": "Bracket for installing 1 blade street name sign onto a 2\" square post.<br>• Bracket fits over 2\" square post and held in place with included set screws.<br>• Street name sign slides into top groove and held in place with included set screws.",
         "extra": ""
     },
