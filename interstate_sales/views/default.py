@@ -22,6 +22,8 @@ def build_dict(request):
     cs_subcats = []
     signs = query.filter(MyModel.category == 'Signs').all()
     signs_subcats = []
+    equipment = query.filter(MyModel.category == 'Equipment').all()
+    equipment_subcats = []
     for item in guardrails:
         if item.subcategory not in gr_subcats:
             gr_subcats.append(item.subcategory)
@@ -37,12 +39,16 @@ def build_dict(request):
     for item in signs:
         if item.subcategory not in signs_subcats:
             signs_subcats.append(item.subcategory)
+    for item in equipment:
+        if item.subcategory not in equipment_subcats:
+            equipment_subcats.append(item.subcategory)
     return {
         'gr_subcats': gr_subcats,
         'tr_subcats': tr_subcats,
         'pm_subcats': pm_subcats,
         'cs_subcats': cs_subcats,
         'signs_subcats': signs_subcats,
+        'equipment_subcats': equipment_subcats,
     }
 
 
@@ -61,6 +67,7 @@ def home_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
         'auth': auth,
     }
 
@@ -117,6 +124,7 @@ def guardrail_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
         'auth': auth,
     }
 
@@ -139,6 +147,7 @@ def paint_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
         'auth': auth,
     }
 
@@ -161,6 +170,7 @@ def markings_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
         'auth': auth,
     }
 
@@ -184,6 +194,7 @@ def safety_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
         'auth': auth,
     }
 
@@ -206,6 +217,30 @@ def signs_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
+        'auth': auth,
+    }
+
+
+@view_config(route_name='equipment', renderer='../templates/equipment.jinja2')
+def equipment_view(request):
+    """Query for guardrail view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    equipment = query.filter(MyModel.category == 'Equipment').all()
+    items = build_dict(request)
+    return {
+        'equipment': equipment,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
         'auth': auth,
     }
 
@@ -236,6 +271,7 @@ def create_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
     }
 
 
@@ -275,6 +311,7 @@ def edit_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
     }
 
 
@@ -307,6 +344,7 @@ def delete_view(request):
         'pm_subcats': items['pm_subcats'],
         'cs_subcats': items['cs_subcats'],
         'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
     }
 
 

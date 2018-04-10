@@ -90,15 +90,15 @@
           {% endfor %}
         </ul>
       </li>
-
-
-      <li id="equipment">
-        <a href="equipment.html">Equipment</a>
+      <li id="markings"><a href="{{request.route_url('equipment')}}">Equipment</a>
         <ul>
-          <li><a href="equipment.html#graco">Graco</a></li>
-          <li><a href="equipment.html#downing">Downing</a></li>
-          <li><a href="equipment.html#arrow_boards">Arrow Boards</a></li>
-          <li><a href="equipment.html#message_boards">Message Boards</a></li>
+          {% for item in equipment_subcats %}
+            {% if '/equipment' in request.path %}
+              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% else %}
+              <li><a href="{{request.route_url('equipment')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </li>
 
