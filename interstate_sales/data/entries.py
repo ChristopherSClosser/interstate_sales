@@ -222,7 +222,7 @@ ENTRIES = [
         "subcategory": "Marking Paint",
         "title": "Aervoe Marking Paint",
         "img": "aervoe.jpg",
-        "markdown": "A superior upside-down marking paint designed for survey marking. It provides the best quality paint in terms of color visibility, retention, and durability.<ul> <li>Mark will last up to 6 months </li> <li>Non-freezing</li><li>Operational to 14°F (-10°C) </li><li>H.D. = high delivery (30% greater than other colors)</li></ul>",
+        "markdown": "A superior upside-down marking paint designed for survey marking. It provides the best quality paint in terms of color visibility, retention, and durability.<br> Mark will last up to 6 months<br> Non-freezing<br> Operational to 14°F (-10°C)<br> H.D. = high delivery (30% greater than other colors)",
         "extra": ""
     },
     {
@@ -310,7 +310,7 @@ ENTRIES = [
         "subcategory": "Bituminous",
         "title": "Martin 'Standard' Bituminous Adhesive",
         "img": "bit1.jpg bit2.jpg",
-        "markdown": "Bituminous Marker Adhesive is a hot melt bituminous adhesive used to permanently bond pavement markers to Portland cement concrete and asphaltic concrete.<ul><li>- Superior Adhesion</li> <li>- Superior Flexibility</li> <li>- Superior Impact Resistance</li></ul>",
+        "markdown": "Bituminous Marker Adhesive is a hot melt bituminous adhesive used to permanently bond pavement markers to Portland cement concrete and asphaltic concrete.<br>- Superior Adhesion<br> - Superior Flexibility<br> - Superior Impact Resistance",
         "extra": ""
     },
     {
@@ -318,7 +318,7 @@ ENTRIES = [
         "subcategory": "Bituminous",
         "title": "Martin 'Flexible' Bituminous Adhesive",
         "img": "bit3.jpg",
-        "markdown": "Evergrip Flexible GTR (Ground Tire Rubber) Bituminous Marker Adhesive is a hot melt bituminous adhesive used to permanently bond pavement markers.<ul><li>- Superior Adhesion</li> <li>- Superior Flexibility</li> <li>- Superior Impact Resistance</li> <li>- Requires less heat for application – Lower fuel cost</li> <li>- Uses recycled GTR – Cleaner environment</li><ul>",
+        "markdown": "Evergrip Flexible GTR (Ground Tire Rubber) Bituminous Marker Adhesive is a hot melt bituminous adhesive used to permanently bond pavement markers.<br> - Superior Adhesion<br>- Superior Flexibility<br>- Superior Impact Resistance<br>- Requires less heat for application – Lower fuel cost<br>- Uses recycled GTR – Cleaner environment",
         "extra": ""
     },
     {
@@ -334,7 +334,7 @@ ENTRIES = [
         "subcategory": "Traffic Beads",
         "title": "'Swarco' Premium Glass Beads",
         "img": "swarco_beads.jpg bead_closeup.jpg",
-        "markdown": "Glass beads are the result of a recycling process which are taken from window manufacturers and is transformed in furnaces into round, clear spheres. The smallest beads are no bigger than a few thousandth parts of a millimetre.<ul><li>Availible in:</li> <li>Bags</li> <li>Drums </li> <li>Super Bags</li><ul>",
+        "markdown": "Glass beads are the result of a recycling process which are taken from window manufacturers and is transformed in furnaces into round, clear spheres. The smallest beads are no bigger than a few thousandth parts of a millimetre.<br>Availible in:<br>Bags</li> <li>Drums<br>Super Bags<br>",
         "extra": ""
     },
     {
@@ -342,7 +342,7 @@ ENTRIES = [
         "subcategory": "Traffic Beads",
         "title": "'Potters' Highway Safety Spheres",
         "img": "potters_bag.jpg bead2.jpg",
-        "markdown": "Pavement marking lines make a significant contribution to highway safety, especially in conditions of poor visibility at night and in wet weather. Applying Potters Highway Safety Marking Sphere technology is one of the most cost-effective ways to increase highway safety in these conditions.<ul><li>Availible in:</li> <li>Bags</li> <li>Drums </li> <li>Super Bags</li><ul>",
+        "markdown": "Pavement marking lines make a significant contribution to highway safety, especially in conditions of poor visibility at night and in wet weather. Applying Potters Highway Safety Marking Sphere technology is one of the most cost-effective ways to increase highway safety in these conditions.<br>Availible in:<br>Bags<br>Drums <br> Super Bags",
         "extra": ""
     },
     {
@@ -366,7 +366,7 @@ ENTRIES = [
         "subcategory": "Parking Lot Safety",
         "title": "Parking Lot Stop",
         "img": "parking_stop.jpg",
-        "markdown": "<ul><li>•Includes 5 pre-drilled holes for easy lag bolt mooring. </li> <li>•Temporary or permanent installation.</li> <li>•Flexible: conforms to any asphalt or concrete surface.</li> <li>•Less damaging to vehicles upon impact.</li> <li>•Resistant to extreme temperature variations, UV light, oils, moisture and damage. </li> <li>•All-weather easy maintenance: will not rust, chip, crack, crumble, corrode or need repainting.</li>",
+        "markdown": "<br>•Includes 5 pre-drilled holes for easy lag bolt mooring.<br>•Temporary or permanent installation.<br>•Flexible: conforms to any asphalt or concrete surface.<br>•Less damaging to vehicles upon impact.<br>•Resistant to extreme temperature variations, UV light, oils, moisture and damage. <br>•All-weather easy maintenance: will not rust, chip, crack, crumble, corrode or need repainting.",
         "extra": ""
     },
     {
@@ -446,7 +446,7 @@ ENTRIES = [
         "subcategory": "Traffic Cones",
         "title": "Cones (Orange)",
         "img": "cone_2.jpg cone_3.jpg",
-        "markdown": "•	Injection molded traffic cones •	Patented interlocking design •	Brilliant fluorescent red/orange traffic cones with UV inhibitors to resist fading • Superior flexibility in heat and cold - PVC traffic cones bounce back from an impact",
+        "markdown": "•	Injection molded traffic cones <br>•	Patented interlocking design <br>•	Brilliant fluorescent red/orange traffic cones with UV inhibitors to resist fading <br>• Superior flexibility in heat and cold - PVC traffic cones bounce back from an impact",
         "extra": ""
     },
     {
@@ -710,7 +710,7 @@ ENTRIES = [
         "subcategory": "Roll Up Signs",
         "title": "",
         "img": "roll_up2.jpg",
-        "markdown": "The heavy duty roll-up signs come with durable fiberglass cross ribs and fabric sewn pockets to ensure long life. •	Available in two sizes, 36\" or 48\". •	Standard legend reflective roll up vinyl signs. Made from 3M Scotchlite reflective vinyl, not mesh. High visibility in day/night time situations. Fiberglass ribs included.",
+        "markdown": "The heavy duty roll-up signs come with durable fiberglass cross ribs and fabric sewn pockets to ensure long life. <br>•	Available in two sizes, 36\" or 48\". <br>•	Standard legend reflective roll up vinyl signs. Made from 3M Scotchlite reflective vinyl, not mesh. High visibility in day/night time situations. Fiberglass ribs included.",
         "extra": ""
     },
     {

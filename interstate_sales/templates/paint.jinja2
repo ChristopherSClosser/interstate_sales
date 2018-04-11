@@ -17,7 +17,7 @@
     {% for item in paints %}
       {% if item.subcategory == category %}
         {% set images = item.img.split(' ') %}
-        {% if images|count > 1 %}
+        {% if images|count > 2 %}
           <div id="menu" style="background-color:white;height:200px;width:980px;float:left;">
           <center>
           {% for image in images %}
@@ -38,11 +38,29 @@
             <img src="{{request.static_url('interstate_sales:static/')}}{{ item.img }}" alt="{{ item.title }}" style="max-width: 225px; max-height: 170px;">
           </center>
         </div>
-        <div id="content" style="background-color:white;height:250px;width:730px;float:right;">
+        <div id="content" style="background-color:white;height:250px;width:680px;float:right; margin-right: 3rem;">
         <center>
         <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
         </center>
         </div>
+        {% elif images|count == 2 %}
+          <div id="menu" style="background-color:white;height:250px;width:250px;float:left;">
+            <center>
+              <img src="{{request.static_url('interstate_sales:static/')}}{{ images[0] }}" alt="{{ item.title }}" style="max-width: 225px; max-height: 170px;">
+            </center>
+          </div>
+          <div id="content" style="background-color:white;height:250px;width:430px;float:left;">
+            <center>
+              <p></p>
+              <h4>{{ item.title }}</h4>
+              <br>{{ item.markdown | safe }}<p></p>
+              </center>
+          </div>
+          <div id="menu" style="background-color:white;height:250px;width:250px;float:right; margin-right: 3rem;">
+            <center>
+              <img src="{{request.static_url('interstate_sales:static/')}}{{ images[1] }}" alt="{{ item.title }}" style="max-width: 175px; max-height: 170px;">
+            </center>
+          </div>
         {% endif %}
         {% if auth %}
           <p>
