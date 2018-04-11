@@ -375,7 +375,7 @@ ENTRIES = [
         "title": "'Impact Recovery Systems' Pedestrian Crossing",
         "img": "ped_irs.jpg impact2.jpg",
         "markdown": "The In-Street Pedestrian Crosswalk Signs provide enhanced conspicuity at un-signalized intersections in order to alert motorists to local laws concerning yielding to or stopping for pedestrians in crosswalks.",
-        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Pavement Markings",
@@ -383,7 +383,7 @@ ENTRIES = [
         "title": "'Impact Recovery Systems' Sta-Rite signpost",
         "img": "sta-rite.jpg impact2.jpg",
         "markdown": "These signs utilize our reactive spring unit which allows the sign to withstand bumper hits and return to original position, without damaging the sign or vehicle. Ideal for high traffic parking lot locations.",
-        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Pavement Markings",
@@ -471,7 +471,7 @@ ENTRIES = [
         "title": "Impact Recovery 'Tuff Post'",
         "img": "irs_tuffpost.jpg impact2.jpg",
         "markdown": "Tuff Post is a high performance channelizer designed to meet the harsh demands of high speed, high traffic areas. Tuff Post has been tested to sustain 50 impacts at 50 MPH with little damage to the unit and to the impacting vehicle, while remaining upright with no vertical listing.",
-        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Construction Safety",
@@ -479,7 +479,7 @@ ENTRIES = [
         "title": "Impact Recovery 'Large Diameter Tuff Post'",
         "img": "irs_tuffpost3-4.jpg impact2.jpg",
         "markdown": "The Large Diameter Tuff Post is a high performance channelizer designed to meet the harsh demands traffic delineation while providing high target value. Made of the same durable materials as our standard 2.375\" Tuff Posts come in 3\" and 4\" diameter posts and are larger than standard posts so they raise driver awareness.",
-        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.impactrecovery.com/products/in-street-pedestrian-crosswalk-sign/' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Construction Safety",
@@ -855,7 +855,7 @@ ENTRIES = [
         "title": "LineLazer 3400",
         "img": "linelazer3400.jpg graco.jpg",
         "markdown": "The LineLazer 3400 is the preferred choice with parking lot and seal coating contractors who are looking for professional performance and features, in a one-gun machine.",
-        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -863,7 +863,7 @@ ENTRIES = [
         "title": "LineLazer 5900",
         "img": "linelazer5900.jpg graco.jpg",
         "markdown": "This LineLazer 5900 is a 1 or 2 gun professional striping machine designed specifically to deliver the most precise and consistent lines in the industry. Materials sprayed are most heavy, low VOC, waterborne and rubberized traffic paints. This sprayer is ideal for your continuous heavy-duty line striping requirements.",
-        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -871,7 +871,7 @@ ENTRIES = [
         "title": "LineLazer 130HS",
         "img": "linelazer130hs.jpg graco.jpg",
         "markdown": "The LineLazer 130HS is a workhorse hydraulic airless striper for the most demanding pavement marking jobs. Materials sprayed are most heavy, low VOC, waterborne and rubberized traffic paints.",
-        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -879,7 +879,7 @@ ENTRIES = [
         "title": "Roadlazer RoadPak",
         "img": "roadpak.jpg graco.jpg",
         "markdown": "RoadLazer RoadPak System is a hydraulic striping system built for the professional road striping contractor. With the RoadPak airless striping system you can achieve extremely accurate lines at highly productive speeds - up to 10 mph (16 km/h).",
-        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -887,7 +887,7 @@ ENTRIES = [
         "title": "ThermoLazer",
         "img": "thermolazer.png graco.jpg",
         "markdown": "The industry-leading experts that brought you the groundbreaking LineLazer family of stripers in 1990 have done it again by changing the game in thermoplastic striping technology. Introducing the new ThermoLazer, the most user-friendly, innovative thermoplastic striper to hit the streets. See for yourself where the next generation of thermoplastic stripers (aka handliner) is heading.",
-        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -895,7 +895,7 @@ ENTRIES = [
         "title": "Grindlazer 390",
         "img": "grindlazer.jpg graco.jpg",
         "markdown": "The GrindLazer 390 is the contractor choice for all-around scarifying jobs including parking lot lines, intersection markings, construction zones and sidewalk smoothing. With the optional LineDriver system its productivity is unmatched and means you can get more work done everyday without the fatigue from walking.",
-        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.graco.com/us/en/products/product-families/linelazer.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -903,7 +903,7 @@ ENTRIES = [
         "title": "Model 1001",
         "img": "bit_applicator.jpg dmi_logo.jpg",
         "markdown": "The Model 1001 is perfect for small to medium jobs. It comes standard with a 24 gallon aluminium vat, 10\" burner, swivel wheel, brakes and basket. Additional options include upgrading to a steel vat, swivel wheel with lock, line up bar and a hand torch.",
-        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -911,7 +911,7 @@ ENTRIES = [
         "title": "Model 2001",
         "img": "dmi2001.jpg dmi_logo.jpg",
         "markdown": "The Model 2001 is built for the big jobs. It comes standard with a 39 gallon steel vat controlled by a solid state LED display. It has an electric start with a power agitator. All controlled by foot flow switch with a flow line that has a 18\" travel.",
-        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -919,7 +919,7 @@ ENTRIES = [
         "title": "Model 2001-2",
         "img": "dmi2001-2.jpg dmi_logo.jpg",
         "markdown": "The Model 2001-2 is also built for the big jobs, featuring dual operator stations. It comes standard with a 39 gallon steel vat controlled by a solid state LED display. It has an electric start with a power agitator. All controlled by foot flow switch with a flow line that has a 18\" travel.",
-        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'><p>(click for more info)</p></a>"
+        "extra": "<a href='http://www.downinginc.com/htmlpages/thermal.html' target='_blank'>(click for more info)</a>"
     },
     {
         "category": "Equipment",
@@ -1046,7 +1046,7 @@ ENTRIES = [
         "subcategory": "Lou",
         "title": "",
         "img": "lou.jpg",
-        "markdown": "Lou is a welcomed addition to the Interstate family. Lou has been in the traffic industry since 1976, having worked with some of the most well known companies in California and Nevada. He is our in house go to person for knowledge on Graco products, having sold them since 1990. Lou can be reached <a href='mailto:lou@interstatesales.com' target='_top'>here.</a>",
+        "markdown": "<b>Lou</b> is a welcomed addition to the Interstate family. Lou has been in the traffic industry since 1976, having worked with some of the most well known companies in California and Nevada. He is our in house go to person for knowledge on Graco products, having sold them since 1990. Lou can be reached <a href='mailto:lou@interstatesales.com' target='_top'>here.</a>",
         "extra": ""
     },
     {
