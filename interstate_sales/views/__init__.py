@@ -14,6 +14,12 @@ from .default import (
     search_view,
     team_view,
     contact_view,
+    gregory_view,
+    # saso_view,
+    # ennisflint_view,
+    # graco_view,
+    # impactrecovery_view,
+    # uteck_view,
     # api_view,
 )
 
@@ -33,4 +39,10 @@ def includeme(config):
     config.add_view(search_view, route_name='search')
     config.add_view(team_view, route_name='team')
     config.add_view(contact_view, route_name='contact')
+    config.add_view(gregory_view, route_name='gregory')
+    # config.add_view(saso_view, route_name='saso')
+    # config.add_view(ennisflint_view, route_name='ennis-flint')
+    # config.add_view(graco_view, route_name='graco')
+    # config.add_view(impactrecovery_view, route_name='impact-recovery')
+    # config.add_view(uteck_view, route_name='u-teck')
     # config.add_view(api_view, route_name='api')
