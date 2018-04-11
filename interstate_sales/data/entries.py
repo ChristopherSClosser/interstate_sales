@@ -23,7 +23,7 @@ ENTRIES = [
         "title": "Trans-Beam",
         "img": "transbeam.jpg",
         "markdown": "Trans-Beam guardrail is produced in standard AASHTO 12'-6\" lengths<br>and is offered in 10-gauge or 12-gauge steel.",
-        "extra": "transbeam.jpg"
+        "extra": ""
     },
     {
         "category": "Guardrail",
@@ -567,7 +567,7 @@ ENTRIES = [
         "title": "LED Barricade Flasher",
         "img": "flasher2.jpg",
         "markdown": "This flasher is super bright thanks to the individual LED lights. Extremely rugged and will provide long hours of operation and ideal for mounting on barricades. Powered by ‘D’ cell batteries.",
-        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li></ul>"
+        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li></ul>"
     },
     {
         "category": "Construction Safety",
