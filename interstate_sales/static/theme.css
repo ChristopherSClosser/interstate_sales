@@ -5,6 +5,9 @@
 #nav ul {
 	list-style: none;
 }
+ul li {
+	list-style: none;
+}
 #nav{
 	float: left;
 }

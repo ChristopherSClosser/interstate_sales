@@ -83,6 +83,7 @@ def home_view(request):
 def search_view(request):
     """Search view."""
     auth = False
+    search = ''
     try:
         search = request.POST['search']
     except KeyError:
@@ -96,7 +97,7 @@ def search_view(request):
     if search:
         for item in query:
             for key, val in vars(item).items():
-                if search in str(key) or search in str(val):
+                if search.lower() in str(key).lower() or search.lower() in str(val).lower():
                     if item not in res:
                         res.append(item)
     subcategories = []

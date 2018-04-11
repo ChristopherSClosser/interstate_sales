@@ -271,7 +271,7 @@ ENTRIES = [
         "title": "Round Polypropelene Pavement Markers",
         "img": "poly.bmp",
         "markdown": "Our round polypropelene pavement markers are manufactured per ASTM specifications. The bottom of these pavement markers are configured to produce an excellent structural bond with the pavement. Non-reflective road marker 4 inches in diameter.",
-        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li></ul>"
+        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -279,7 +279,7 @@ ENTRIES = [
         "title": "Ceramic Raised Pavement Markers",
         "img": "ceramic_yellow.jpg",
         "markdown": "Ceramic traffic buttons provide ultimate daytime/nighttime visibility, cost effective alternative to painted stripes, eliminates painting stripes and maximum durability. When properly installed, traffic buttons can last 3-4 times longer than painted stripes.",
-        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li></ul>"
+        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -287,7 +287,7 @@ ENTRIES = [
         "title": "C80 Series Reflective Pavement Markers",
         "img": "c80.jpg",
         "markdown": "The new Ennis Paints C80 raised pavement markers are the result of state of the art technology representing a new standard for roadway delineation. Engineered for extended reflector life and rugged performance. The C80 series offers cost effective solutions for drivers at night and during inclement weather conditions. C80 series is coated with toughened covering for extra strength. Finger grips allow for easy placement and the Patent Pending sure grip bottom allows for excellent adhesion to the road. Available in different color combinations.",
-        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li><li>Red</li> <li>Blue</li><li>Red/Clear</li></ul>"
+        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li><li>Red</li> <li>Blue</li><li>Red/Clear</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -295,7 +295,7 @@ ENTRIES = [
         "title": "948 Series Reflective Pavement Markers",
         "img": "948.jpg",
         "markdown": "The model 948 is an innovative glass-face marker for use on pavement. It is designed to meet today's changing highway and vehicle conditions. The 948 marker measures 4.7\" long x 2.3\" wide x 0.52\" high. Markers can be applied with bituminous adhesive or conventional epoxy adhesive.",
-        "extra": "<ul><li>Availible in:</li><li>White</li><li>Yellow</li><li>Red/Clear</li></ul>"
+        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li><li>Red/Clear</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -1047,6 +1047,30 @@ ENTRIES = [
         "title": "",
         "img": "lou.jpg",
         "markdown": "Lou is a welcomed addition to the Interstate family. Lou has been in the traffic industry since 1976, having worked with some of the most well known companies in California and Nevada. He is our in house go to person for knowledge on Graco products, having sold them since 1990. Lou can be reached <a href='mailto:lou@interstatesales.com' target='_top'>here.</a>",
+        "extra": ""
+    },
+    {
+        "category": "Contact",
+        "subcategory": "Toll Free Phone Number",
+        "title": "Toll Free Phone Number",
+        "img": "",
+        "markdown": "(800)237-7245",
+        "extra": ""
+    },
+    {
+        "category": "Contact",
+        "subcategory": "Local Phone Number",
+        "title": "Local Phone Number",
+        "img": "",
+        "markdown": "(530)823-6070",
+        "extra": ""
+    },
+    {
+        "category": "Contact",
+        "subcategory": "Fax Number",
+        "title": "Fax Number",
+        "img": "",
+        "markdown": "(530)823-0994",
         "extra": ""
     },
 
