@@ -431,6 +431,27 @@ def gregory_view(request):
     }
 
 
+@view_config(route_name='saso', renderer='../templates/saso.jinja2')
+def saso_view(request):
+    """Gregory view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    items = build_dict(request)
+    return {
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
+        'auth': auth,
+    }
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):

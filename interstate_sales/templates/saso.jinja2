@@ -1,0 +1,32 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+  <div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
+  <div id="header" style="background-color:white;height:100px;width:350px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/wpp.bmp')}}" alt="We proudly Present" width="225" height="90"></center></div>
+  <div id="header" style="background-color:white;height:100px;width:400px;float:left;"></div>
+  <div id="header" style="background-color:white;height:100px;width:230px;float:left;"></div>
+
+  <div id="header" style="background-color:gold;height:125px;width:295px;float:left;"></div>
+  <div id="header" style="background-color:white;height:125px;width:390px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/saso_logo.jpg')}}" alt="seso_logo" width="290" height="100"></center></div>
+  <div id="header" style="background-color:gold;height:125px;width:290px;float:left;"></div>
+
+  <div id="header" style="background-color:white;height:25px;width:350px;float:left;"></div>
+  <div id="header" style="background-color:white;height:25px;width:400px;float:left;"></div>
+  <div id="header" style="background-color:white;height:25px;width:230px;float:left;"></div>
+
+
+  <div id="menu" style="background-color:white;height:250px;width:190px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/signkit.jpg')}}" alt="looper" style="max-width:150px;height: 100px;"><br><a href="{{request.static_url('interstate_sales:static/signkit_big.jpg')}}" style="color:#0000FF;text-align:left">Illuminated Sign Kit</a></center></div>
+
+  <div id="content" style="background-color:white;height:250px;width:190px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/flashingbeacon2.png')}}" alt="carsonite" style="max-width:150px;"><br><a href="{{request.static_url('interstate_sales:static/flashing_beacon_big.jpg')}}" style="color:#0000FF;text-align:left">Solar Powered<br>Flashing Beacon</a></center></div>
+  <div id="content" style="background-color:white;height:250px;width:190px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/rapidflash1.jpg')}}" alt="carsonite" style="max-width:150px;"><br><a href="{{request.static_url('interstate_sales:static/rapid_flash_big.jpg')}}" style="color:#0000FF;text-align:left">Solar Powered<br>Rapid Flashing Beacon</a></center></div>
+  <div id="content" style="background-color:white;height:250px;width:190px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/retrofit1.jpg')}}" alt="carsonite" style="max-width:150px;"><br><a href="{{request.static_url('interstate_sales:static/retrofit_big.jpg')}}" style="color:#0000FF;text-align:left">Solar Powered<br>Retrofit Kit </a></center></div>
+  <div id="content" style="background-color:white;height:250px;width:190px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/sp450.jpg')}}" alt="carsonite" style="max-width:150px;height: 100px;"><br><a href="{{request.static_url('interstate_sales:static/sp450.pdf')}}" style="color:#0000FF;text-align:left">SafePace 450</a></center></div>
+
+{% endblock content %}
