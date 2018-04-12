@@ -148,7 +148,9 @@
     {% endblock content %}
 
     <div id="footer" style="background-color:gold; clear:both; text-align:center; width:980px; float:left;">
-      <p><center><b>www.interstatesales.com</center></p>
+      <a href="{{request.route_url('home')}}" style="text-decoration:none;color:black;">
+        <p><center><b>www.interstatesales.com</center></p>
+      </a>
     </div>
 
 

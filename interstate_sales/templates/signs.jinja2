@@ -82,7 +82,9 @@
               </div>
               <div id="menu" style="background-color:white;width:190px;float:right; margin-right: 3rem;">
                 <center>
-                  <img src="{{request.static_url('interstate_sales:static/')}}{{ images[1] }}" alt="{{ item.title }}" style="max-width: 175px; max-height: 170px;">
+                  <a href="{{request.static_url('interstate_sales:static/')}}{{ images[1] }}" target="_blank">
+                    <img src="{{request.static_url('interstate_sales:static/')}}{{ images[1] }}" alt="{{ item.title }}" style="max-width: 175px; max-height: 170px;">
+                  </a>
                 </center>
               </div>
               {% if item.extra %}
