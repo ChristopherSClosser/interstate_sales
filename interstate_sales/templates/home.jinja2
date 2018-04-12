@@ -1,7 +1,7 @@
 {% extends "base.jinja2" %}
+{% block title %}Home{% endblock %}
 
 {% block content %}
-
 
   <div id="content_1" style="background-color:black;color:white;height:415px;width:490px;float:left;"><br><br>
     <center><h1><em> Welcome to <b>Interstate Sales</b></em></h1></center>
@@ -89,9 +89,12 @@
       <img src="{{request.static_url('interstate_sales:static/el_cajon.jpg')}}" width="200" height="200" border="3"><p>Follow Link to T-Man Traffic</p></a></center><br>
     </div>
 
+    <div id="header" style="background-color:white;height:15px;width:980px;float:left;"></div>
     <div id="address_1" style="width:980px; background-color:white;">
-      <p style="font-family:arial;color:black;font-size:18px;font-weight:bold; text-align:center">
-      12600 Locksley Lane&emsp;Suite #200&emsp;Auburn, California&emsp;95602
+      <a href="{{ request.route_url('contact') }}" style="text-decoration:none;color:black;">
+        <p style="font-family:arial;color:black;font-size:18px;font-weight:bold; text-align:center">
+        12600 Locksley Lane&emsp;Suite #200&emsp;Auburn, California&emsp;95602
+      </a>
     </div>
   <br>
 {% endblock content %}

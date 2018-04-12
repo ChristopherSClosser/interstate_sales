@@ -1,4 +1,5 @@
 {% extends "base.jinja2" %}
+{% block title %}Equipment{% endblock %}
 
 {% block content %}
 
@@ -17,7 +18,7 @@
     {% for item in equipment %}
       {% if item.subcategory == category %}
 
-      
+
         {% if item.img %}
           {% set images = item.img.split(' ') %}
           {% if images|count > 2 %}
