@@ -1,0 +1,28 @@
+{% extends "base.jinja2" %}
+{% block title %}Ennis Flint{% endblock %}
+
+{% block content %}
+
+  <div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
+  <div id="header" style="background-color:white;height:100px;width:350px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/wpp.bmp')}}" alt="We proudly Present" width="225" height="90"></center></div>
+  <div id="header" style="background-color:white;height:100px;width:400px;float:left;"></div>
+  <div id="header" style="background-color:white;height:100px;width:230px;float:left;"></div>
+
+  <div id="header" style="background-color:gold;height:150px;width:295px;float:left;"></div>
+  <div id="header" style="background-color:white;height:150px;width:395px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/ennis.bmp')}}" alt="transpo logo" width="200" height="150"></center></div>
+  <div id="header" style="background-color:gold;height:150px;width:290px;float:left;"></div>
+
+  <div id="header" style="background-color:white;height:90px;width:100%;float:left;"></div>
+
+  <div id="menu" style="background-color:white;height:200px;width:245px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/efseries.bmp')}}" alt="traffic paint" width="80" height="40"><br><a href="http://www.ennisflint.com/Products/Traffic-Paint" style="color:#0000FF;text-align:left">Traffic Paint</a></center></div>
+  <div id="content" style="background-color:white;height:200px;width:245px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/premark.png')}}" alt="ennis/flint premark" width="150" height="60"><br><a href="http://www.ennisflint.com/Products/Preformed-Thermoplastic/PreMark" style="color:#0000FF;text-align:left">Preformed Thermoplastic</a></center></div>
+  <div id="content" style="background-color:white;height:200px;width:245px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/stimsonite.jpg')}}" alt="stimsonite" width="150" height="60"><br><a href="http://www.ennisflint.com/Products/Raised-Pavement-Markers/Sun-Surface-Markers"style="color:#0000FF;text-align:left">Pavement Markings</a></center></div>
+  <div id="content" style="background-color:white;height:200px;width:245px;float:left;">
+  <center><img src="{{request.static_url('interstate_sales:static/efseries.bmp')}}" alt="carsonite" width="80" height="40"><br><a href="http://www.ennisflint.com/Products/Hot-Applied-Thermoplastic"style="color:#0000FF;text-align:left">Thermoplastic</a></center></div>
+
+{% endblock content %}

@@ -1,7 +1,7 @@
 {% extends "base.jinja2" %}
+{% block title %}Home{% endblock %}
 
 {% block content %}
-
 
   <div id="content_1" style="background-color:black;color:white;height:415px;width:490px;float:left;"><br><br>
     <center><h1><em> Welcome to <b>Interstate Sales</b></em></h1></center>
@@ -19,7 +19,7 @@
 
   <div id="content_2" style="background-color:black;height:415px;width:490px;float:left;"><br>
     <center>
-      <img src="{{request.static_url('interstate_sales:static/office.jpg')}}" alt="office" width="450" height="350" border="2">
+      <img src="{{request.static_url('interstate_sales:static/office.jpg')}}" alt="office" width="430" height="340" border="2">
     </center>
   </div>
 
@@ -30,22 +30,22 @@
 
   <div id="content_5" style="background-color:black;height:150px;width:980px;float:left;"><br>
     <center>
-      <a href="Gregory.html" target="newWindow" >
-        <img src="{{request.static_url('interstate_sales:static/gregory.bmp')}}" alt="gregory" width="120" height="60"border="3" align="center" >
+      <a href="{{ request.route_url('gregory') }}">
+        <img src="{{request.static_url('interstate_sales:static/gregory.gif')}}" alt="gregory" width="120" height="60"border="3" align="center" >
       </a>
-      <a href="Saso.html" target="newWindow" >
+      <a href="{{ request.route_url('saso') }}">
         <img src="{{request.static_url('interstate_sales:static/saso_logo.jpg')}}" alt="saso" width="120" height="60" border="3"align="center" >
       </a>
-      <a href="Ennis-Flint.html" target="newWindow" >
+      <a href="{{ request.route_url('ennis-flint') }}">
         <img src="{{request.static_url('interstate_sales:static/ennis_logo.png')}}" alt="ennis_logo" width="120" height="100"border="3" align="center">
       </a>
-      <a href="graco.html" target="newWindow" >
+      <a href="{{ request.route_url('graco') }}">
         <img src="{{request.static_url('interstate_sales:static/graco.jpg')}}" alt="gracologo" width="120" height="100" border="3"align="center">
       </a>
-      <a href="Impact Recovery.html" target="newWindow" >
+      <a href="{{ request.route_url('impact-recovery') }}">
         <img src="{{request.static_url('interstate_sales:static/impact_logo.png')}}" alt="impact_logo" width="120" height="60"border="3" align="center">
       </a>
-      <a href="Uteck.html"  target="newWindow" >
+      <a href="{{ request.route_url('u-teck') }}">
         <img src="{{request.static_url('interstate_sales:static/u-teck.jpg')}}" alt="u-teck" width="120" height="60" border="3" align="center" >
       </a>
     </center>
@@ -76,7 +76,7 @@
   <div id="content_6" style="background-color:black;height:300px;width:350px;float:left;"><br>
     <center>
       <div id="content" style="background-color:black;height:250px;width:230px;float:right;">
-        <a href="contact.html"  target="_blank" >
+        <a href="{{ request.route_url('contact') }}">
           <img src="{{request.static_url('interstate_sales:static/auburn.jpg')}}" width="200" height="200" border="3"><p>Follow Link to Contact Us</p></a></center>
       </div>
 
@@ -89,9 +89,12 @@
       <img src="{{request.static_url('interstate_sales:static/el_cajon.jpg')}}" width="200" height="200" border="3"><p>Follow Link to T-Man Traffic</p></a></center><br>
     </div>
 
+    <div id="header" style="background-color:white;height:15px;width:980px;float:left;"></div>
     <div id="address_1" style="width:980px; background-color:white;">
-      <p style="font-family:arial;color:black;font-size:18px;font-weight:bold; text-align:center">
-      12600 Locksley Lane&emsp;Suite #200&emsp;Auburn, California&emsp;95602
+      <a href="{{ request.route_url('contact') }}" style="text-decoration:none;color:black;">
+        <p style="font-family:arial;color:black;font-size:18px;font-weight:bold; text-align:center">
+        12600 Locksley Lane&emsp;Suite #200&emsp;Auburn, California&emsp;95602
+      </a>
     </div>
   <br>
 {% endblock content %}

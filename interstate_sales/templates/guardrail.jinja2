@@ -1,8 +1,9 @@
 {% extends "base.jinja2" %}
+{% block title %}Guardrail{% endblock %}
 
 {% block content %}
 
-  {% for category in subcategories %}
+  {% for category in gr_subcats %}
 
     {% if category == 'Guardrail' %}
 
@@ -16,34 +17,91 @@
     <div id="header" style="background-color:white;height:50px;width:980px;float:left;"></div>
     {% for item in guardrails %}
       {% if item.subcategory == category %}
-        {% set images = item.img.split(' ') %}
-        {% if images|count > 1 %}
-          <div id="menu" style="background-color:white;height:200px;width:980px;float:left;">
-          <center>
-          {% for image in images %}
 
-            <img src="{{request.static_url('interstate_sales:static/')}}{{ image }}" alt="{{ image }}" style="width: 200px; height: 150px;">
 
-          {% endfor %}
-          </center>
-          </div>
-          <center>
-          <div id="content" style="background-color:white;height:250px;width:950px;float:right;">
-          <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
-          </div>
-          </center>
-        {% elif images|count == 1 %}
-        <div id="menu" style="background-color:white;height:250px;width:250px;float:left;">
-          <center>
-            <img src="{{request.static_url('interstate_sales:static/')}}{{ item.img }}" alt="{{ item.title }}" style="max-width: 225px; max-height: 170px;">
-          </center>
-        </div>
-        <div id="content" style="background-color:white;height:250px;width:730px;float:right;">
-        <center>
-        <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
-        </center>
-        </div>
+        {% if item.img %}
+          {% set images = item.img.split(' ') %}
+          {% if images|count > 2 %}
+              <div id="menu" style="background-color:white;height:200px;width:980px;float:left;">
+              <center>
+              {% for image in images %}
+
+                <img src="{{request.static_url('interstate_sales:static/')}}{{ image }}" alt="{{ image }}" style="width: 200px; height: 150px;">
+
+              {% endfor %}
+              </center>
+              </div>
+              {% if item.extra %}
+                <div id="content" style="background-color:white;height:250px;width:690px;float:left;">
+                <center>
+                <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
+                </center>
+                </div>
+                <div id="content" style="background-color:white;width:230px;float:right;">
+                <center><p></p>{{ item.extra|safe }}</center></div>
+              {% else %}
+                <center>
+                <div id="content" style="background-color:white;height:250px;width:950px;float:right;">
+                <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
+                </div>
+                </center>
+              {% endif %}
+
+          {% elif images|count == 1 %}
+              <div id="menu" style="background-color:white; height:250px;width:250px;float:left;">
+                <center>
+                  <img src="{{request.static_url('interstate_sales:static/')}}{{ item.img }}" alt="{{ item.title }}" style="max-width: 225px; max-height: 170px;">
+                </center>
+              </div>
+              {% if item.extra %}
+                <div id="content" style="background-color:white;height:250px;width:500px;float:left;">
+                <center>
+                <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
+                </center>
+                </div>
+                <div id="content" style="background-color:white;width:230px;float:right;">
+                <center><p></p>{{ item.extra|safe }}</center></div>
+              {% else %}
+                <div id="content" style="background-color:white;height:250px;width:650px; margin-right: 3rem; float:left;">
+                <center>
+                <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
+                </center>
+                </div>
+              {% endif %}
+          {% elif images|count == 2 %}
+              <div id="menu" style="background-color:white;height:250px;width:250px;float:left;">
+                <center>
+                  <img src="{{request.static_url('interstate_sales:static/')}}{{ images[0] }}" alt="{{ item.title }}" style="max-width: 225px; max-height: 170px;">
+                </center>
+              </div>
+              <div id="content" style="background-color:white;height:250px;width:485px;float:left;">
+                <center>
+                  <p></p>
+                  <h4>{{ item.title }}</h4>
+                  <br>{{ item.markdown | safe }}<p></p>
+                  </center>
+              </div>
+              <div id="menu" style="background-color:white;width:190px;float:right; margin-right: 3rem;">
+                <center>
+                  <img src="{{request.static_url('interstate_sales:static/')}}{{ images[1] }}" alt="{{ item.title }}" style="max-width: 175px; max-height: 170px;">
+                </center>
+              </div>
+              {% if item.extra %}
+                <div id="content" style="background-color:white;width:230px;
+                 float:right;">
+                <center style="margin-right: 3rem;">{{ item.extra|safe }}</center></div>
+              {% endif %}
+          {% endif %}
+        {% else %}
+            </center>
+            </div>
+            <center>
+            <div id="content" style="background-color:white;height:200px;width:950px;float:right;">
+            <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
+            </div>
+            </center>
         {% endif %}
+
         {% if auth %}
           <p>
           <form class="" action="item/{{item.id}}/edit-entry" method="get">
@@ -56,6 +114,8 @@
           </form>
           </p><hr style="width:980px;float:left;">
         {% endif %}
+
+
       {% endif %}
     {% endfor %}
   {% endfor %}
