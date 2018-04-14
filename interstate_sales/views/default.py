@@ -65,14 +65,12 @@ def build_dict(request):
 )
 def upload_view(request):
     """."""
-    if request.POST:
-        # if request.POST['upload_file']:
+    if 'upload_file' in request.POST:
         file_name = request.POST['upload_file'].filename
         input_file = request.POST['upload_file'].file
-        f_p = os.path.join('./static', file_name)
+        temp = os.path.join('interstate_sales/static', file_name)
         try:
-            with open(f_p, 'w+') as output_file:
-                # file_path = os.path.join(request.static_url('interstate_sales:static/'), output_file)
+            with open(temp, 'wb') as output_file:
                 shutil.copyfileobj(input_file, output_file)
                 return HTTPFound(request.route_url('home'))
         except:
@@ -84,7 +82,7 @@ def upload_view(request):
                 pass
             items = build_dict(request)
             return {
-                'did not work': 'unsuccessfull',
+                'didnotwork': 'unsuccessful',
                 'gr_subcats': items['gr_subcats'],
                 'tr_subcats': items['tr_subcats'],
                 'pm_subcats': items['pm_subcats'],
