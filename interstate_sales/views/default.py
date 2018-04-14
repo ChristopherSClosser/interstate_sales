@@ -65,6 +65,9 @@ def build_dict(request):
 )
 def upload_view(request):
     """."""
+    # from filestack import Client
+    # client = Client(os.environ.get('FILEPICKER_API_KEY'))  # filestack key
+
     if 'upload_file' in request.POST:
         file_name = request.POST['upload_file'].filename
         input_file = request.POST['upload_file'].file
@@ -82,7 +85,7 @@ def upload_view(request):
                 pass
             items = build_dict(request)
             return {
-                'didnotwork': 'unsuccessful',
+                'didnotwork': 'Unsuccessful, try renaming the file.',
                 'gr_subcats': items['gr_subcats'],
                 'tr_subcats': items['tr_subcats'],
                 'pm_subcats': items['pm_subcats'],
