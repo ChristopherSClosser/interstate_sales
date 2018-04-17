@@ -13,6 +13,7 @@ requires = [
     'pyramid >= 1.9a',
     'pyramid_debugtoolbar',
     'pyramid_jinja2',
+    'pyramid_storage',
     'pyramid_retry',
     'pyramid_tm',
     'SQLAlchemy',

@@ -58,7 +58,7 @@ def includeme(config):
     """
     settings = config.get_settings()
     settings['tm.manager_hook'] = 'pyramid_tm.explicit_manager'
-
+    # config.include('pyramid_storage')
     # use pyramid_tm to hook the transaction lifecycle to the request
     config.include('pyramid_tm')
 

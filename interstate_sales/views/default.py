@@ -1,11 +1,11 @@
 """Interstate Sales Views."""
 
-
 from pyramid.security import remember, forget
 from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid.view import view_config, forbidden_view_config
 from ..security import is_authenticated
 from ..models import MyModel
+import shutil
 import os
 
 
@@ -55,6 +55,61 @@ def build_dict(request):
         'signs_subcats': signs_subcats,
         'equipment_subcats': equipment_subcats,
         'team_subcats': team_subcats,
+    }
+
+
+@view_config(
+    route_name='upload',
+    renderer='../templates/upload.jinja2',
+    permission='secret',
+)
+def upload_view(request):
+    """."""
+    # from filestack import Client
+    # client = Client(os.environ.get('FILEPICKER_API_KEY'))  # filestack key
+
+    if 'upload_file' in request.POST:
+        file_name = request.POST['upload_file'].filename
+        input_file = request.POST['upload_file'].file
+        temp = os.path.join('interstate_sales/static', file_name)
+        try:
+            with open(temp, 'wb') as output_file:
+                shutil.copyfileobj(input_file, output_file)
+                return HTTPFound(request.route_url('home'))
+        except:
+
+            auth = False
+            try:
+                auth = request.cookies['auth_tkt']
+            except KeyError:
+                pass
+            items = build_dict(request)
+            return {
+                'didnotwork': 'Unsuccessful, try renaming the file.',
+                'gr_subcats': items['gr_subcats'],
+                'tr_subcats': items['tr_subcats'],
+                'pm_subcats': items['pm_subcats'],
+                'cs_subcats': items['cs_subcats'],
+                'signs_subcats': items['signs_subcats'],
+                'equipment_subcats': items['equipment_subcats'],
+                'team_subcats': items['team_subcats'],
+                'auth': auth,
+            }
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    items = build_dict(request)
+    return {
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
+        'auth': auth,
     }
 
 
