@@ -1,16 +1,17 @@
 # Interstate Sales
 ---
 ### Description
-Version: *0.0*
+Version: *0.0.1b*
 
 interstate_sales
-* Feature #1
-* Feature #2
-* Feature #3
+* Data Base
+* REST API Add, Update, Delete Items
+* Search Feature
 
 ### Authors
 ---
-* https://github.com/ChristopherSClosser/interstate_sales
+* Jason Portlock
+* [Chris Closser](https://github.com/ChristopherSClosser/interstate_sales)
 
 ### Getting Started
 ---
