@@ -53,7 +53,7 @@ The testing files for this project are:
 
 | File Name | Description |
 |:---:|:---:|
-| `./interstate_sales/tests.py` | None |
+| `./interstate_sales/tests.py` | Backend I-S Tests. |
 
 ### URLs
 ---
@@ -61,7 +61,7 @@ The URLS for this project can be found in the following modules:
 
 | URL module | Description |
 |:---:|:---:|
-| ./interstate_sales/routes.py | Defined Routes. |
+| `./interstate_sales/routes.py` | I-S Defined Routes. |
 
 ### Pyramid Development Files
 ---
@@ -72,6 +72,7 @@ Development files specific to the Pyramid web framework can be found in the foll
 ---
 * *python* - programming language
 * *pyramid* - web framework
+* *postgres* - database storage
 
 ### License
 ---
