@@ -5,7 +5,7 @@ Version: *0.0.1b*
 
 New Features
 * Data Base
-* REST API Add, Update, Delete Items
+* REST API - Add, Update, Delete Items
 * Search Feature
 
 ### Authors
