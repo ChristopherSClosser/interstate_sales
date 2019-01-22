@@ -93,6 +93,13 @@ z-index: 999;
 	float:left;
 }
 
+#white_space_contact_small {
+	background-color:white;
+	height:50px;
+	width:180px;
+	float:left;
+}
+
 #white_space_contact_medium {
 	background-color:white;
 	height:125px;
@@ -103,6 +110,14 @@ z-index: 999;
 #white_space_contact_large {
 	background-color:gold;
 	height:125px;
+	width:400px;
+	float:left;
+}
+
+#contact_title {
+	background-color:black;
+	color:white;
+	height:50px;
 	width:400px;
 	float:left;
 }
