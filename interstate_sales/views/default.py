@@ -620,3 +620,24 @@ def logout(request):
     """."""
     headers = forget(request)
     return HTTPFound(request.route_url('home'), headers=headers)
+
+
+@view_config(renderer='json', route_name='api')
+def api_view(request):
+    """Display entries as json."""
+    query = request.dbsession.query(MyModel)
+    entries = query.order_by(MyModel.id.asc()).all()
+    return {
+        'entries': [
+            {
+                'id': entry.id,
+                'category': entry.category,
+                'subcategory': entry.subcategory,
+                'title': entry.title,
+                'img': entry.img,
+                'markdown': entry.markdown,
+                'extra': entry.extra,
+            }
+            for entry in entries
+        ]
+    }
