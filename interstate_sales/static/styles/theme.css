@@ -129,6 +129,13 @@ z-index: 999;
 	float:left;
 }
 
+#white_space_left {
+	background-color:white;
+	height:400px;
+	width:8%;
+	float:left;
+}
+
 #grey_space_half {
 	background:grey;
 	height:50px;
@@ -160,6 +167,20 @@ z-index: 999;
 
 /* contact form
 ------------------------------------------------*/
+#email_form {
+	background-color:white;
+	height:400px;
+	width:400px;
+	float:left;
+}
+
+#gmap {
+	background-color:white;
+	margin-left:8rem;
+	height:400px;
+	float:left;
+}
+
 label, input, textarea {
 font-family:inherit;
 float:left;
