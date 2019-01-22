@@ -93,6 +93,27 @@ z-index: 999;
 	float:left;
 }
 
+/* Buttons & boxes
+-----------------------------------------------*/
+#search_box {
+	width: 15rem;
+	float: right;
+	position: absolute;
+	margin-top: .75rem;
+	margin-left: .75rem;
+}
+
+#search_button {
+	margin-top: .75rem;
+	margin-left: 17rem;
+	width: 6rem;
+	left: 18rem;
+}
+
+#new_button {
+	margin-top: .75rem;
+	margin-left: .75rem;
+}
 
 /* contact form
 ------------------------------------------------*/
@@ -162,4 +183,14 @@ p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px;
 center {
 	margin-left: 2rem;
 	margin-right: 1rem;
+}
+
+/* footer
+------------------------------------------------*/
+#footer {
+	background-color:gold;
+	clear:both;
+	text-align:center;
+	width:980px;
+	float:left;
 }
