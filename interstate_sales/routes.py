@@ -26,4 +26,4 @@ def includeme(config):
     config.add_route('delete', '/item/{id:\d+}/delete-entry')
     config.add_route('search', '/search')
     config.add_route('api', '/api-v1')
-    config.add_route('upload', '/upload')
+    # config.add_route('upload', '/upload')

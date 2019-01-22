@@ -10,6 +10,11 @@ __pycache__/
 *.pyc
 *$py.class
 *~
+
+# local files
+upload.jinja2
+
+
 .coverage
 coverage.xml
 build/

@@ -20,7 +20,7 @@ from .default import (
     graco_view,
     impactrecovery_view,
     uteck_view,
-    upload_view,
+    # upload_view,
     api_view,
 )
 
@@ -46,5 +46,5 @@ def includeme(config):
     config.add_view(graco_view, route_name='graco')
     config.add_view(impactrecovery_view, route_name='impact-recovery')
     config.add_view(uteck_view, route_name='u-teck')
-    config.add_view(upload_view, route_name='upload')
+    # config.add_view(upload_view, route_name='upload')
     config.add_view(api_view, route_name='api')
