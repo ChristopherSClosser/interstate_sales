@@ -79,6 +79,34 @@ z-index: 999;
 
 /* Spacers
 -----------------------------------------------*/
+#white_space_15 {
+	background-color:white;
+	height:15px;
+	width:400px;
+	float:left;
+}
+
+#white_space_contact {
+	background-color:white;
+	height:15px;
+	width:180px;
+	float:left;
+}
+
+#white_space_contact_medium {
+	background-color:white;
+	height:125px;
+	width:180px;
+	float:left;
+}
+
+#white_space_contact_large {
+	background-color:gold;
+	height:125px;
+	width:400px;
+	float:left;
+}
+
 #white_space_quad {
 	background-color:white;
 	height:25px;
