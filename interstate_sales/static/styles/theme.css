@@ -68,10 +68,33 @@ z-index: 999;
 	color: gold;
 }
 
+/* Search
+-----------------------------------------------*/
+#search {
+	background:gold;
+	height:50px;
+	width:980px;
+	float:left;
+}
+
+/* Spacers
+-----------------------------------------------*/
+#white_space_quad {
+	background-color:white;
+	height:25px;
+	width:980px;
+	float:left;
+}
+
+#grey_space_half {
+	background:grey;
+	height:50px;
+	width:980px;
+	float:left;
+}
 
 
-
-/* contact form details
+/* contact form
 ------------------------------------------------*/
 label, input, textarea {
 font-family:inherit;
