@@ -33,3 +33,18 @@ $(function () {
   listItems.not(':first').hide();
   setInterval(changeList, change_img_time);
 });
+
+// splash control
+$(function(){
+  if (!sessionStorage.visited){
+    $('.overlay').show();
+  } else {
+    $('.overlay').hide();
+  }
+
+  $('.overlay').on('click', function(){
+    sessionStorage.visited = true;
+    // console.log(visited);
+    $('.overlay').fadeOut('slow');
+  });
+});
