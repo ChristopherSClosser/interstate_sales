@@ -11,8 +11,9 @@ ul li {
 #nav{
 	float: left;
 }
-  #nav li {
-    display: inline;
+#nav li {
+  display: inline;
+	text-align: left;
 }
 #nav > li {
 	float: left;
@@ -134,7 +135,7 @@ p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px;
   right: 100px;
   display: none;
   text-indent: -9999px;
-  background: url('arrow6.jpg') no-repeat;
+  background: url('../images/arrow6.jpg') no-repeat;
 }
 
 center {
