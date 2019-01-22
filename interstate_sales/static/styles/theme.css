@@ -194,3 +194,8 @@ center {
 	width:980px;
 	float:left;
 }
+
+#footer a {
+	text-decoration: none;
+  color: black;
+}
