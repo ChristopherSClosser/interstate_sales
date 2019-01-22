@@ -11,8 +11,9 @@ ul li {
 #nav{
 	float: left;
 }
-  #nav li {
-    display: inline;
+#nav li {
+  display: inline;
+	text-align: left;
 }
 #nav > li {
 	float: left;
