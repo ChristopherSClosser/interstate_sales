@@ -143,6 +143,13 @@ z-index: 999;
 	float:left;
 }
 
+#white_space_half {
+	background:white;
+	height:50px;
+	width:980px;
+	float:left;
+}
+
 /* Buttons & boxes
 -----------------------------------------------*/
 #search_box {
@@ -247,6 +254,15 @@ p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px;
 center {
 	margin-left: 2rem;
 	margin-right: 1rem;
+}
+
+/* delete item
+------------------------------------------------*/
+
+#delete_text {
+	color: red;
+	margin-left: 1rem;
+	float: left;
 }
 
 /* footer
