@@ -3,35 +3,22 @@
   <head>
     {% block head %}
     <meta name="description" content="Interstate Sales has been selling top quality highway safety devices for over 40 years!At Interstate Sales our mission is to provide our customers with excellent products and outstanding customer service. We are a wholesale distributor, which means you save on the price." />
-    <meta name="keywords" content=" Gregory guardrail, EKT end treatment, Fleat end treatment,traffic paint,traffic signs,highway safety materials,ennis paint,graco, impact recovery, sign posts,sign hardware,stencils, corten,road signs, delineators, channelizers, tubular post, square posts, u-channel post, sign brackets, sign mounting, custom signs, trash bags, batteries, barricades, thermoplastic, flashers, caution tape, glass beads, reflective beads, flint, hotape,premark, potters, swarco, transpo, pavement markers, RPM, centermount reflectors, bituminous, hot melt adhesive, stick'n'stomp, epoxy, primer, reflective tape, sign blanks, reflective sheeting, 3m, ekt, skt, sand bags, big sandy, crash barrels, cones, reflective cones, loopers, ringtop, downing bituminous applicators, crack sealant, cold patch, pothole patch,">
+    <meta name="keywords" content=" Gregory guardrail, EKT end treatment, Fleat end treatment,traffic paint,traffic signs,highway safety materials,ennis paint,graco, impact recovery, sign posts,sign hardware,stencils, corten,road signs, delineators, channelizers, tubular post, square posts, u-channel post, sign brackets, sign mounting, custom signs, trash bags, batteries, barricades, thermoplastic, flashers, caution tape, glass beads, reflective beads, flint, hotape,premark, potters, swarco, transpo, pavement markers, RPM, centermount reflectors, bituminous, hot melt adhesive, stick'n'stomp, epoxy, primer, reflective tape, sign blanks, reflective sheeting, 3m, ekt, skt, sand bags, big sandy, crash barrels, cones, reflective cones, loopers, ringtop, downing bituminous applicators, crack sealant, cold patch, pothole patch, paint">
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="{{request.static_url('interstate_sales:static/images/favicon.ico')}}" type="image/x-icon">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-              $('.scrollup').fadeIn();
-          } else {
-              $('.scrollup').fadeOut();
-          }
-        })
-      });
-    </script>
     <link href="{{request.static_url('interstate_sales:static/styles/theme.css')}}" rel="stylesheet">
     <title>Interstate Sales - {% block title %}{% endblock %}</title>
     {% endblock %}
   </head>
-  <body style="background-color:white;">
+  <body>
     <div id="wrap">
     <a href="#" id="top"><b></b></a>
-    <div id="Banner_image" style="width:980px">
+    <div id="Banner_image">
       <img src="{{request.static_url('interstate_sales:static/images/Interstate_Sales_Backdrop.jpg')}}" alt="Interstate Sales" width="980" height="300">
     </div>
-    <div id="container1" style="width:980px">
-    <a style="position: fixed; bottom:5px;right:5px;" class="scrollup" href="#" title="Back to Top">
-      <img style="border: none;" src="{{request.static_url('interstate_sales:static/images/arrow6.jpg')}}" alt="up icon">
+    <a class="scrollup" href="#" title="Back to Top">
+      <img src="{{request.static_url('interstate_sales:static/images/arrow6.jpg')}}" alt="up icon">
     </a>
 
     <center>
@@ -120,25 +107,25 @@
     </ul>
     </center>
 
-    <div id="header" style="background:gold;height:50px;width:980px;float:left;">
+    <div id="search">
 
       <div>
         <form class="" action="search" method="post">
-          <input type="text" name="search" maxlength="25" value="" style="width: 15rem; float: right; position: absolute; margin-top: .75rem; margin-left: .75rem;">
-          <input style="margin-top: .75rem; margin-left: 17rem; width: 6rem; left: 18rem;" type="submit" value="Search"}>
+          <input id="search_box" type="text" name="search" maxlength="25" value="">
+          <input id="search_button" type="submit" value="Search"}>
         </form>
       </div>
     </div>
-    <div id="header" style="background-color:white;height:25px;width:980px;float:left;"></div>
+    <div id="white_space_quad"></div>
 
     {% if auth %}
 
-      <div id="header" style="background:grey;height:50px;width:980px;float:left;">
+      <div id="grey_space_half">
 
         <div>
           <form class="" action="item/new-entry" method="get">
 
-            <input style="margin-top: .75rem; margin-left: .75rem;" type="submit" value="Add Item">
+            <input id="new_button" type="submit" value="Add Item">
           </form>
           <!--
           <form class="" action="upload" method="get">
@@ -152,20 +139,26 @@
         </div>
 
       </div>
-      <div id="header" style="background-color:white;height:25px;width:980px;float:left;"></div>
+      <div id="white_space_quad"></div>
 
     {% endif %}
 
     {% block content %}
     {% endblock content %}
 
-    <div id="footer" style="background-color:gold; clear:both; text-align:center; width:980px; float:left;">
-      <a href="{{request.route_url('home')}}" style="text-decoration:none;color:black;">
+    <div id="footer">
+      <a href="{{request.route_url('home')}}">
         <p><center><b>www.interstatesales.com</center></p>
       </a>
     </div>
 
 
   </body>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="{{request.static_url('interstate_sales:static/scripts/app.js')}}"></script>
 </html>

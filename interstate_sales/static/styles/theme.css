@@ -68,11 +68,126 @@ z-index: 999;
 	color: gold;
 }
 
+/* Search
+-----------------------------------------------*/
+#search {
+	background:gold;
+	height:50px;
+	width:980px;
+	float:left;
+}
 
+/* Spacers
+-----------------------------------------------*/
+#white_space_15 {
+	background-color:white;
+	height:15px;
+	width:400px;
+	float:left;
+}
 
+#white_space_contact {
+	background-color:white;
+	height:15px;
+	width:180px;
+	float:left;
+}
 
-/* contact form details
+#white_space_contact_small {
+	background-color:white;
+	height:50px;
+	width:180px;
+	float:left;
+}
+
+#white_space_contact_medium {
+	background-color:white;
+	height:125px;
+	width:180px;
+	float:left;
+}
+
+#white_space_contact_large {
+	background-color:gold;
+	height:125px;
+	width:400px;
+	float:left;
+}
+
+#contact_title {
+	background-color:black;
+	color:white;
+	height:50px;
+	width:400px;
+	float:left;
+}
+
+#white_space_quad {
+	background-color:white;
+	height:25px;
+	width:980px;
+	float:left;
+}
+
+#white_space_left {
+	background-color:white;
+	height:400px;
+	width:8%;
+	float:left;
+}
+
+#grey_space_half {
+	background:grey;
+	height:50px;
+	width:980px;
+	float:left;
+}
+
+#white_space_half {
+	background:white;
+	height:50px;
+	width:980px;
+	float:left;
+}
+
+/* Buttons & boxes
+-----------------------------------------------*/
+#search_box {
+	width: 15rem;
+	float: right;
+	position: absolute;
+	margin-top: .75rem;
+	margin-left: .75rem;
+}
+
+#search_button {
+	margin-top: .75rem;
+	margin-left: 17rem;
+	width: 6rem;
+	left: 18rem;
+}
+
+#new_button {
+	margin-top: .75rem;
+	margin-left: .75rem;
+}
+
+/* contact form
 ------------------------------------------------*/
+#email_form {
+	background-color:white;
+	height:400px;
+	width:400px;
+	float:left;
+}
+
+#gmap {
+	background-color:white;
+	margin-left:8rem;
+	height:400px;
+	float:left;
+}
+
 label, input, textarea {
 font-family:inherit;
 float:left;
@@ -127,18 +242,40 @@ p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px;
 }
 
 .scrollup {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
   width: 60px;
   height: 60px;
   opacity: 0.8;
-  position: fixed;
-  bottom: 50px;
-  right: 100px;
   display: none;
-  text-indent: -9999px;
-  background: url('../images/arrow6.jpg') no-repeat;
 }
 
 center {
 	margin-left: 2rem;
 	margin-right: 1rem;
+}
+
+/* delete item
+------------------------------------------------*/
+
+#delete_text {
+	color: red;
+	margin-left: 1rem;
+	float: left;
+}
+
+/* footer
+------------------------------------------------*/
+#footer {
+	background-color:gold;
+	clear:both;
+	text-align:center;
+	width:980px;
+	float:left;
+}
+
+#footer a {
+	text-decoration: none;
+  color: black;
 }
