@@ -1,5 +1,46 @@
 'use strict';
 
+// function for mobile menu on page ready
+$(function(){
+  if (!sessionStorage.visited){
+    $('.overlay').show();
+  } else {
+    $('.overlay').hide();
+  }
+
+  $('.dropdown-content').hide();
+
+  $('.burger').on('click', function(){
+    if ($('nav').is(':visible')){
+      $('#main-nav').slideUp('fast');
+    } else {
+      $('#main-nav').slideDown('fast');
+    }
+  });
+
+  $('.overlay').on('click', function(){
+    sessionStorage.visited = true;
+    // console.log(visited);
+    $('.overlay').fadeOut('slow');
+  });
+
+  // hide nav into burger when width is small
+  $('#home, #about, #events').on('click', function(){
+    if (window.innerWidth <= 739){
+      $('#main-nav').slideUp('fast');
+    }
+  });
+
+  // displays dropdown list on click for mobile
+  $('.dropdown').on('click', function(){
+    if ($('.dropdown-content').is(':hidden')){
+      // $('#project-list').animate({width: 'toggle'},350);
+      $('.dropdown-content').slideDown();
+    } else {
+      $('.dropdown-content').slideUp();
+    }
+  });
+
 // scroll to top - show hide arrow button
 $(function(){
   $(window).scroll(function () {
