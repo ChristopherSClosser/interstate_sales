@@ -1,6 +1,10 @@
 
 /*Navigation menu
 ------------------------------------------*/
+.hidden {
+    display: none;
+}
+
 #nav,
 #nav ul {
 	list-style: none;

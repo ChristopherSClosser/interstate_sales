@@ -13,61 +13,19 @@
   </head>
   <body>
     <div id="white_space_quad"></div>
-    {% if expr %}
-
-    <header class="header nav-down">
-      <div class="brand">
-        <button class="burger">&#9776;</button>
-      </div>
-      {% if auth %}
-        <center>
-        <div class="loggedin">
-          You Are Logged in as Administrator | <a href="{{request.route_url('new')}}">ADD A NEW RECORD</a> | <a href="{{request.route_url('logout')}}">LOGOUT</a>
-        </div>
-        </center>
-      {% endif %}
-      {% if main_menu %}
-
-        <nav class="hidden main-nav" id="main-nav">
-          <ul id="nav">
-            {% for item in main_menu %}
-              <li id="{{ item.extra }}">
-                {% if auth %}
-                  {% if auth_tools %}
-                    {% for img in auth_tools[0].img.split(' ') %}
-                      <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
-                        <img id="{{ img.split('.')[0] }}"
-                          src="{{request.static_url('interstate_sales:static/images/')}}{{ img }}">
-                      </a>
-                    {% endfor %}
-                  {% endif %}
-
-                {% endif %}
-
-                <a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a>
-              </li><hr>
-
-            {% endfor %}
-          </ul>
-
-        </nav>
-      {% endif %}
-
-
-    </header>
-    {% endif %}
 
     <div id="wrap">
     <a href="#" id="top"><b></b></a>
     <div id="Banner_image">
       <img src="{{request.static_url('interstate_sales:static/images/50th_banner.jpg')}}" alt="Interstate Sales" width="980">
     </div>
+    <div class="burger"><img src="{{request.static_url('interstate_sales:static/images/burger.png')}}"></div>
     <a class="scrollup" href="#" title="Back to Top">
       <img src="{{request.static_url('interstate_sales:static/images/arrow6.jpg')}}" alt="up icon">
     </a>
 
     <center>
-    <ul id="nav">
+    <ul class="hidden" id="nav">
       <li id="home"><a href="{{request.route_url('home')}}">Home</a></li>
       <li id="guardrail"><a href="{{request.route_url('guardrail')}}">Guardrail</a>
         <ul>
@@ -146,7 +104,6 @@
           {% endfor %}
         </ul>
       </li>
-
 
       <li id="contact"><a href="{{request.route_url('contact')}}">Contact Us</a></li>
     </ul>
