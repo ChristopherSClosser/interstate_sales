@@ -24,11 +24,10 @@
       <img src="{{request.static_url('interstate_sales:static/images/arrow6.jpg')}}" alt="up icon">
     </a>
 
-    <center>
     <ul class="hidden" id="nav">
       <li id="home"><a href="{{request.route_url('home')}}">Home</a></li>
       <li id="guardrail"><a href="{{request.route_url('guardrail')}}">Guardrail</a>
-        <ul>
+        <ul class="subnav">
           {% for item in gr_subcats %}
             {% if '/guardrail' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
@@ -39,7 +38,7 @@
         </ul>
       </li>
       <li id="paint"><a href="{{request.route_url('paint')}}">Traffic Paint</a>
-        <ul>
+        <ul class="subnav">
           {% for item in tr_subcats %}
             {% if '/paint' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
@@ -50,7 +49,7 @@
         </ul>
       </li>
       <li id="markings"><a href="{{request.route_url('markings')}}">Pavement Markings</a>
-        <ul>
+        <ul class="subnav">
           {% for item in pm_subcats %}
             {% if '/markings' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
@@ -60,8 +59,8 @@
           {% endfor %}
         </ul>
       </li>
-      <li id="markings"><a href="{{request.route_url('safety')}}">Construction Safety</a>
-        <ul>
+      <li id="safety"><a href="{{request.route_url('safety')}}">Construction Safety</a>
+        <ul class="subnav">
           {% for item in cs_subcats %}
             {% if '/safety' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
@@ -71,8 +70,8 @@
           {% endfor %}
         </ul>
       </li>
-      <li id="markings"><a href="{{request.route_url('signs')}}">Signs</a>
-        <ul>
+      <li id="signs"><a href="{{request.route_url('signs')}}">Signs</a>
+        <ul class="subnav">
           {% for item in signs_subcats %}
             {% if '/signs' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
@@ -82,8 +81,8 @@
           {% endfor %}
         </ul>
       </li>
-      <li id="markings"><a href="{{request.route_url('equipment')}}">Equipment</a>
-        <ul>
+      <li id="equipment"><a href="{{request.route_url('equipment')}}">Equipment</a>
+        <ul class="subnav">
           {% for item in equipment_subcats %}
             {% if '/equipment' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
@@ -93,8 +92,8 @@
           {% endfor %}
         </ul>
       </li>
-      <li id="markings"><a href="{{request.route_url('team')}}">Our Team</a>
-        <ul>
+      <li id="team"><a href="{{request.route_url('team')}}">Our Team</a>
+        <ul class="subnav">
           {% for item in team_subcats %}
             {% if '/team' in request.path %}
               <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
@@ -107,7 +106,6 @@
 
       <li id="contact"><a href="{{request.route_url('contact')}}">Contact Us</a></li>
     </ul>
-    </center>
 
   <!--
     <div id="search">

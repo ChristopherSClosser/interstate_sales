@@ -2,18 +2,28 @@
 /*Navigation menu
 ------------------------------------------*/
 .hidden {
-    display: none;
+  display: none;
+}
+
+.burger img {
+	width: 3rem;
+}
+
+.subnav {
+	left: 9.5rem;
 }
 
 #nav,
 #nav ul {
+	display: inline-grid;
+	position: absolute;
 	list-style: none;
 }
 ul li {
 	list-style: none;
 }
 #nav{
-	float: left;
+	left: 2rem;
 }
 #nav li {
   display: inline;
@@ -23,7 +33,7 @@ ul li {
 	float: left;
 }
 #nav li a {
-display: block;
+	display: block;
 	height: 3em;
 	line-height: 3em;
 	padding: 0 0.9em;
@@ -34,7 +44,7 @@ display: block;
 #nav ul {
 	position: absolute;
 	display: none;
-z-index: 999;
+	z-index: 999;
 }
 #nav ul li a {
 	width: 200px;

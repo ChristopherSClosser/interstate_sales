@@ -8,7 +8,7 @@ $(function(){
   //   $('.overlay').hide();
   // }
   //
-  // $('.dropdown-content').hide();
+  $('.hidden').hide();
 
   $('.burger').on('click', function(){
     if ($('#nav').is(':visible')){
