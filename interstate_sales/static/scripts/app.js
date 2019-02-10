@@ -22,8 +22,22 @@ $(function(){
   $('#guardrail').on('click', function(){
     if ($('#guardrail .subnav').is(':visible')){
       $('#guardrail .subnav').slideUp('fast');
+    } else if ($('.subnav').is(':visible')){
+      $('.subnav').hide();
+      $('#guardrail .subnav').slideDown('fast');
     } else {
       $('#guardrail .subnav').slideDown('fast');
+    }
+  });
+
+  $('#paint').on('click', function(){
+    if ($('#paint .subnav').is(':visible')){
+      $('#paint .subnav').slideUp('fast');
+    } else if ($('.subnav').is(':visible')){
+      $('.subnav').hide();
+      $('#paint .subnav').slideDown('fast');
+    } else {
+      $('#paint .subnav').slideDown('fast');
     }
   });
 
