@@ -10,7 +10,11 @@
 }
 
 .subnav {
-	left: 9.5rem;
+  margin-left: 11rem;
+}
+
+#guardrail .subnav {
+  margin-top: -3rem;
 }
 
 #nav,
@@ -49,9 +53,9 @@ ul li {
 #nav ul li a {
 	width: 200px;
 }
-#nav li:hover ul {
+/* #nav li:hover ul {
 	display: block;
-}
+} */
 
 /* Main menu
 ------------------------------------------*/

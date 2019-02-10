@@ -14,7 +14,16 @@ $(function(){
     if ($('#nav').is(':visible')){
       $('#nav').slideUp('fast');
     } else {
+      $('.subnav').hide();
       $('#nav').slideDown('fast');
+    }
+  });
+
+  $('#guardrail').on('click', function(){
+    if ($('#guardrail .subnav').is(':visible')){
+      $('#guardrail .subnav').slideUp('fast');
+    } else {
+      $('#guardrail .subnav').slideDown('fast');
     }
   });
 
