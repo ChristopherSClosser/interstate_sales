@@ -15,144 +15,146 @@
     <div id="white_space_quad"></div>
 
     <div id="wrap">
-    <a href="#" id="top"><b></b></a>
-    <div id="Banner_image">
-      <img src="{{request.static_url('interstate_sales:static/images/50th_banner.jpg')}}" alt="Interstate Sales" width="980">
-    </div>
-    <div class="burger"><img src="{{request.static_url('interstate_sales:static/images/burger.png')}}"></div>
-    <a class="scrollup" href="#" title="Back to Top">
-      <img src="{{request.static_url('interstate_sales:static/images/arrow6.jpg')}}" alt="up icon">
-    </a>
-
-    <ul class="hidden" id="nav">
-      <li id="home"><a href="{{request.route_url('home')}}">Home</a></li>
-      <li id="guardrail"><a href="{{request.route_url('guardrail')}}">Guardrail</a>
-        <ul class="subnav">
-          {% for item in gr_subcats %}
-            {% if '/guardrail' in request.path %}
-              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% else %}
-              <li><a href="{{request.route_url('guardrail')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-      <li id="paint"><a href="{{request.route_url('paint')}}">Traffic Paint</a>
-        <ul class="subnav">
-          {% for item in tr_subcats %}
-            {% if '/paint' in request.path %}
-              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% else %}
-              <li><a href="{{request.route_url('paint')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-      <li id="markings"><a href="{{request.route_url('markings')}}">Pavement Markings</a>
-        <ul class="subnav">
-          {% for item in pm_subcats %}
-            {% if '/markings' in request.path %}
-              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% else %}
-              <li><a href="{{request.route_url('markings')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-      <li id="safety"><a href="{{request.route_url('safety')}}">Construction Safety</a>
-        <ul class="subnav">
-          {% for item in cs_subcats %}
-            {% if '/safety' in request.path %}
-              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% else %}
-              <li><a href="{{request.route_url('safety')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-      <li id="signs"><a href="{{request.route_url('signs')}}">Signs</a>
-        <ul class="subnav">
-          {% for item in signs_subcats %}
-            {% if '/signs' in request.path %}
-              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% else %}
-              <li><a href="{{request.route_url('signs')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-      <li id="equipment"><a href="{{request.route_url('equipment')}}">Equipment</a>
-        <ul class="subnav">
-          {% for item in equipment_subcats %}
-            {% if '/equipment' in request.path %}
-              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% else %}
-              <li><a href="{{request.route_url('equipment')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-      <li id="team"><a href="{{request.route_url('team')}}">Our Team</a>
-        <ul class="subnav">
-          {% for item in team_subcats %}
-            {% if '/team' in request.path %}
-              <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% else %}
-              <li><a href="{{request.route_url('team')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-
-      <li id="contact"><a href="{{request.route_url('contact')}}">Contact Us</a></li>
-    </ul>
-
-  <!--
-    <div id="search">
-
-      <div>
-        <form class="" action="search" method="post">
-          <input id="search_box" type="text" name="search" maxlength="25" value="">
-          <input id="search_button" type="submit" value="Search"}>
-        </form>
+      <a href="#" id="top"><b></b></a>
+      <div id="Banner_image">
+        <a href="{{request.route_url('home')}}">
+          <img src="{{request.static_url('interstate_sales:static/images/50th_banner.jpg')}}" alt="Interstate Sales" width="980">
+        </a>
       </div>
-    </div>
-  -->
-
-    {% if auth %}
-
-      <div id="grey_space_half">
-
-        <div>
-          <form class="" action="item/new-entry" method="get">
-
-            <input id="new_button" type="submit" value="Add Item">
-          </form>
-          <!--
-          <form class="" action="upload" method="get">
-
-            <input style="position:absolute;float:left;margin-top: .75rem; margin-left: .75rem;width: 200px;" type="submit" value="Upload Image">
-          </form>
-          -->
-        </div>
-        <div>
-
-        </div>
-
-      </div>
-      <div id="white_space_quad"></div>
-
-    {% endif %}
-
-    {% block content %}
-    {% endblock content %}
-
-    <div id="footer">
-      <a href="{{request.route_url('home')}}">
-        <p><center><b>www.interstatesales.com</center></p>
+      <div class="burger"><img src="{{request.static_url('interstate_sales:static/images/burger.png')}}"></div>
+      <a class="scrollup" href="#" title="Back to Top">
+        <img src="{{request.static_url('interstate_sales:static/images/arrow6.jpg')}}" alt="up icon">
       </a>
-    </div>
 
+      <ul class="hidden" id="nav">
+        <li id="home"><a href="{{request.route_url('home')}}">Home</a></li>
+        <li id="guardrail"><a href="{{request.route_url('guardrail')}}">Guardrail</a>
+          <ul class="subnav">
+            {% for item in gr_subcats %}
+              {% if '/guardrail' in request.path %}
+                <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% else %}
+                <li><a href="{{request.route_url('guardrail')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li id="paint"><a href="{{request.route_url('paint')}}">Traffic Paint</a>
+          <ul class="subnav">
+            {% for item in tr_subcats %}
+              {% if '/paint' in request.path %}
+                <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% else %}
+                <li><a href="{{request.route_url('paint')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li id="markings"><a href="{{request.route_url('markings')}}">Pavement Markings</a>
+          <ul class="subnav">
+            {% for item in pm_subcats %}
+              {% if '/markings' in request.path %}
+                <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% else %}
+                <li><a href="{{request.route_url('markings')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li id="safety"><a href="{{request.route_url('safety')}}">Construction Safety</a>
+          <ul class="subnav">
+            {% for item in cs_subcats %}
+              {% if '/safety' in request.path %}
+                <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% else %}
+                <li><a href="{{request.route_url('safety')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li id="signs"><a href="{{request.route_url('signs')}}">Signs</a>
+          <ul class="subnav">
+            {% for item in signs_subcats %}
+              {% if '/signs' in request.path %}
+                <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% else %}
+                <li><a href="{{request.route_url('signs')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li id="equipment"><a href="{{request.route_url('equipment')}}">Equipment</a>
+          <ul class="subnav">
+            {% for item in equipment_subcats %}
+              {% if '/equipment' in request.path %}
+                <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% else %}
+                <li><a href="{{request.route_url('equipment')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li id="team"><a href="{{request.route_url('team')}}">Our Team</a>
+          <ul class="subnav">
+            {% for item in team_subcats %}
+              {% if '/team' in request.path %}
+                <li><a href="#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% else %}
+                <li><a href="{{request.route_url('team')}}#{{ item.replace(' ', '').lower() }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li id="contact"><a href="{{request.route_url('contact')}}">Contact Us</a></li>
+      </ul>
+
+    <!--
+      <div id="search">
+
+        <div>
+          <form class="" action="search" method="post">
+            <input id="search_box" type="text" name="search" maxlength="25" value="">
+            <input id="search_button" type="submit" value="Search"}>
+          </form>
+        </div>
+      </div>
+    -->
+
+      {% if auth %}
+
+        <div id="grey_space_half">
+
+          <div>
+            <form class="" action="item/new-entry" method="get">
+
+              <input id="new_button" type="submit" value="Add Item">
+            </form>
+            <!--
+            <form class="" action="upload" method="get">
+
+              <input style="position:absolute;float:left;margin-top: .75rem; margin-left: .75rem;width: 200px;" type="submit" value="Upload Image">
+            </form>
+            -->
+          </div>
+          <div>
+
+          </div>
+
+        </div>
+        <div id="white_space_quad"></div>
+
+      {% endif %}
+
+      {% block content %}
+      {% endblock content %}
+
+      <div id="footer">
+        <a href="{{request.route_url('home')}}">
+          <p><center><b>www.interstatesales.com</center></p>
+        </a>
+      </div>
+    </div>
 
   </body>
 
