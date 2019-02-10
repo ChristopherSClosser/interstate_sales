@@ -72,7 +72,7 @@
             {% endfor %}
           </ul>
         </li>
-        <li id="signs"><a href="{{request.route_url('signs')}}">Signs</a>
+        <li id="signs"><a>Signs</a>
           <ul class="subnav">
             {% for item in signs_subcats %}
               {% if '/signs' in request.path %}
@@ -83,7 +83,7 @@
             {% endfor %}
           </ul>
         </li>
-        <li id="equipment"><a href="{{request.route_url('equipment')}}">Equipment</a>
+        <li id="equipment"><a>Equipment</a>
           <ul class="subnav">
             {% for item in equipment_subcats %}
               {% if '/equipment' in request.path %}
@@ -94,7 +94,7 @@
             {% endfor %}
           </ul>
         </li>
-        <li id="team"><a href="{{request.route_url('team')}}">Our Team</a>
+        <li id="team"><a>Our Team</a>
           <ul class="subnav">
             {% for item in team_subcats %}
               {% if '/team' in request.path %}

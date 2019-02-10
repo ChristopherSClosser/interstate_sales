@@ -48,6 +48,18 @@ $(function(){
   $('#safety').on('click', function(){
     $('#safety .subnav').slideDown('fast');
   });
+
+  $('#signs').on('click', function(){
+    $('#signs .subnav').slideDown('fast');
+  });
+
+  $('#equipment').on('click', function(){
+    $('#equipment .subnav').slideDown('fast');
+  });
+
+  $('#team').on('click', function(){
+    $('#team .subnav').slideDown('fast');
+  });
   // --------------------------------------
 
   // $('.overlay').on('click', function(){
