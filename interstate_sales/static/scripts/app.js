@@ -41,6 +41,17 @@ $(function(){
     }
   });
 
+  $('#markings').on('click', function(){
+    if ($('#markings .subnav').is(':visible')){
+      $('#markings .subnav').slideUp('fast');
+    } else if ($('.subnav').is(':visible')){
+      $('.subnav').hide();
+      $('#markings .subnav').slideDown('fast');
+    } else {
+      $('#markings .subnav').slideDown('fast');
+    }
+  });
+
   // $('.overlay').on('click', function(){
   //   sessionStorage.visited = true;
   //   // console.log(visited);
