@@ -23,7 +23,7 @@ ul li {
 	list-style: none;
 }
 #nav{
-	left: 2rem;
+	left: 0;
 }
 #nav li {
   display: inline;
@@ -57,7 +57,7 @@ ul li {
 ------------------------------------------*/
 #nav {
 	font-family: Arial;
-	font-size: 14px;
+	/* font-size: 14px; */
 	background:white;
 }
 #nav > li > a {
@@ -253,6 +253,7 @@ p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px;
 #wrap {
 	width: 980px;
 	margin: 0 auto;
+  position: relative;
 }
 
 .scrollup {
@@ -295,9 +296,6 @@ center {
 }
 
 
-/* @media only screen and (min-width: 1280px) {
-	html {
-	  margin-left: 13%;
-	  width: 75%;
-	}
-} */
+@media only screen and (min-width: 980px) {
+
+}
