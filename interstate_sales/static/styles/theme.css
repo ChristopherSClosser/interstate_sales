@@ -7,10 +7,11 @@
 
 .burger img {
 	width: 3rem;
+  margin-left: 1rem;
 }
 
 .subnav {
-  margin-left: 11rem;
+  margin-left: 11.3rem;
   margin-top: -3rem;
 }
 
@@ -90,10 +91,9 @@ ul li {
 /* Search
 -----------------------------------------------*/
 #search {
-	background:gold;
-	height:50px;
-	/* width:980px; */
-	float:left;
+  position: absolute;
+  top: 9.6rem;
+  right: 1rem;
 }
 
 /* Spacers
@@ -177,6 +177,7 @@ ul li {
 	position: absolute;
 	margin-top: .75rem;
 	margin-left: .75rem;
+  border-radius: 0.5rem;
 }
 
 #search_button {
@@ -184,6 +185,7 @@ ul li {
 	margin-left: 17rem;
 	width: 6rem;
 	left: 18rem;
+  border-radius: 0.5rem;
 }
 
 #new_button {
