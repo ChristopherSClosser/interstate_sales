@@ -13,15 +13,37 @@
   </head>
   <body>
     <div id="white_space_quad"></div>
+    <div id="banner">
+      <a href="{{request.route_url('home')}}">
+        <img src="{{request.static_url('interstate_sales:static/images/50th_banner.jpg')}}" alt="Interstate Sales" width="980">
+      </a>
+    </div>
+    {% if auth %}
+      <div class="loggedin">
+        You Are Logged in as Administrator | <a href="{{request.route_url('new')}}">ADD A NEW RECORD</a> | <a href="{{request.route_url('logout')}}">LOGOUT</a>
+      </div>
 
+
+      <div id="white_space_quad"></div>
+
+    {% endif %}
     <div id="wrap">
       <a href="#" id="top"><b></b></a>
-      <div id="Banner_image">
-        <a href="{{request.route_url('home')}}">
-          <img src="{{request.static_url('interstate_sales:static/images/50th_banner.jpg')}}" alt="Interstate Sales" width="980">
-        </a>
+
+
+      <div class="burger">
+        <img src="{{request.static_url('interstate_sales:static/images/burger.png')}}">
+
+        <div id="search">
+          <div>
+            <form class="" action="search" method="post">
+              <input id="search_box" type="text" name="search" maxlength="25" placeholder="Search">
+              <input id="search_button" type="submit" value="Search"}>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="burger"><img src="{{request.static_url('interstate_sales:static/images/burger.png')}}"></div>
+
       <a class="scrollup" href="#" title="Back to Top">
         <img src="{{request.static_url('interstate_sales:static/images/arrow6.jpg')}}" alt="up icon">
       </a>
@@ -109,40 +131,7 @@
         <li id="contact"><a href="{{request.route_url('contact')}}">Contact Us</a></li>
       </ul>
 
-      <div id="search">
 
-        <div>
-          <form class="" action="search" method="post">
-            <input id="search_box" type="text" name="search" maxlength="25" placeholder="Search">
-            <input id="search_button" type="submit" value="Search"}>
-          </form>
-        </div>
-      </div>
-
-      {% if auth %}
-
-        <div id="grey_space_half">
-
-          <div>
-            <form class="" action="item/new-entry" method="get">
-
-              <input id="new_button" type="submit" value="Add Item">
-            </form>
-            <!--
-            <form class="" action="upload" method="get">
-
-              <input style="position:absolute;float:left;margin-top: .75rem; margin-left: .75rem;width: 200px;" type="submit" value="Upload Image">
-            </form>
-            -->
-          </div>
-          <div>
-
-          </div>
-
-        </div>
-        <div id="white_space_quad"></div>
-
-      {% endif %}
 
       {% block content %}
       {% endblock content %}

@@ -1,4 +1,29 @@
 
+/* Auth
+------------------------------------------*/
+
+.loggedin {
+  width: 954px;
+  text-align: center;
+  color: white;
+  border-bottom: white solid 0.1px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: .2rem;
+  margin: 0 auto;
+}
+.loggedin a {
+  text-decoration: none;
+  color: white;
+}
+
+/* banner
+------------------------------------------*/
+#banner {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
 /*Navigation menu
 ------------------------------------------*/
 .hidden {
@@ -92,7 +117,7 @@ ul li {
 -----------------------------------------------*/
 #search {
   position: absolute;
-  top: 9.6rem;
+  top: 0;
   right: 1rem;
 }
 
