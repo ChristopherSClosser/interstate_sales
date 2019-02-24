@@ -148,6 +148,7 @@ def search_view(request):
     except KeyError:
         pass
     query = request.dbsession.query(MyModel).all()
+    items = build_dict(request)
     res = []
     if search:
         for item in query:
@@ -164,6 +165,13 @@ def search_view(request):
         'res': res,
         'search': search,
         'subcategories': subcategories,
+        'gr_subcats': items['gr_subcats'],
+        'tr_subcats': items['tr_subcats'],
+        'pm_subcats': items['pm_subcats'],
+        'cs_subcats': items['cs_subcats'],
+        'signs_subcats': items['signs_subcats'],
+        'equipment_subcats': items['equipment_subcats'],
+        'team_subcats': items['team_subcats'],
         'auth': auth,
     }
 

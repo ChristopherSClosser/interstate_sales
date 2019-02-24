@@ -10,7 +10,7 @@ $(function(){
   //
   $('.hidden').hide();
 
-  $('.burger').on('click', function(){
+  $('.burger img').on('click', function(){
     if ($('#nav').is(':visible')){
       $('#nav').slideUp('fast');
     } else {
