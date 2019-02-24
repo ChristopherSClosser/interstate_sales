@@ -31,6 +31,7 @@
 }
 
 .burger img {
+  cursor: pointer;
 	width: 3rem;
   margin-left: 1rem;
 }
@@ -203,14 +204,15 @@ ul li {
 	margin-top: .75rem;
 	margin-left: .75rem;
   border-radius: 0.5rem;
+  background:#eee;
+
 }
 
 #search_button {
-	margin-top: .75rem;
-	margin-left: 17rem;
-	width: 6rem;
-	left: 18rem;
-  border-radius: 0.5rem;
+  margin-top: 0.4rem;
+  margin-left: 17rem;
+  width: 1.8rem;
+  left: 18rem;
 }
 
 #new_button {
@@ -235,48 +237,45 @@ ul li {
 }
 
 label, input, textarea {
-font-family:inherit;
-float:left;
-clear:left;
-width:250px;
-font-weight:bold;
+  font-family:inherit;
+  float:left;
+  clear:left;
+  width:250px;
+  font-weight:bold;
 }
-label {
-cursor:pointer;
-}
-input {
-padding:.2em;
-margin-bottom:.2em;
-background:#eee;
-}
-textarea {
-height:120px;
-margin-bottom:.8em;
-overflow:auto;
 
-padding:.2em;
-margin-bottom:.2em;
-background:#eee;
+label {
+  cursor:pointer;
 }
+
+input {
+  padding:.2em;
+  margin-bottom:.2em;
+}
+
 textarea {
-height:120px;
-margin-bottom:.8em;
-overflow:auto;
-padding:.2em;
-background:#eee;
+  height:120px;
+  margin-bottom:.8em;
+  overflow:auto;
+  padding:.2em;
+  margin-bottom:.2em;
+  background:#eee;
 }
+
 input.submit {
-width:5em;
-padding:.1em;
+  width:5em;
+  padding:.1em;
 }
+
 input.reset {
-width:5em;
-padding:.1em;
+  width:5em;
+  padding:.1em;
 }
-input:focus, textarea:focus, input:hover, textarea:hover {
+
+/* input:focus, textarea:focus, input:hover, textarea:hover {
 	background:#C4DCF4;
 	outline:0;
-}
+} */
 
 p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px; }
 
