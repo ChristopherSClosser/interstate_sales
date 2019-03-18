@@ -4,8 +4,8 @@
 $(function(){
   if (!sessionStorage.visited){
     $('.overlay').show();
-  // } else {
-  //   $('.overlay').hide();
+  } else if (sessionStorage.visited = true) {
+    $('.overlay').hide();
   }
 
   $('.hidden').hide();
@@ -134,3 +134,9 @@ $(function () {
 //     $('.overlay').fadeOut('slow');
 //   });
 // });
+
+$(function () {
+  $( window ).on("beforeunload", function() {
+    sessionStorage.visited = false;
+  });
+});
