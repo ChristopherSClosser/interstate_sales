@@ -2,6 +2,12 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+  <div class="overlay">
+    <a id="logo" href="" onclick="return false;">
+      <h1>Here is an anoying popup...</h1>
+      <img src="{{request.static_url('interstate_sales:static/images/50th_banner.jpg')}}"
+        alt=""></a>
+  </div>
 
   <div id="content_1" style="background-color:black;color:white;height:415px;width:490px;float:left;"><br><br>
     <center><h1><em> Welcome to <b>Interstate Sales</b></em></h1></center>

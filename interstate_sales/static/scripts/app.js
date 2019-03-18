@@ -2,12 +2,12 @@
 
 // function for mobile menu on page ready
 $(function(){
-  // if (!sessionStorage.visited){
-  //   $('.overlay').show();
+  if (!sessionStorage.visited){
+    $('.overlay').show();
   // } else {
   //   $('.overlay').hide();
-  // }
-  //
+  }
+
   $('.hidden').hide();
 
   $('.burger img').on('click', function(){
@@ -62,11 +62,11 @@ $(function(){
   });
   // --------------------------------------
 
-  // $('.overlay').on('click', function(){
-  //   sessionStorage.visited = true;
-  //   // console.log(visited);
-  //   $('.overlay').fadeOut('slow');
-  // });
+  $('.overlay').on('click', function(){
+    sessionStorage.visited = true;
+    // console.log(visited);
+    $('.overlay').fadeOut('slow');
+  });
 
   // // hide nav into burger when width is small
   // $('#home, #about, #events').on('click', function(){
@@ -121,16 +121,16 @@ $(function () {
 });
 
 // splash control
-$(function(){
-  if (!sessionStorage.visited){
-    $('.overlay').show();
-  } else {
-    $('.overlay').hide();
-  }
-
-  $('.overlay').on('click', function(){
-    sessionStorage.visited = true;
-    // console.log(visited);
-    $('.overlay').fadeOut('slow');
-  });
-});
+// $(function(){
+//   if (!sessionStorage.visited){
+//     $('.overlay').show();
+//   } else {
+//     $('.overlay').hide();
+//   }
+//
+//   $('.overlay').on('click', function(){
+//     sessionStorage.visited = true;
+//     // console.log(visited);
+//     $('.overlay').fadeOut('slow');
+//   });
+// });
