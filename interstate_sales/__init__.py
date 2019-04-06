@@ -5,7 +5,7 @@ from pyramid.authentication import AuthTktAuthenticationPolicy
 
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application."""
-    # settings['sqlalchemy.url'] = os.environ.get('DATABASE_URL')
+    settings['sqlalchemy.url'] = os.environ.get('DATABASE_URL')
     config = Configurator(settings=settings)
     # base_path = request.static_url('interstate_sales:static/')
     config.include('pyramid_jinja2')

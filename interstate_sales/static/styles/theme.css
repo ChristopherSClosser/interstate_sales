@@ -1,15 +1,69 @@
+/* advo
+------------------------------------------*/
+.overlay {
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: -156px;
+}
+
+/* Auth
+------------------------------------------*/
+
+.loggedin {
+  width: 954px;
+  text-align: center;
+  color: white;
+  border-bottom: white solid 0.1px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: .2rem;
+  margin: 0 auto;
+}
+.loggedin a {
+  text-decoration: none;
+  color: white;
+}
+
+/* banner
+------------------------------------------*/
+#banner {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
 
 /*Navigation menu
 ------------------------------------------*/
+.hidden {
+  display: none;
+}
+
+.burger img {
+  cursor: pointer;
+	width: 3rem;
+  margin-left: 1rem;
+}
+
+.subnav {
+  margin-left: 11.3rem;
+  margin-top: -3rem;
+}
+
+#guardrail .subnav {
+  /* margin-top: -3rem; */
+}
+
 #nav,
 #nav ul {
+	display: inline-grid;
+	position: absolute;
 	list-style: none;
 }
 ul li {
 	list-style: none;
 }
 #nav{
-	float: left;
+	left: 0;
 }
 #nav li {
   display: inline;
@@ -19,7 +73,7 @@ ul li {
 	float: left;
 }
 #nav li a {
-display: block;
+	display: block;
 	height: 3em;
 	line-height: 3em;
 	padding: 0 0.9em;
@@ -30,20 +84,20 @@ display: block;
 #nav ul {
 	position: absolute;
 	display: none;
-z-index: 999;
+	z-index: 999;
 }
 #nav ul li a {
 	width: 200px;
 }
-#nav li:hover ul {
+/* #nav li:hover ul {
 	display: block;
-}
+} */
 
 /* Main menu
 ------------------------------------------*/
 #nav {
 	font-family: Arial;
-	font-size: 14px;
+	/* font-size: 14px; */
 	background:white;
 }
 #nav > li > a {
@@ -71,10 +125,9 @@ z-index: 999;
 /* Search
 -----------------------------------------------*/
 #search {
-	background:gold;
-	height:50px;
-	width:980px;
-	float:left;
+  position: absolute;
+  top: 0;
+  right: 1rem;
 }
 
 /* Spacers
@@ -125,7 +178,7 @@ z-index: 999;
 #white_space_quad {
 	background-color:white;
 	height:25px;
-	width:980px;
+	/* width:980px; */
 	float:left;
 }
 
@@ -139,14 +192,14 @@ z-index: 999;
 #grey_space_half {
 	background:grey;
 	height:50px;
-	width:980px;
+	/* width:980px; */
 	float:left;
 }
 
 #white_space_half {
 	background:white;
 	height:50px;
-	width:980px;
+	/* width:980px; */
 	float:left;
 }
 
@@ -158,13 +211,16 @@ z-index: 999;
 	position: absolute;
 	margin-top: .75rem;
 	margin-left: .75rem;
+  border-radius: 0.5rem;
+  background:#eee;
+
 }
 
 #search_button {
-	margin-top: .75rem;
-	margin-left: 17rem;
-	width: 6rem;
-	left: 18rem;
+  margin-top: 0.4rem;
+  margin-left: 17rem;
+  width: 1.8rem;
+  left: 18rem;
 }
 
 #new_button {
@@ -189,48 +245,55 @@ z-index: 999;
 }
 
 label, input, textarea {
-font-family:inherit;
-float:left;
-clear:left;
-width:250px;
-font-weight:bold;
+  font-family:inherit;
+  float:left;
+  clear:left;
+  width:250px;
+  font-weight:bold;
 }
-label {
-cursor:pointer;
-}
-input {
-padding:.2em;
-margin-bottom:.2em;
-background:#eee;
-}
-textarea {
-height:120px;
-margin-bottom:.8em;
-overflow:auto;
 
-padding:.2em;
-margin-bottom:.2em;
-background:#eee;
+label {
+  cursor:pointer;
 }
+
+input {
+  padding:.2em;
+  margin-bottom:.2em;
+}
+
 textarea {
-height:120px;
-margin-bottom:.8em;
-overflow:auto;
-padding:.2em;
-background:#eee;
+  height:120px;
+  margin-bottom:.8em;
+  overflow:auto;
+  padding:.2em;
+  margin-bottom:.2em;
+  background:#eee;
 }
+
 input.submit {
-width:5em;
-padding:.1em;
+  width:5em;
+  padding:.1em;
 }
+
 input.reset {
-width:5em;
-padding:.1em;
+  width:5em;
+  padding:.1em;
 }
-input:focus, textarea:focus, input:hover, textarea:hover {
-background:#C4DCF4;
-outline:0;
-}
+
+/* .thumbnail:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:700px;
+  height:auto;
+  display:block;
+  z-index:999;
+} */
+
+/* input:focus, textarea:focus, input:hover, textarea:hover {
+	background:#C4DCF4;
+	outline:0;
+} */
 
 p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px; }
 
@@ -239,6 +302,7 @@ p {margin-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: -5px;
 #wrap {
 	width: 980px;
 	margin: 0 auto;
+  position: relative;
 }
 
 .scrollup {
@@ -278,4 +342,9 @@ center {
 #footer a {
 	text-decoration: none;
   color: black;
+}
+
+
+@media only screen and (min-width: 980px) {
+
 }
