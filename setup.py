@@ -18,7 +18,7 @@ requires = [
     'pyramid_tm',
     'SQLAlchemy',
     'transaction',
-    'psycopg2',
+    'psycopg2-binary',
     'ipython',
     'pyramid_ipython',
     'zope.sqlalchemy',
@@ -34,7 +34,7 @@ tests_require = [
 
 setup(
     name='interstate_sales',
-    version='0.0',
+    version='0..0.2b',
     description='interstate_sales',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
