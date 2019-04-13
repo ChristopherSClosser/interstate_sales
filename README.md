@@ -1,7 +1,7 @@
 # Interstate Sales
 ---
 ### Description
-Version: *0.0.2b*
+Version: *0.0.3b*
 
 New Features
 * Data Base
