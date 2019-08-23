@@ -2,13 +2,14 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+<!--
   <div class="overlay">
     <a id="logo" href="" onclick="return false;">
       <h1>Here is an anoying popup...</h1>
       <img src="{{request.static_url('interstate_sales:static/images/50th_banner.jpg')}}"
         alt=""></a>
   </div>
-
+-->
   <div id="content_1" style="background-color:black;color:white;height:415px;width:490px;float:left;"><br><br>
     <center><h1><em> Welcome to <b>Interstate Sales</b></em></h1></center>
 
@@ -82,7 +83,7 @@
   <div id="content_6" style="background-color:black;height:300px;width:350px;float:left;"><br>
     <center>
       <div id="content" style="background-color:black;height:250px;width:230px;float:right;">
-        <a href="{{ request.route_url('contact') }}">
+        <a href="{{ request.route_url('contact') }}" style="color:white">
           <img src="{{request.static_url('interstate_sales:static/images/auburn.jpg')}}" width="200" height="200" border="3"><p>Follow Link to Contact Us</p></a></center>
       </div>
 
@@ -91,7 +92,7 @@
 
     <div id="content_6" style="background-color:black;height:300px;width:350px;float:left;">
       <br>
-      <center><div id="content" style="background-color:black;height:250px;width:230px;float:left;"><a href="http://www.tmantraffic.com" target="_blank" >
+      <center><div id="content" style="background-color:black;height:250px;width:230px;float:left;"><a href="http://www.tmantraffic.com" target="_blank" style="color:white">
       <img src="{{request.static_url('interstate_sales:static/images/el_cajon.jpg')}}" width="200" height="200" border="3"><p>Follow Link to T-Man Traffic</p></a></center><br>
     </div>
 
