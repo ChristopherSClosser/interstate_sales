@@ -2,6 +2,16 @@
 <html>
   <head>
     {% block head %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148255307-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148255307-1');
+    </script>
+
     <meta name="description" content="Interstate Sales has been selling top quality highway safety devices for over 40 years!At Interstate Sales our mission is to provide our customers with excellent products and outstanding customer service. We are a wholesale distributor, which means you save on the price." />
     <meta name="keywords" content=" Gregory guardrail, EKT end treatment, Fleat end treatment,traffic paint,traffic signs,highway safety materials,ennis paint,graco, impact recovery, sign posts,sign hardware,stencils, corten,road signs, delineators, channelizers, tubular post, square posts, u-channel post, sign brackets, sign mounting, custom signs, trash bags, batteries, barricades, thermoplastic, flashers, caution tape, glass beads, reflective beads, flint, hotape,premark, potters, swarco, transpo, pavement markers, RPM, centermount reflectors, bituminous, hot melt adhesive, stick'n'stomp, epoxy, primer, reflective tape, sign blanks, reflective sheeting, 3m, ekt, skt, sand bags, big sandy, crash barrels, cones, reflective cones, loopers, ringtop, downing bituminous applicators, crack sealant, cold patch, pothole patch, paint">
     <meta charset="UTF-8" />
@@ -12,7 +22,7 @@
     {% endblock %}
   </head>
   <body>
-  
+
     <div id="white_space_quad"></div>
     <div id="banner">
       <a href="{{request.route_url('home')}}">
