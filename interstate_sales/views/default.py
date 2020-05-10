@@ -333,7 +333,7 @@ def team_view(request):
     query = request.dbsession.query(MyModel)
     team = query.filter(
         MyModel.category == 'Our Team'
-    ).order_by(MyModel.extra.asc())
+    ).order_by(int(MyModel.extra).asc())
     items = build_dict(request)
     return {
         'team': team,
