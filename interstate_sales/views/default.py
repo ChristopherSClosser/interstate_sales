@@ -334,10 +334,9 @@ def team_view(request):
     team = query.filter(
         MyModel.category == 'Our Team')
     teamorder = sorted(team, key=lambda MyModel: print(MyModel.extra[1:]))
-    import pdb; pdb.set_trace()
     items = build_dict(request)
     return {
-        'team': team,
+        'team': teamorder,
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
