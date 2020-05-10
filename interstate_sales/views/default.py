@@ -324,14 +324,16 @@ def equipment_view(request):
 
 @view_config(route_name='team', renderer='../templates/team.jinja2')
 def team_view(request):
-    """Query for guardrail view."""
+    """Team view."""
     auth = False
     try:
         auth = request.cookies['auth_tkt']
     except KeyError:
         pass
     query = request.dbsession.query(MyModel)
-    team = query.filter(MyModel.category == 'Our Team').all()
+    team = query.filter(
+        MyModel.category == 'Our Team'
+    ).order_by(MyModel.extra.asc())
     items = build_dict(request)
     return {
         'team': team,
