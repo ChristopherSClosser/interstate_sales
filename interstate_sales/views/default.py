@@ -332,8 +332,9 @@ def team_view(request):
         pass
     query = request.dbsession.query(MyModel)
     team = query.filter(
-        MyModel.category == 'Our Team').all()
+        MyModel.category == 'Our Team')
     teamorder = sorted(team, key=lambda MyModel: print(MyModel.extra[1:]))
+    import pdb; pdb.set_trace()
     items = build_dict(request)
     return {
         'team': team,
