@@ -333,7 +333,7 @@ def team_view(request):
     query = request.dbsession.query(MyModel)
     team = query.filter(
         MyModel.category == 'Our Team')
-    teamorder = sorted(team, key=lambda MyModel: print(MyModel.extra[1:]))
+    teamorder = sorted(team, key=lambda MyModel: print(MyModel.extra))
     items = build_dict(request)
     return {
         'team': teamorder,
