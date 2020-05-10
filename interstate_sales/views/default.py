@@ -332,11 +332,11 @@ def team_view(request):
         pass
     query = request.dbsession.query(MyModel)
     team = query.filter(
-        MyModel.category == 'Our Team').all()
-    teamorder = sorted(team, key=lambda MyModel: MyModel.extra[1:])
+        MyModel.category == 'Our Team').order_by(MyModel.extra)
+    # teamorder = sorted(team, key=lambda MyModel: MyModel.extra[1:])
     items = build_dict(request)
     return {
-        'team': teamorder,
+        'team': team,
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],
