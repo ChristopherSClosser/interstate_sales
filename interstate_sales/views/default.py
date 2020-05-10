@@ -334,7 +334,8 @@ def team_view(request):
     team = query.filter(
         MyModel.category == 'Our Team')
     teamorder = sorted(team, key=lambda MyModel: int(MyModel.extra))
-    for item in teamorder print(item.subcategory, item.extra)
+    for item in teamorder:
+        print(item.subcategory, item.extra)
     items = build_dict(request)
     return {
         'team': teamorder,
