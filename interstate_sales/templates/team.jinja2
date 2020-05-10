@@ -32,12 +32,12 @@
           </div>
           </center>
         {% elif images|count == 1 %}
-        <div id="menu" style="background-color:white;width:250px; margin-left: 10%; float:left;">
+        <div id="menu" style="background-color:white;height:300px;width:250px; margin-left: 10%; float:left;">
           <center>
             <img src="{{ item.img | replace("open", "uc") }}" alt="{{ item.title }}" style="max-width: 225px; max-height: 200px;">
           </center>
         </div>
-        <div id="content" style="background-color:white;width:500px;float:left;">
+        <div id="content" style="background-color:white;height:300px;width:500px;float:left;">
         <center>
         <p></p><h4>{{ item.title }}</h4><br>{{ item.markdown | safe }}<p></p>
         </center>
