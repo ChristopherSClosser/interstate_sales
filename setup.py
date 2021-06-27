@@ -34,7 +34,7 @@ tests_require = [
 
 setup(
     name='interstate_sales',
-    version='1.1.10',
+    version='2.0.1',
     description='interstate_sales',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
