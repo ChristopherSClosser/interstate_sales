@@ -1,7 +1,7 @@
 # Interstate Sales
 ---
 ### Description
-Version: *1.1.10*
+Version: *2.0.1*
 
 New Features
 * Data Base
@@ -16,7 +16,7 @@ New Features
 ### Getting Started
 ---
 ##### *Prerequisites*
-* [python (3.6+)](https://www.python.org/downloads/)
+* [python (3.9+)](https://www.python.org/downloads/)
 * [pip](https://pip.pypa.io/en/stable/)
 * [git](https://git-scm.com/)
 
