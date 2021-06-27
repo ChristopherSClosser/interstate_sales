@@ -25,6 +25,7 @@ def build_dict(request):
     equipment = query.filter(MyModel.category == 'Equipment').all()
     equipment_subcats = []
     team = query.filter(MyModel.category == 'Our Team').all()
+    teamorder = sorted(team, key=lambda MyModel: int(MyModel.extra))
     team_subcats = []
     for item in guardrails:
         if item.subcategory not in gr_subcats:
@@ -44,7 +45,7 @@ def build_dict(request):
     for item in equipment:
         if item.subcategory not in equipment_subcats:
             equipment_subcats.append(item.subcategory)
-    for item in team:
+    for item in teamorder:
         if item.subcategory not in team_subcats:
             team_subcats.append(item.subcategory)
     return {
@@ -324,17 +325,19 @@ def equipment_view(request):
 
 @view_config(route_name='team', renderer='../templates/team.jinja2')
 def team_view(request):
-    """Query for guardrail view."""
+    """Team view."""
     auth = False
     try:
         auth = request.cookies['auth_tkt']
     except KeyError:
         pass
     query = request.dbsession.query(MyModel)
-    team = query.filter(MyModel.category == 'Our Team').all()
+    team = query.filter(
+        MyModel.category == 'Our Team')
+    teamorder = sorted(team, key=lambda MyModel: int(MyModel.extra))
     items = build_dict(request)
     return {
-        'team': team,
+        'team': teamorder,
         'gr_subcats': items['gr_subcats'],
         'tr_subcats': items['tr_subcats'],
         'pm_subcats': items['pm_subcats'],

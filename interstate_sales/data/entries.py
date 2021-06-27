@@ -175,7 +175,7 @@ ENTRIES = [
         "title": "Fast Dry",
         "img": "ennis_5g_wb.jpg",
         "markdown": "User friendly, high solids, traffic marking formulated specifically for use in both airless and conventional air-atomized striping equipment.",
-        "extra": "<ul><h3>Availible in:</h3> <li>White</li> <li>Black</li> <li>Yellow</li> <li>Red</li> <li>Green</li><li>Blue</li></ul>"
+        "extra": "<ul><h3>Available in:</h3> <li>White</li> <li>Black</li> <li>Yellow</li> <li>Red</li> <li>Green</li><li>Blue</li></ul>"
     },
     {
         "category": "Traffic Paint",
@@ -183,7 +183,7 @@ ENTRIES = [
         "title": "High Build",
         "img": "ennis_5g_wb.jpg",
         "markdown": "Formulated for increased durability and retroreflectivity through greater film build.",
-        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li>"
+        "extra": "<ul><h3>Available in:</h3><li>White</li><li>Yellow</li>"
     },
     {
         "category": "Traffic Paint",
@@ -191,7 +191,7 @@ ENTRIES = [
         "title": "Low-VOC",
         "img": "ennis_5g_low.jpg",
         "markdown": "Solvent based paints are classified as Low VOC. Versatile quick dry times with excellent durability.",
-        "extra": "<ul><h3>Availible in:</h3> <li>White</li> <li>Black</li> <li>Yellow</li> <li>Red</li> <li>Blue</li></ul>"
+        "extra": "<ul><h3>Available in:</h3> <li>White</li> <li>Black</li> <li>Yellow</li> <li>Red</li> <li>Blue</li></ul>"
     },
     {
         "category": "Traffic Paint",
@@ -271,7 +271,7 @@ ENTRIES = [
         "title": "Round Polypropelene Pavement Markers",
         "img": "poly.bmp",
         "markdown": "Our round polypropelene pavement markers are manufactured per ASTM specifications. The bottom of these pavement markers are configured to produce an excellent structural bond with the pavement. Non-reflective road marker 4 inches in diameter.",
-        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li></ul>"
+        "extra": "<ul><h3>Available in:</h3><li>White</li><li>Yellow</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -279,7 +279,7 @@ ENTRIES = [
         "title": "Ceramic Raised Pavement Markers",
         "img": "ceramic_yellow.jpg",
         "markdown": "Ceramic traffic buttons provide ultimate daytime/nighttime visibility, cost effective alternative to painted stripes, eliminates painting stripes and maximum durability. When properly installed, traffic buttons can last 3-4 times longer than painted stripes.",
-        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li></ul>"
+        "extra": "<ul><h3>Available in:</h3><li>White</li><li>Yellow</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -287,7 +287,7 @@ ENTRIES = [
         "title": "C80 Series Reflective Pavement Markers",
         "img": "c80.jpg",
         "markdown": "The new Ennis Paints C80 raised pavement markers are the result of state of the art technology representing a new standard for roadway delineation. Engineered for extended reflector life and rugged performance. The C80 series offers cost effective solutions for drivers at night and during inclement weather conditions. C80 series is coated with toughened covering for extra strength. Finger grips allow for easy placement and the Patent Pending sure grip bottom allows for excellent adhesion to the road. Available in different color combinations.",
-        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li><li>Red</li> <li>Blue</li><li>Red/Clear</li></ul>"
+        "extra": "<ul><h3>Available in:</h3><li>White</li><li>Yellow</li><li>Red</li> <li>Blue</li><li>Red/Clear</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -295,7 +295,7 @@ ENTRIES = [
         "title": "948 Series Reflective Pavement Markers",
         "img": "948.jpg",
         "markdown": "The model 948 is an innovative glass-face marker for use on pavement. It is designed to meet today's changing highway and vehicle conditions. The 948 marker measures 4.7\" long x 2.3\" wide x 0.52\" high. Markers can be applied with bituminous adhesive or conventional epoxy adhesive.",
-        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li><li>Red/Clear</li></ul>"
+        "extra": "<ul><h3>Available in:</h3><li>White</li><li>Yellow</li><li>Red/Clear</li></ul>"
     },
     {
         "category": "Pavement Markings",
@@ -334,7 +334,7 @@ ENTRIES = [
         "subcategory": "Traffic Beads",
         "title": "'Swarco' Premium Glass Beads",
         "img": "swarco_beads.jpg bead_closeup.jpg",
-        "markdown": "Glass beads are the result of a recycling process which are taken from window manufacturers and is transformed in furnaces into round, clear spheres. The smallest beads are no bigger than a few thousandth parts of a millimetre.<br>Availible in:<br>Bags</li> <li>Drums<br>Super Bags<br>",
+        "markdown": "Glass beads are the result of a recycling process which are taken from window manufacturers and is transformed in furnaces into round, clear spheres. The smallest beads are no bigger than a few thousandth parts of a millimetre.<br>Available in:<br>Bags</li> <li>Drums<br>Super Bags<br>",
         "extra": ""
     },
     {
@@ -342,7 +342,7 @@ ENTRIES = [
         "subcategory": "Traffic Beads",
         "title": "'Potters' Highway Safety Spheres",
         "img": "potters_bag.jpg bead2.jpg",
-        "markdown": "Pavement marking lines make a significant contribution to highway safety, especially in conditions of poor visibility at night and in wet weather. Applying Potters Highway Safety Marking Sphere technology is one of the most cost-effective ways to increase highway safety in these conditions.<br>Availible in:<br>Bags<br>Drums <br> Super Bags",
+        "markdown": "Pavement marking lines make a significant contribution to highway safety, especially in conditions of poor visibility at night and in wet weather. Applying Potters Highway Safety Marking Sphere technology is one of the most cost-effective ways to increase highway safety in these conditions.<br>Available in:<br>Bags<br>Drums <br> Super Bags",
         "extra": ""
     },
     {
@@ -567,7 +567,7 @@ ENTRIES = [
         "title": "LED Barricade Flasher",
         "img": "flasher2.jpg",
         "markdown": "This flasher is super bright thanks to the individual LED lights. Extremely rugged and will provide long hours of operation and ideal for mounting on barricades. Powered by ‘D’ cell batteries.",
-        "extra": "<ul><h3>Availible in:</h3><li>White</li><li>Yellow</li></ul>"
+        "extra": "<ul><h3>Available in:</h3><li>White</li><li>Yellow</li></ul>"
     },
     {
         "category": "Construction Safety",
@@ -830,7 +830,7 @@ ENTRIES = [
         "subcategory": "Sign Post",
         "title": "Square Post",
         "img": "unistrut.bmp square_post.jpg",
-        "markdown": "Galvanized square post.<br>• Type: 14 gauge<br>• Length: 10' and 12'<br>• 1.75\" and 2\" Square post<br>• Galvanized steel<br>Anchor and Sleeve assembly availible also.",
+        "markdown": "Galvanized square post.<br>• Type: 14 gauge<br>• Length: 10' and 12'<br>• 1.75\" and 2\" Square post<br>• Galvanized steel<br>Anchor and Sleeve assembly Available also.",
         "extra": ""
     },
     {
